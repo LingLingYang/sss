@@ -5614,8 +5614,13 @@
 12771,Passion_Hat_Box2,Passion Hat Box2,2,0,,0,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 12772,Cool_Hat_Box2,Cool Hat Box2,2,0,,0,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 12773,Victory_Hat_Box2,Victory Hat Box2,2,0,,0,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
-//
+12774,Empty_Potion_Bottle,Empty Potion Bottle,2,0,,0,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 12775,Ancient_Spirit_Amulet,Ancient Spirit Amulet,2,20,,600,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
+//
+12812,Snow_Flip,Snow Flip,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ECL_SNOWFLIP",1; },{},{}
+12813,Peony_Mommy,Peony Mamy,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ECL_PEONYMAMY",1; },{},{}
+12814,Slapping_Herb,Slapping Herb,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ECL_SADAGUI",1; },{},{}
+12815,Yggdrasil_Dust,Yggdrasil Dust,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ECL_SEQUOIADUST",1; },{},{}
 //
 12848,Falcon_Flute,Falcon Flute,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ if(getskilllv("HT_FALCON")) { if(checkwarg()) end; if(checkfalcon()==1) { setfalcon 0; } else { setfalcon 1; } } },{},{}
 12901,Insurance_Package,生命保证证书箱子,18,20,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ getitem 12209,10; },{},{}
