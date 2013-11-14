@@ -311,10 +311,11 @@ bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱
 	ATF_TARGET	作用在对方(不指定时默认此项)
 	其他ATF_*同注10，原ATF_*仍然有效
 注9：
-	0=作用在自己
-	1=作用在对方
+	0=作用在自己(AutospellOnSkill表示对方)
+	1=作用在对方(AutospellOnSkill表示自己)
 	2=使用随机技能等级[1~条件等级]
 	3=1+2 (随机等级, 作用在对方)
+
 注10：
 	第1组:	BF_SHORT:	近距离攻击	
 		BF_LONG:	远距离攻击
