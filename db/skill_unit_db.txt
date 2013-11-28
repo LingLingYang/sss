@@ -159,7 +159,7 @@
 3020,0xf8,   ,  0, 2, 500,all,	 0x018	//KO_ZENKAI
 
 5004,0x86,    , 0, 1:1:1:2:2:2:3:3:4:4,1000,enemy, 0x018	//RK_DRAGONBREATH_WATER
-5006,0x101,   , 0, 3,2000,enemy, 0x018	//NC_MAGMA_ERUPTION
+5006,0x101,   , 0, 3,500,enemy, 0x018	//NC_MAGMA_ERUPTION
 5010,0xfe,    , 0, 2,  -1,enemy, 0x000	//SC_ESCAPE
 
 8403,0xed,   , -1, 0,  20,enemy, 0x010	//EL_FIRE_MANTLE
