@@ -2482,3 +2482,7 @@ Produce_Materials	21
 Produce_Runestone	24
 
 MAX_MOB_DB	10000
+
+IBG_HPPOTION	1
+IBG_SPPOTION	2
+IBG_HEADGEAR	3

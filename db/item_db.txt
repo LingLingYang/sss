@@ -5444,12 +5444,12 @@
 12419,Manaplus,法力增加药水,3,10,,50,,,,,,,,,,,,,{},{},{}
 12420,Muramura_M,Muramura M,3,10,,50,,,,,,,,,,,,,{},{},{}
 12421,Falmons_F,Falmons F,3,10,,50,,,,,,,,,,,,,{},{},{}
-12422,HP_Increase_Potion_(Small),HP增加药水(小),2,10,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 1,0; itembonus 500000,SC_HP_POTION_S,1; },{},{}
-12423,HP_Increase_Potion_(Medium),HP增加药水(中),2,10,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 2,0; itembonus 500000,SC_HP_POTION_M,1; },{},{}
-12424,HP_Increase_Potion_(Large),HP增加药水(大),2,10,,80,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 5,0; itembonus 500000,SC_HP_POTION_L,1; },{},{}
-12425,SP_Increase_Potion_(Small),SP增加药水(小),2,10,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,2; itembonus 500000,SC_SP_POTION_S,2; },{},{}
-12426,SP_Increase_Potion_(Medium),SP增加药水(中),2,10,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,4; itembonus 500000,SC_SP_POTION_M,2; },{},{}
-12427,SP_Increase_Potion_(Large),SP增加药水(大),2,10,,80,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,8; itembonus 500000,SC_SP_POTION_L,2; },{},{}
+12422,HP_Increase_Potion_(Small),HP增加药水(小),2,10,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 1,0; itembonus 500000,SC_HP_POTION_S,IBG_HPPOTION; },{},{}
+12423,HP_Increase_Potion_(Medium),HP增加药水(中),2,10,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 2,0; itembonus 500000,SC_HP_POTION_M,IBG_HPPOTION; },{},{}
+12424,HP_Increase_Potion_(Large),HP增加药水(大),2,10,,80,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 5,0; itembonus 500000,SC_HP_POTION_L,IBG_HPPOTION; },{},{}
+12425,SP_Increase_Potion_(Small),SP增加药水(小),2,10,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,2; itembonus 500000,SC_SP_POTION_S,IBG_SPPOTION; },{},{}
+12426,SP_Increase_Potion_(Medium),SP增加药水(中),2,10,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,4; itembonus 500000,SC_SP_POTION_M,IBG_SPPOTION; },{},{}
+12427,SP_Increase_Potion_(Large),SP增加药水(大),2,10,,80,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,8; itembonus 500000,SC_SP_POTION_L,IBG_SPPOTION; },{},{}
 12428,Concentrated_White_Potion_Z,浓缩白色药水Z,2,10,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal 1000,0; itembonus 500000,SC_C_WHITE_POTION_Z; },{},{}
 12429,Savage_Full_Roast,烤野猪,2,10,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_start SC_SAVAGE_STEAK,300000,20; },{},{}
 12430,Cocktail_Warg_Blood,狼血鸡尾酒,2,10,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_start SC_COCKTAIL_WARG_BLOOD,300000,20; },{},{}
@@ -7255,6 +7255,8 @@
 18727,Sedora_Hat,Sedora Hat,5,20,,300,,13,,1,0xFFFFFFFF,7,2,256,,10,1,869,{},{},{}
 18728,Egir_Helm,Egir Helm,5,200000,,800,,10,,1,0xFFFFFFFF,7,2,256,,110,1,870,{ bonus bUnbreakableHelm,0; },{},{}
 18729,MVP_Basketball,MVP Basketball,5,20,,150,,6,,1,0xFFFFFFFF,7,2,256,,1,1,871,{},{},{}
+18742,C_MoonStar_Accessory,Moon and Stars,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,718; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
+18744,C_World_Star,Twilight,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,728; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
 18785,King_Poring_Hat,King Poring Hat,5,20,,600,,10,,1,0xFFFFFFFF,7,2,256,,10,1,905,{ bonus bDex,1; bonus bLuk,1; },{},{}
 18821,Rainbow_Feather_Deco,Rainbow Feather Deco,5,20,,300,,5,,1,0xFFFFFFFF,7,2,256,,1,1,934,{},{},{}
 18839,Poring_Sunglasses,Poring Sunglasses,5,0,,100,,10,,1,0xFFFFFFFF,7,2,512,,1,0,954,{ bonus bDex,1; },{},{}
