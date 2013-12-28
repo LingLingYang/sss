@@ -150,7 +150,7 @@
 644,Gift_Box,礼物箱,2,1000,,200,,,,,0xFFFFFFFF,7,2,,,,,,{ getitem groupranditem(IG_GiftBox),1; },{},{}
 645,Center_Potion,集中药水,2,800,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_start SC_ASPDPOTION0,1800000,0; },{},{}
 656,Awakening_Potion,觉醒药水,2,1500,,150,,,,,0xFFF7FEEF,7,2,,,40,,,{ sc_start SC_ASPDPOTION1,1800000,0; },{},{}
-657,Berserk_Potion,菠色克药水,2,3000,,200,,,,,0x01E646A6,7,2,,,85,,,{ sc_start SC_ASPDPOTION2,1800000,0; },{},{}
+657,Berserk_Potion,菠色克药水,2,3000,,200,,,,,0x05E646A6,7,2,,,85,,,{ sc_start SC_ASPDPOTION2,1800000,0; },{},{}
 658,Union_Of_Tribe,组织的团结力,2,2,,500,,,,,0xFFFFFFFF,7,2,,,,,,{ guildgetexp rand(600000,1200000); },{},{}
 659,Heart_Of_Her,心爱女人之回忆,2,500,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ pet 1188; },{},{}
 660,Prohibition_Red_Candle,红色蜡烛,2,20000,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ pet 1200; },{},{}
@@ -1375,7 +1375,7 @@
 2379,Warlock_Battle_Robe,指挥官的战斗外袍,5,0,,0,,36,,1,0x00810204,7,2,16,,80,1,0,{ bonus bMaxHP,150; bonus bMdef,2; bonus2 bSubRace,RC_DemiHuman,2; if (isequipped(2539,2436)) { bonus2 bSubRace,RC_NonDemiHuman,-300; bonus bInt,3; bonus bMaxHPRate,12; bonus2 bResEff,Eff_Stun,2000; autobonus2 "{ bonus bDefEle,Ele_Ghost; }",30,10000,BF_WEAPON,"{ specialeffect2 EF_ENERGYCOAT; }"; }; },{},{}
 2380,Medic_Robe,指挥官的医疗外袍,5,0,,0,,25,,1,0x00008110,7,2,16,,80,1,0,{ bonus bMaxHP,150; bonus bMdef,2; bonus2 bSubRace,RC_DemiHuman,2; if (isequipped(2539,2436)) { bonus2 bSubRace,RC_NonDemiHuman,-300; bonus bInt,3; bonus bMaxHPRate,12; bonus2 bCastrate,156,-50; bonus bHealPower,6; autobonus2 "{ bonus bDefEle,Ele_Ghost; }",30,10000,BF_WEAPON,"{ specialeffect2 EF_ENERGYCOAT; }"; }; },{},{}
 2381,Elite_Archer_Suit,指挥官的皮甲,5,0,,0,,35,,1,0x00080808,7,2,16,,80,1,0,{ bonus bMaxHP,150; bonus bMdef,2; bonus2 bSubRace,RC_DemiHuman,2; if (isequipped(2539,2436)) { bonus2 bSubRace,RC_NonDemiHuman,-300; bonus bDex,3; bonus bMaxHPRate,12; bonus bLongAtkDef,10; bonus bDelayRate,-25; }; },{},{}
-2382,Elite_Shooter_Suit,狙击手的大衣,5,0,,0,,25,,1,0x01000000,7,2,16,,80,1,0,{ bonus bMaxHP,150; bonus bMdef,2; bonus2 bSubRace,RC_DemiHuman,2; if (isequipped(2540,2437)) { bonus2 bSubRace,RC_NonDemiHuman,-300; bonus bDex,3; bonus bMaxHPRate,12; bonus bLongAtkDef,10; bonus bDelayRate,-25; }; },{},{}
+2382,Elite_Shooter_Suit,狙击手的大衣,5,0,,0,,25,,1,0x05000000,7,2,16,,80,1,0,{ bonus bMaxHP,150; bonus bMdef,2; bonus2 bSubRace,RC_DemiHuman,2; if (isequipped(2540,2437)) { bonus2 bSubRace,RC_NonDemiHuman,-300; bonus bDex,3; bonus bMaxHPRate,12; bonus bLongAtkDef,10; bonus bDelayRate,-25; }; },{},{}
 2383,Brynhild,布伦希尔德,5,0,,400,,120,,0,0xFFFFFFFF,7,2,16,,94,0,0,{ bonus bMdef,10; bonus bMaxHP,20*BaseLevel; bonus bMaxSP,5*BaseLevel; bonus2 bAddRace,RC_NonBoss,10; bonus2 bAddRace,RC_Boss,10; bonus bMatkRate,10; bonus bUnbreakableArmor,0; bonus bNoKnockback,0; },{},{}
 2384,Spritual_Tunic,Spiritual Tunic,5,20,,0,,38,,0,0xFFFFFFFF,7,2,16,,0,0,0,{ bonus bMaxHP,800; bonus2 bResEff,Eff_Freeze,10000; bonus2 bSubEle,Ele_Earth,20; bonus2 bSubEle,Ele_Fire,20; bonus2 bSubEle,Ele_Wind,20; bonus2 bSubEle,Ele_Poison,20; bonus2 bSubEle,Ele_Holy,20; bonus2 bSubEle,Ele_Dark,20; bonus2 bSubEle,Ele_Ghost,20; bonus2 bSubEle,Ele_Undead,20; },{},{}
 2385,Recuperative_Armor,Recuperative Armor,5,20,,0,,67,,0,0xFFFFFFFF,7,2,16,,0,0,0,{ bonus bNoRegen,1; bonus bNoRegen,2; bonus bHPGainValue,60; bonus bSPGainValue,6; bonus bMagicHPGainValue,60; bonus bMagicSPGainValue,6; },{},{ heal 0,-100; }
@@ -1399,8 +1399,8 @@
 2402,Sandals_,轻便鞋,5,400,,200,,5,,1,0xFFFFFFFF,7,2,64,,0,1,0,{},{},{}
 2403,Shoes,长靴,5,3500,,400,,10,,0,0xFFFFFFFE,7,2,64,,0,1,0,{},{},{}
 2404,Shoes_,长靴,5,3500,,400,,10,,1,0xFFFFFFFE,7,2,64,,0,1,0,{},{},{}
-2405,Boots,战士长靴,5,18000,,600,,16,,0,0x016E5CEA,7,2,64,,0,1,0,{},{},{}
-2406,Boots_,战士长靴,5,18000,,600,,16,,1,0x016E5CEA,7,2,64,,0,1,0,{},{},{}
+2405,Boots,战士长靴,5,18000,,600,,16,,0,0x056E5CEA,7,2,64,,0,1,0,{},{},{}
+2406,Boots_,战士长靴,5,18000,,600,,16,,1,0x056E5CEA,7,2,64,,0,1,0,{},{},{}
 2407,Chrystal_Pumps,玻璃鞋,5,20,,100,,5,,0,0xFFFFFFFE,7,0,64,,0,1,0,{ bonus bMdef,10; bonus bLuk,5; },{},{}
 2408,Cuffs,脚链,5,5000,,3000,,18,,0,0xFFFFFFFF,7,2,64,,0,1,0,{ if (isequipped(2655)) { bonus bBaseAtk,50; bonus2 bAddDefClass,1196,20; bonus2 bAddDefClass,1197,20; } },{},{}
 2409,Spiky_Heel,抗魔鞋,5,8500,,600,,10,,0,0xFFFFFFFE,7,2,64,,0,1,0,{ bonus bMdef,5; },{},{}
@@ -1423,7 +1423,7 @@
 2426,Shadow_Walk,阴影之 靴,5,10000,,2000,,0,,0,0x000FFFFE,2,2,64,,75,1,0,{ bonus bMdef,10; if(getskilllv("AS_CLOAKING") < 3){ bonus5 bAutoSpellWhenHit,"AS_CLOAKING",3,100,BF_MAGIC,0; } else bonus5 bAutoSpellWhenHit,"AS_CLOAKING",getskilllv("AS_CLOAKING"),100,BF_MAGIC,0; },{},{}
 2427,Golden_Shoes,Golden Shoes,5,0,,300,,4,,0,0xFFFFFFFF,7,2,64,,,1,0,{ bonus bMdef,4; },{},{}
 2428,Freyja_Boots,菲力亚的长靴,5,0,,300,,22,,0,0xFFFFFFFF,7,2,64,,0,1,0,{ bonus2 bSubRace,RC_DemiHuman,5; },{},{}
-2429,Iron_Boots01,铁 制 鞋,5,0,,1500,,5,,0,0x031E5CEA,7,2,64,,0,1,0,{},{},{}
+2429,Iron_Boots01,铁 制 鞋,5,0,,1500,,5,,0,0x071E5CEA,7,2,64,,0,1,0,{},{},{}
 2430,Iron_Boots02,铁 制 鞋,5,0,,800,,5,,0,0x00018315,7,2,64,,0,1,0,{},{},{}
 2431,Valley_Shoes,Valley Shoes,5,20,,0,,10,,0,0xFFFFFFFE,7,2,64,1,1,0,0,{ bonus bMaxHPRate,7; bonus bMaxSPRate,7; },{},{}
 2432,Spiky_Heel_,抗魔鞋,5,8500,,600,,10,,1,0xFFFFFFFE,7,2,64,,0,1,0,{ bonus bMdef,5; },{},{}
@@ -1431,7 +1431,7 @@
 2434,Black_Leather_Boots_,黑皮靴,5,10000,,500,,16,,1,0x000FFFFE,2,2,64,,55,1,0,{ bonus bAgi,1; if(getrefine() >= 9) bonus bAgi,2; },{},{}
 2435,Battle_Greave,将军的重靴,5,0,,0,,15,,1,0x027654E2,7,2,64,,80,1,0,{ bonus bMaxHP,100; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
 2436,Combat_Boots,指挥官的军靴,5,0,,0,,9,,1,0x00898B1C,7,2,64,,80,1,0,{ bonus bMaxHP,100; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
-2437,Battle_Boots,狙击手的长靴,5,0,,0,,9,,1,0x01000000,7,2,64,,80,1,0,{ bonus bMaxHP,100; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
+2437,Battle_Boots,狙击手的长靴,5,0,,0,,9,,1,0x05000000,7,2,64,,80,1,0,{ bonus bMaxHP,100; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
 2438,Paw_Of_Cat,Cat's Paw,5,20,,300,,0,,0,0xFFFFFFFF,7,2,64,,80,1,0,{ bonus bFlee,5; bonus bAgi,1; },{},{}
 2439,Refresh_Shoes,Refresh Shoes,5,20,,0,,20,,0,0xFFFFFFFF,7,2,64,,0,0,0,{ bonus bMaxHPRate,17; bonus bMaxSPRate,8; bonus2 bHPRegenRate,20,10000; bonus2 bSPRegenRate,3,10000; },{},{}
 2440,Sprint_Shoes,奔跑长靴,5,20,,300,,10,,1,0x000FDF80,2,2,64,,70,1,0,{ bonus bAgi,1; bonus bSPrecovRate,5; },{},{}
@@ -1454,7 +1454,7 @@
 2457,Paradise_Boots2,乐园团 靴子Ⅱ,5,0,,0,,16,,0,0xFFFFFFFE,7,2,64,,26,0,0,{ bonus bHPrecovRate,12; bonus bSPrecovRate,4; },{},{}
 2458,Paradise_Boots3,乐园团 靴子Ⅲ,5,0,,0,,18,,0,0xFFFFFFFE,7,2,64,,40,0,0,{ bonus bHPrecovRate,14; bonus bSPrecovRate,6; },{},{}
 2459,Upg_Shoes,强化长靴,5,20,,200,,15,,1,0xFFFFFFFE,7,2,64,,1,1,0,{ bonus bMaxHPRate,3; },{},{}
-2460,Upg_Boots,强化战士长靴,5,20,,300,,21,,1,0x016E5CEA,7,2,64,,1,1,0,{ bonus bMaxHPRate,3; },{},{}
+2460,Upg_Boots,强化战士长靴,5,20,,300,,21,,1,0x056E5CEA,7,2,64,,1,1,0,{ bonus bMaxHPRate,3; },{},{}
 2461,Upg_Greaves,强化重靴,5,20,,400,,32,,1,0x00004080,7,2,64,,1,1,0,{ bonus bMaxHPRate,3; },{},{}
 2462,Sleipnir_R,Sleipnir,5,0,,3500,,40,,0,0xFFFFFFFF,7,2,64,,94,0,0,{ bonus bMdef,10; bonus bInt,25; bonus bMaxHPrate,20; bonus bMaxSPrate,20; bonus bSPrecovRate,25; bonus bSpeedRate,25; },{},{}
 2463,Wild_Boats,狂野 长靴,5,20,,0,,12,,0,0xFFFFFFFF,7,2,64,,75,0,0,{ bonus bUnbreakableShoes,0; },{},{}
@@ -1476,7 +1476,7 @@
 //2481,
 //2482,
 2483,WoE_Greave,攻城护胫,5,20,,750,,30,,1,0x000444A2,7,2,64,,95,1,0,{ bonus bMdef,1; bonus2 bSubRace,RC_Player,2; },{},{}
-2484,WoE_Boots,攻城战靴,5,20,,500,,20,,1,0x036E5CEA,7,2,64,,95,1,0,{ bonus bMdef,5; bonus2 bSubRace,RC_Player,1; },{},{}
+2484,WoE_Boots,攻城战靴,5,20,,500,,20,,1,0x076E5CEA,7,2,64,,95,1,0,{ bonus bMdef,5; bonus2 bSubRace,RC_Player,1; },{},{}
 2485,WoE_Shoes,攻城长靴,5,20,,350,,15,,1,0x00818315,7,2,64,,95,1,0,{ bonus bMdef,10; bonus2 bSubRace,RC_Player,1; },{},{}
 //2486,
 //2487,
@@ -1526,7 +1526,7 @@
 2537,Diabolus_Manteau,恐惧斗篷,5,20,,250,,15,,1,0x000FDF80,2,2,4,,0,1,0,{ bonus2 bSubEle,Ele_Neutral,5; bonus bMaxHP,100; bonus2 bAddDamageClass,1916,10; bonus2 bAddDamageClass,1917,10; if (isequipped(2433)) bonus bMaxHPRate,6; },{},{}
 2538,Commander_Manteau,将军的斗篷,5,0,,0,,28,,1,0x027654E2,7,2,4,,80,1,0,{ bonus bMaxHP,50; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
 2539,Commander_Manteau_,指挥官的披肩,5,0,,0,,20,,1,0x00898B1C,7,2,4,,80,1,0,{ bonus bMaxHP,50; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
-2540,Sheriff_Manteau,狙击手的斗篷,5,0,,0,,20,,1,0x01000000,7,2,4,,80,1,0,{ bonus bMaxHP,50; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
+2540,Sheriff_Manteau,狙击手的斗篷,5,0,,0,,20,,1,0x05000000,7,2,4,,80,1,0,{ bonus bMaxHP,50; bonus bMdef,1; bonus2 bSubRace,RC_DemiHuman,1; },{},{}
 2541,Asprika,阿斯普利卡,5,0,,400,,40,,0,0xFFFFFFFF,7,2,4,,94,0,0,{ bonus bMdef,5; bonus3 bSubEle,Ele_Neutral,30,BF_SHORT; bonus3 bSubEle,Ele_Water,30,BF_SHORT; bonus3 bSubEle,Ele_Earth,30,BF_SHORT; bonus3 bSubEle,Ele_Fire,30,BF_SHORT; bonus3 bSubEle,Ele_Wind,30,BF_SHORT; bonus3 bSubEle,Ele_Poison,30,BF_SHORT; bonus3 bSubEle,Ele_Holy,30,BF_SHORT; bonus3 bSubEle,Ele_Dark,30,BF_SHORT; bonus3 bSubEle,Ele_Ghost,30,BF_SHORT; bonus3 bSubEle,Ele_Undead,30,BF_SHORT; bonus bFlee,30; skill "AL_TELEPORT",1; bonus bUnbreakableGarment,0; },{},{}
 2542,Flame_Manteau,纳户特基格的斗篷,5,20,,70,,16,,1,0x000FFFFE,2,2,4,,70,1,0,{ bonus bMaxHPRate,5; bonus bMdef,2; bonus bMatkRate,1; bonus2 bAddEle,Ele_Fire,2; },{},{}
 2543,Sylphid_Manteau,Sylph Manteau,5,20,,0,,33,,0,0xFFFFFFFF,7,2,4,,0,0,0,{ bonus bFlee,13; bonus2 bSubEle,Ele_Neutral,13; bonus bFlee2,1; },{},{}
@@ -1706,7 +1706,7 @@
 2730,Morroc_Seal,皇家卫士的徽章,5,0,,50,,0,,1,0xFFFFFFFE,7,2,136,,80,0,0,{ bonus bMaxHP,50; bonus bAspdRate,3; },{},{}
 2731,Morroc_Charm_Stone,咒语符文石,5,0,,50,,0,,1,0xFFFFFFFE,7,2,136,,80,0,0,{ bonus bMaxSP,50; bonus bCastRate,-1; },{},{}
 2732,Morroc_Ring,死亡挂坠,5,0,,50,,0,,1,0xFFFFFFFE,7,2,136,,80,0,0,{ bonus bCritical,5; },{},{}
-2733,Medal_Gunner,狙击手勋章,5,0,,0,,1,,0,0x01000000,7,2,136,,80,0,0,{ bonus2 bAddRace,RC_NonBoss,5; bonus2 bAddRace,RC_Boss,5; bonus bMatkRate,5; bonus bCritical,10; bonus bMaxHP,300; bonus bMaxSP,80; bonus3 bAddEff,Eff_Blind,1000,ATF_LONG; },{},{}
+2733,Medal_Gunner,狙击手勋章,5,0,,0,,1,,0,0x05000000,7,2,136,,80,0,0,{ bonus2 bAddRace,RC_NonBoss,5; bonus2 bAddRace,RC_Boss,5; bonus bMatkRate,5; bonus bCritical,10; bonus bMaxHP,300; bonus bMaxSP,80; bonus3 bAddEff,Eff_Blind,1000,ATF_LONG; },{},{}
 2734,Directive_A,战斗命令,5,0,,0,,1,,0,0xFFFFFFFF,7,2,136,,80,0,0,{},{},{}
 2735,Directive_B,战斗命令,5,0,,0,,1,,0,0xFFFFFFFF,7,2,136,,80,0,0,{},{},{}
 2736,Navel_Ring,肚脐环,5,0,,100,,0,,0,0xFFFFFFFF,7,2,136,,75,0,0,{ bonus bDex,3; bonus bLuk,3; bonus bMdef,2; },{},{}
@@ -2369,7 +2369,7 @@
 4544,SLD_Dark_Snake_Card,Sealed Evil Snake Lord Card,6,20,,10,,,,,,,,769,,,,,{ bonus bInt,3; if (getrefine()>14) { bonus2 bResEff,Eff_Blind,7500; bonus2 bResEff,Eff_Curse,7500; } else { bonus2 bResEff,Eff_Blind,5000; bonus2 bResEff,Eff_Curse,5000; } },{},{}
 //Port Malay Cards
 4582,Bungisngis_Card,Bungisngi Card,6,20,,10,,,,,,,,769,,,,,{ bonus bMaxHPRate,getrefine(); },{},{}
-4583,Engkanto_Card,Engkanto Card,6,20,,10,,,,,,,,769,,,,,{ bonus bAddEle,Ele_Poison,30; bonus2 bIgnoreDefRate,RC_Plant,30; },{},{}
+4583,Engkanto_Card,Engkanto Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bAddEle,Ele_Poison,30; bonus2 bIgnoreDefRate,RC_Plant,30; },{},{}
 4584,Manananggal_Card,Manananggal Card,6,20,,10,,,,,,,,2,,,,,{ bonus bMaxSPRate,-1; bonus bSPDrainValue,1; },{},{}
 4585,Mangkukulam_Card,Mangkukulam Card,6,20,,10,,,,,,,,16,,,,,{ bonus bMaxSPRate,10; bonus bSPGainValue,666; },{},{}
 4586,Tikbalang_Card,Tikbalang Card,6,20,,10,,,,,,,,769,,,,,{ bonus bMatk,10; bonus2 bMagicAddEle,Ele_Wind,5; },{},{}
@@ -4531,6 +4531,22 @@
 //
 7635,Sachet,香包,3,100,,0,,,,,,,,,,,,,{},{},{}
 //
+7646,RO_Luk_Bookmark,RO Luk Bookmark,3,20,,10,,,,,,,,,,,,,{},{},{}
+7647,Taiwan_Luk_Coin,Taiwan Luk Coin,3,0,,0,,,,,,,,,,,,,{},{},{}
+7648,Snake_Bookmark,Snake Bookmark,3,20,,10,,,,,,,,,,,,,{},{},{}
+7649,Big_Luk_Bookmark,Big Luk Bookmark,3,20,,10,,,,,,,,,,,,,{},{},{}
+7651,Mystery_Egg,Mystery Egg,3,10,,10,,,,,,,,,,,,,{},{},{}
+7663,Full_Metal_Jacket,Full Metal Jacket,10,1,,2,10,,,,0x05000000,63,2,32768,,1,,3,{},{},{}
+7664,Projection_Landmines,Projection Landmines,10,1,,3,10,,,,0x05000000,63,2,32768,,1,,5,{},{},{}
+7665,Dragon_Tail_Missile,Dragon Tail Missile,10,1,,100,10,,,,0x05000000,63,2,32768,,1,,5,{},{},{}
+7666,TimeTravel_Scroll,Time Travel Scroll,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+7667,Abandoned_Machine,Abandoned Machine,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+7668,Clean_Bandage,Clean Bandage,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+7669,Rubbing_Alchohol,Rubbing Alchohol,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+7670,Sour_Grass,Sour Grass,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+7671,Firstaid_Kit,First Aid Kit,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+7672,Relief_Food,Relief Food,3,20,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//
 7701,Dragon_Spirit,神龙的魂魄,3,2,,10,,,,,,,,,,,,,{},{},{}
 7702,Special_Cogwheel,特别的 齿轮,3,2,,10,,,,,,,,,,,,,{},{},{}
 7703,Piece_Of_Cogwheel,齿轮 碎片,3,2,,10,,,,,,,,,,,,,{},{},{}
@@ -5799,61 +5815,61 @@
 13076,唱蔓八,千年忍刀,4,20,,600,120,,1,1,0x02100000,7,2,2,3,110,1,1,{ bonus bMatk,100; bonus bInt,3; },{},{}
 13078,固墨明虐,三日月,4,20,,600,50,,1,1,0x02100000,7,2,2,4,100,1,1,{ bonus bMatk,120; bonus bUseSPrate,-5; bonus bCastrate,-5; },{},{}
 // Guns
-13100,Six_Shooter,6火树,4,4500,,400,30,,7,1,0x01000000,7,2,34,1,10,1,17,{ bonus bHit,-10; },{},{}
-13101,Six_Shooter_,6射击,4,4500,,400,30,,7,2,0x01000000,7,2,34,1,10,1,17,{ bonus bHit,-10; },{},{}
-13102,Crimson_Bolt,深红色锁簧,4,20000,,450,45,,7,1,0x01000000,7,2,34,2,35,1,17,{ bonus bHit,-10; },{},{}
-13103,Crimson_Bolt_,深红色锁簧,4,20000,,450,45,,7,2,0x01000000,7,2,34,2,35,1,17,{ bonus bHit,-10; },{},{}
-13104,The_Garrison,格林手枪,4,48000,,500,70,,7,1,0x01000000,7,2,34,2,55,1,17,{ bonus bHit,-10; },{},{}
-13105,The_Garrison_,格林手枪,4,48000,,500,70,,7,2,0x01000000,7,2,34,2,55,1,17,{ bonus bHit,-10; },{},{}
-13106,Gold_Lux,金色lux,4,100000,,500,20,,7,0,0x01000000,7,2,34,3,12,1,17,{ bonus bHit,-10; if(getskilllv("GS_GLITTERING")>0) bonus3 bAutoSpell,"GS_GLITTERING",getskilllv("GS_GLITTERING"),100; },{},{}
-13107,Wasteland_Outlaw,荒野的 无法者,4,20,,580,68,,7,2,0x01000000,7,2,34,3,70,1,17,{ bonus bHit,readparam(bAgi)/10; bonus bAspdRate,readparam(bAgi)/14; },{},{}
-13108,BF_Pistol1,角斗士的沙漠之鹰,4,0,,0,70,,7,0,0x01000000,7,2,34,3,80,1,17,{ bonus bDex,2; bonus bHit,-10; bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bAspdRate,100; }",10,3000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; bonus bUnbreakableWeapon,0; },{},{}
+13100,Six_Shooter,6火树,4,4500,,400,30,,7,1,0x05000000,7,2,34,1,10,1,17,{ bonus bHit,-10; },{},{}
+13101,Six_Shooter_,6射击,4,4500,,400,30,,7,2,0x05000000,7,2,34,1,10,1,17,{ bonus bHit,-10; },{},{}
+13102,Crimson_Bolt,深红色锁簧,4,20000,,450,45,,7,1,0x05000000,7,2,34,2,35,1,17,{ bonus bHit,-10; },{},{}
+13103,Crimson_Bolt_,深红色锁簧,4,20000,,450,45,,7,2,0x05000000,7,2,34,2,35,1,17,{ bonus bHit,-10; },{},{}
+13104,The_Garrison,格林手枪,4,48000,,500,70,,7,1,0x05000000,7,2,34,2,55,1,17,{ bonus bHit,-10; },{},{}
+13105,The_Garrison_,格林手枪,4,48000,,500,70,,7,2,0x05000000,7,2,34,2,55,1,17,{ bonus bHit,-10; },{},{}
+13106,Gold_Lux,金色lux,4,100000,,500,20,,7,0,0x05000000,7,2,34,3,12,1,17,{ bonus bHit,-10; if(getskilllv("GS_GLITTERING")>0) bonus3 bAutoSpell,"GS_GLITTERING",getskilllv("GS_GLITTERING"),100; },{},{}
+13107,Wasteland_Outlaw,荒野的 无法者,4,20,,580,68,,7,2,0x05000000,7,2,34,3,70,1,17,{ bonus bHit,readparam(bAgi)/10; bonus bAspdRate,readparam(bAgi)/14; },{},{}
+13108,BF_Pistol1,角斗士的沙漠之鹰,4,0,,0,70,,7,0,0x05000000,7,2,34,3,80,1,17,{ bonus bDex,2; bonus bHit,-10; bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bAspdRate,100; }",10,3000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; bonus bUnbreakableWeapon,0; },{},{}
 //13109,Wasteland_Outlaw_C
-13110,Krieger_Pistol1,荣光手枪,4,0,,0,80,,7,0,0x01000000,7,2,34,4,80,1,17,{ bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus4 bAutoSpellOnSkill,"GS_RAPIDSHOWER","GS_GLITTERING",1,1000; bonus2 bSkillAtk,"GS_RAPIDSHOWER",getrefine()*2; } },{},{}
+13110,Krieger_Pistol1,荣光手枪,4,0,,0,80,,7,0,0x05000000,7,2,34,4,80,1,17,{ bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus4 bAutoSpellOnSkill,"GS_RAPIDSHOWER","GS_GLITTERING",1,1000; bonus2 bSkillAtk,"GS_RAPIDSHOWER",getrefine()*2; } },{},{}
 //13111,Sharpshooter_Revolver
-13112,P_Revolver1,P.左轮枪Ⅰ,4,0,,0,44,,7,0,0x01000000,7,2,34,2,26,0,17,{ bonus bHit,-5; },{},{}
-13113,P_Revolver2,P.左轮枪Ⅱ,4,0,,0,60,,7,0,0x01000000,7,2,34,2,40,0,17,{ bonus bHit,-5; },{},{}
-13115,Upg_Revolver,强化左轮手枪,4,20,,500,35,,7,1,0x01000000,7,2,34,3,1,1,17,{ bonus bAtk,5*getrefine(); bonus bLongAtkRate,2*getrefine(); if(BaseLevel >= 70) { bonus bAtk,5*((BaseLevel-69)/10); } },{},{}
+13112,P_Revolver1,P.左轮枪Ⅰ,4,0,,0,44,,7,0,0x05000000,7,2,34,2,26,0,17,{ bonus bHit,-5; },{},{}
+13113,P_Revolver2,P.左轮枪Ⅱ,4,0,,0,60,,7,0,0x05000000,7,2,34,2,40,0,17,{ bonus bHit,-5; },{},{}
+13115,Upg_Revolver,强化左轮手枪,4,20,,500,35,,7,1,0x05000000,7,2,34,3,1,1,17,{ bonus bAtk,5*getrefine(); bonus bLongAtkRate,2*getrefine(); if(BaseLevel >= 70) { bonus bAtk,5*((BaseLevel-69)/10); } },{},{}
 //
-13150,Branch,支枪,4,3000,,500,50,,9,3,0x01000000,7,2,34,1,1,1,18,{},{},{}
-13151,The_Cyclone,旋风,4,17500,,700,120,,9,1,0x01000000,7,2,34,2,24,1,18,{ bonus bHit,10; bonus bCritical,10; },{},{}
-13152,The_Cyclone_,旋风,4,17500,,700,120,,9,2,0x01000000,7,2,34,2,24,1,18,{ bonus bHit,10; bonus bCritical,10; },{},{}
-13153,Dusk,黄昏,4,23500,,750,150,,9,1,0x01000000,7,2,34,2,56,1,18,{ bonus bHit,10; bonus bCritical,10; },{},{}
-13154,Rolling_Stone,旋转石头,4,12000,,900,135,,9,1,0x01000000,7,2,34,1,14,1,20,{ bonus bSplashRange,1; },{},{}
-13155,Black_Rose,黑玫瑰,4,32000,,900,180,,9,1,0x01000000,7,2,34,2,35,1,20,{ bonus bSplashRange,1; },{},{}
-13156,Gate_Keeper,门卫,4,56000,,1000,210,,9,0,0x01000000,7,2,34,2,24,1,20,{ bonus bSplashRange,1; bonus3 bAutoSpell,"GS_SPREADATTACK",6,50; },{},{}
-13157,Drifter,漂流,4,80000,,2300,50,,9,1,0x01000000,7,2,34,2,55,1,19,{},{},{}
-13158,Butcher,刽子手,4,130000,,2500,75,,9,0,0x01000000,7,2,34,3,68,1,19,{ bonus2 bCriticalAddRace,RC_Brute,10; },{},{}
-13159,Butcher_,刽子手,4,130000,,2500,75,,9,1,0x01000000,7,2,34,3,68,1,19,{ bonus2 bCriticalAddRace,RC_Brute,10; },{},{}
-13160,Destroyer,轰炸机,4,110000,,1200,220,,9,0,0x01000000,7,2,34,2,52,1,21,{ bonus bBreakArmorRate,200; },{},{}
-13161,Destroyer_,轰炸机,4,110000,,1200,220,,9,1,0x01000000,7,2,34,2,52,1,21,{ bonus bBreakArmorRate,200; },{},{}
-13162,Inferno,喷火,4,230000,,1250,280,,9,1,0x01000000,7,2,34,2,65,1,21,{},{},{}
-13163,Long_Barrel,长身 步枪,4,40000,,1000,150,,9,0,0x01000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,20; bonus bAspdRate,-3; bonus3 bAutoSpell,"GS_TRACKING",5,20; },{},{}
-13164,Long_Barrel_,长身 步枪,4,40000,,1000,150,,9,1,0x01000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,20; bonus bAspdRate,-3; bonus3 bAutoSpell,"GS_TRACKING",5,20; },{},{}
-13165,Jungle_Carbine,短 卡宾,4,56000,,700,170,,9,0,0x01000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,4; bonus bAspdRate,10; bonus bHit,-readparam(bDex)/3; },{},{}
-13166,Jungle_Carbine_,短 卡宾,4,56000,,700,170,,9,1,0x01000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,4; bonus bAspdRate,10; bonus bHit,-readparam(bDex)/3; },{},{}
-13167,Gate_KeeperDD,短口 枪-DD,4,72000,,1300,200,,9,0,0x01000000,7,2,34,4,70,1,20,{ bonus bSplashRange,1; bonus3 bAutoSpell,"GS_SPREADATTACK",6,50; bonus bDef,getrefine(); bonus bDex,1; },{},{}
-13168,Thunder_P,THUNDER-P,4,76000,,700,80,,9,1,0x01000000,7,2,34,3,70,1,20,{ bonus bSplashRange,1; bonus bHit,-5; bonus bAspdRate,20; },{},{}
-13169,Thunder_P_,THUNDER-P,4,76000,,700,80,,9,2,0x01000000,7,2,34,3,70,1,20,{ bonus bSplashRange,1; bonus bHit,-5; bonus bAspdRate,20; },{},{}
-13170,Lever_Action_Rifle,优化的 来复枪,4,20,,770,138,,9,2,0x01000000,7,2,34,3,70,1,18,{ bonus bHit,20; bonus bCritical,50; bonus bAspdRate,-5; },{},{}
-13171,BF_Rifle1,角斗士的来复枪,4,0,,0,50,,9,0,0x01000000,7,2,34,3,80,1,18,{ bonus bDex,2; bonus bHit,10; bonus bCritical,10; bonus2 bAddRace,RC_DemiHuman,75; bonus2 bCastRate,512,-25; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus bUnbreakableWeapon,0; },{},{}
-13172,BF_Gatling_Gun1,角斗士的格林机关枪,4,0,,0,80,,9,0,0x01000000,7,2,34,3,80,1,19,{ bonus bDex,2; bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bBaseAtk,80; bonus2 bHPLossRate,120,1000; }",10,6000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
-13173,BF_Shotgun1,角斗士的散弹枪,4,0,,0,100,,9,0,0x01000000,7,2,34,3,80,1,20,{ bonus bDex,2; bonus bSplashRange,1; bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bBaseAtk,80; bonus2 bHPLossRate,100,1000; }",30,6000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
-13174,BF_Launcher1,角斗士的榴弹发射器,4,0,,0,300,,9,0,0x01000000,7,2,34,3,80,1,21,{ bonus bDex,2; bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bBaseAtk,300; bonus2 bHPLossRate,120,1000; }",30,9000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
+13150,Branch,支枪,4,3000,,500,50,,9,3,0x05000000,7,2,34,1,1,1,18,{},{},{}
+13151,The_Cyclone,旋风,4,17500,,700,120,,9,1,0x05000000,7,2,34,2,24,1,18,{ bonus bHit,10; bonus bCritical,10; },{},{}
+13152,The_Cyclone_,旋风,4,17500,,700,120,,9,2,0x05000000,7,2,34,2,24,1,18,{ bonus bHit,10; bonus bCritical,10; },{},{}
+13153,Dusk,黄昏,4,23500,,750,150,,9,1,0x05000000,7,2,34,2,56,1,18,{ bonus bHit,10; bonus bCritical,10; },{},{}
+13154,Rolling_Stone,旋转石头,4,12000,,900,135,,9,1,0x05000000,7,2,34,1,14,1,20,{ bonus bSplashRange,1; },{},{}
+13155,Black_Rose,黑玫瑰,4,32000,,900,180,,9,1,0x05000000,7,2,34,2,35,1,20,{ bonus bSplashRange,1; },{},{}
+13156,Gate_Keeper,门卫,4,56000,,1000,210,,9,0,0x05000000,7,2,34,2,24,1,20,{ bonus bSplashRange,1; bonus3 bAutoSpell,"GS_SPREADATTACK",6,50; },{},{}
+13157,Drifter,漂流,4,80000,,2300,50,,9,1,0x05000000,7,2,34,2,55,1,19,{},{},{}
+13158,Butcher,刽子手,4,130000,,2500,75,,9,0,0x05000000,7,2,34,3,68,1,19,{ bonus2 bCriticalAddRace,RC_Brute,10; },{},{}
+13159,Butcher_,刽子手,4,130000,,2500,75,,9,1,0x05000000,7,2,34,3,68,1,19,{ bonus2 bCriticalAddRace,RC_Brute,10; },{},{}
+13160,Destroyer,轰炸机,4,110000,,1200,220,,9,0,0x05000000,7,2,34,2,52,1,21,{ bonus bBreakArmorRate,200; },{},{}
+13161,Destroyer_,轰炸机,4,110000,,1200,220,,9,1,0x05000000,7,2,34,2,52,1,21,{ bonus bBreakArmorRate,200; },{},{}
+13162,Inferno,喷火,4,230000,,1250,280,,9,1,0x05000000,7,2,34,2,65,1,21,{},{},{}
+13163,Long_Barrel,长身 步枪,4,40000,,1000,150,,9,0,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,20; bonus bAspdRate,-3; bonus3 bAutoSpell,"GS_TRACKING",5,20; },{},{}
+13164,Long_Barrel_,长身 步枪,4,40000,,1000,150,,9,1,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,20; bonus bAspdRate,-3; bonus3 bAutoSpell,"GS_TRACKING",5,20; },{},{}
+13165,Jungle_Carbine,短 卡宾,4,56000,,700,170,,9,0,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,4; bonus bAspdRate,10; bonus bHit,-readparam(bDex)/3; },{},{}
+13166,Jungle_Carbine_,短 卡宾,4,56000,,700,170,,9,1,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,4; bonus bAspdRate,10; bonus bHit,-readparam(bDex)/3; },{},{}
+13167,Gate_KeeperDD,短口 枪-DD,4,72000,,1300,200,,9,0,0x05000000,7,2,34,4,70,1,20,{ bonus bSplashRange,1; bonus3 bAutoSpell,"GS_SPREADATTACK",6,50; bonus bDef,getrefine(); bonus bDex,1; },{},{}
+13168,Thunder_P,THUNDER-P,4,76000,,700,80,,9,1,0x05000000,7,2,34,3,70,1,20,{ bonus bSplashRange,1; bonus bHit,-5; bonus bAspdRate,20; },{},{}
+13169,Thunder_P_,THUNDER-P,4,76000,,700,80,,9,2,0x05000000,7,2,34,3,70,1,20,{ bonus bSplashRange,1; bonus bHit,-5; bonus bAspdRate,20; },{},{}
+13170,Lever_Action_Rifle,优化的 来复枪,4,20,,770,138,,9,2,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,20; bonus bCritical,50; bonus bAspdRate,-5; },{},{}
+13171,BF_Rifle1,角斗士的来复枪,4,0,,0,50,,9,0,0x05000000,7,2,34,3,80,1,18,{ bonus bDex,2; bonus bHit,10; bonus bCritical,10; bonus2 bAddRace,RC_DemiHuman,75; bonus2 bCastRate,512,-25; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus bUnbreakableWeapon,0; },{},{}
+13172,BF_Gatling_Gun1,角斗士的格林机关枪,4,0,,0,80,,9,0,0x05000000,7,2,34,3,80,1,19,{ bonus bDex,2; bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bBaseAtk,80; bonus2 bHPLossRate,120,1000; }",10,6000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
+13173,BF_Shotgun1,角斗士的散弹枪,4,0,,0,100,,9,0,0x05000000,7,2,34,3,80,1,20,{ bonus bDex,2; bonus bSplashRange,1; bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bBaseAtk,80; bonus2 bHPLossRate,100,1000; }",30,6000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
+13174,BF_Launcher1,角斗士的榴弹发射器,4,0,,0,300,,9,0,0x05000000,7,2,34,3,80,1,21,{ bonus bDex,2; bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,20; autobonus "{ bonus bBaseAtk,300; bonus2 bHPLossRate,120,1000; }",30,9000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
 //13175,Lever_Action_Rifle_C
-13176,Krieger_Rifle1,荣光来福枪,4,0,,0,90,,9,0,0x01000000,7,2,34,4,80,1,18,{ bonus2 bAddRace,RC_DemiHuman,75; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus2 bCastrate,"GS_TRACKING",25; bonus2 bSkillAtk,"GS_TRACKING",getrefine() * 3; } },{},{}
-13177,Krieger_Gatling1,荣光重机枪,4,0,,0,90,,9,0,0x01000000,7,2,34,4,80,1,19,{ bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,25; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) {bonus2 bAddRace,RC_Boss,getrefine(); bonus2 bAddRace,RC_NonBoss,getrefine(); } },{},{}
-13178,Krieger_Shotgun1,荣光猎枪,4,0,,0,110,,9,0,0x01000000,7,2,34,4,80,1,20,{ bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus bSplashRange,1; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_SPREADATTACK",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; } },{},{}
-13179,Krieger_Launcher1,荣光榴弹发射器,4,0,,0,330,,9,0,0x01000000,7,2,34,4,80,1,21,{ bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_GROUNDDRIFT",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; autobonus "{ bonus bAspdRate,20; }",200,20000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; } },{},{}
+13176,Krieger_Rifle1,荣光来福枪,4,0,,0,90,,9,0,0x05000000,7,2,34,4,80,1,18,{ bonus2 bAddRace,RC_DemiHuman,75; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus2 bCastrate,"GS_TRACKING",25; bonus2 bSkillAtk,"GS_TRACKING",getrefine() * 3; } },{},{}
+13177,Krieger_Gatling1,荣光重机枪,4,0,,0,90,,9,0,0x05000000,7,2,34,4,80,1,19,{ bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,25; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) {bonus2 bAddRace,RC_Boss,getrefine(); bonus2 bAddRace,RC_NonBoss,getrefine(); } },{},{}
+13178,Krieger_Shotgun1,荣光猎枪,4,0,,0,110,,9,0,0x05000000,7,2,34,4,80,1,20,{ bonus2 bAddRace,RC_DemiHuman,55; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus bSplashRange,1; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_SPREADATTACK",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; } },{},{}
+13179,Krieger_Launcher1,荣光榴弹发射器,4,0,,0,330,,9,0,0x05000000,7,2,34,4,80,1,21,{ bonus2 bAddRace,RC_DemiHuman,35; bonus2 bIgnoreDefRate,RC_DemiHuman,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { bonus2 bAddRace,RC_DemiHuman,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); bonus2 bIgnoreDefRate,RC_DemiHuman,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_GROUNDDRIFT",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; autobonus "{ bonus bAspdRate,20; }",200,20000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; } },{},{}
 // Bullets
-13200,Bullet,有声枪,10,1,,2,10,,,,0x01000000,7,2,32768,,1,,3,{},{},{}
-13201,Silver_Bullet,神圣有声枪,10,15,,2,15,,,,0x01000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
-13202,Shell_Of_Blood,血波枪,10,30,,2,30,,,,0x01000000,7,2,32768,,1,,3,{ bonus2 bAddEff,Eff_Bleeding,100; },{},{}
-13203,Flare_Sphere,火枪,10,80,,5,50,,,,0x01000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Fire; },{},{}
-13204,Lighting_Sphere,雷击枪,10,80,,5,50,,,,0x01000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Wind; },{},{}
-13205,Poison_Sphere,毒枪,10,80,,5,50,,,,0x01000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
-13206,Blind_Sphere,失明枪,10,80,,5,50,,,,0x01000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEff,Eff_Blind,500; },{},{}
-13207,Freezing_Sphere,冰冻枪,10,80,,5,50,,,,0x01000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Water; },{},{}
+13200,Bullet,有声枪,10,1,,2,10,,,,0x05000000,7,2,32768,,1,,3,{},{},{}
+13201,Silver_Bullet,神圣有声枪,10,15,,2,15,,,,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
+13202,Shell_Of_Blood,血波枪,10,30,,2,30,,,,0x05000000,7,2,32768,,1,,3,{ bonus2 bAddEff,Eff_Bleeding,100; },{},{}
+13203,Flare_Sphere,火枪,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Fire; },{},{}
+13204,Lighting_Sphere,雷击枪,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Wind; },{},{}
+13205,Poison_Sphere,毒枪,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
+13206,Blind_Sphere,失明枪,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEff,Eff_Blind,500; },{},{}
+13207,Freezing_Sphere,冰冻枪,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Water; },{},{}
 // Shurikens & Kunais
 13250,Shuriken,飞镖,10,4,,5,10,,,,0x02100000,7,2,32768,,1,,6,{},{},{}
 13251,Nimbus_Shuriken,风雨飞镖,10,10,,5,30,,,,0x02100000,7,2,32768,,20,,6,{},{},{}
@@ -6785,7 +6801,7 @@
 14508,Zeny_Scroll,Zeny转蛋,2,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 14509,Light_Center_Pot,轻盈集中药水,2,800,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_start SC_ASPDPOTION0,1800000,0; },{},{}
 14510,Light_Awakening_Pot,轻盈觉醒药水,2,1500,,20,,,,,0xFFF7FEEF,7,2,,,40,,,{ sc_start SC_ASPDPOTION1,1800000,0; },{},{}
-14511,Light_Berserk_Pot,轻盈菠色克药水,2,3000,,20,,,,,0x01E646A6,7,2,,,85,,,{ sc_start SC_ASPDPOTION2,1800000,0; },{},{}
+14511,Light_Berserk_Pot,轻盈菠色克药水,2,3000,,20,,,,,0x05E646A6,7,2,,,85,,,{ sc_start SC_ASPDPOTION2,1800000,0; },{},{}
 14512,Meteor_10_Scroll,陨石术10级卷轴,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "WZ_METEOR",10; },{},{}
 14513,Storm_10_Scroll,暴风雪10级卷轴,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "WZ_STORMGUST",10; },{},{}
 14514,Vermilion_10_Scroll,怒雷强击10级卷轴,11,0,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "WZ_VERMILION",10; },{},{}
@@ -6924,7 +6940,7 @@
 15044,Green_Surgical_Gown,绿色研究服,5,20,,660,,66,,1,0x00040000,8,2,16,,100,1,0,{ bonus bDex,1; bonus bMaxSP,30; if(isequipped(13027)) { bonus3 bAddMonsterDropItem,929,RC_Brute,50+5*getrefine(); bonus3 bAddMonsterDropItem,929,RC_DemiHuman,50+5*getrefine(); bonus3 bAddMonsterDropItem,970,RC_Brute,10+5*getrefine(); bonus3 bAddMonsterDropItem,970,RC_DemiHuman,10+5*getrefine(); } },{},{}
 //15045,
 15046,WoE_Plate,攻城板甲,5,20,,3300,,85,,1,0x006444A2,7,2,16,,95,1,0,{ bonus bMdef,5; bonus2 bSubRace,RC_Player,2; if(getrefine() >= 6) { bonus bHealpower2,12; bonus2 bAddItemHealRate,IG_Recovery,12; } if(getrefine() >= 9) { bonus bMaxHPRate,25; } if(isequipped(2483,2586)) { bonus2 bSubRace,RC_Player,15; } },{},{}
-15047,WoE_Suits,攻城外套,5,20,,750,,50,,1,0x036E5CEA,7,2,16,,95,1,0,{ bonus bMdef,10; bonus2 bSubRace,RC_Player,2; if(getrefine() >= 6) { bonus bFlee2,5; bonus bLongAtkDef,20; } if(getrefine() >= 9) { bonus bMaxHPRate,15; } if(isequipped(2484,2587)) { bonus bDex,5; bonus2 bSubRace,RC_Player,15; } },{},{}
+15047,WoE_Suits,攻城外套,5,20,,750,,50,,1,0x076E5CEA,7,2,16,,95,1,0,{ bonus bMdef,10; bonus2 bSubRace,RC_Player,2; if(getrefine() >= 6) { bonus bFlee2,5; bonus bLongAtkDef,20; } if(getrefine() >= 9) { bonus bMaxHPRate,15; } if(isequipped(2484,2587)) { bonus bDex,5; bonus2 bSubRace,RC_Player,15; } },{},{}
 15048,WoE_Robe,攻城长袍,5,20,,500,,40,,1,0x00818315,7,2,16,,95,1,0,{ bonus bMdef,20; bonus2 bSubRace,RC_Player,2; if(getrefine() >= 6) { bonus bFlee,5; bonus bLongAtkDef,15; } if(getrefine() >= 9) { bonus bMaxHP,1000; bonus bMaxSP,100; } if(isequipped(2485,2587)) { bonus bInt,5; bonus bMdef,10; bonus2 bSubRace,RC_Player,15; } },{},{}
 //15049,
 //15050,
