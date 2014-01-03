@@ -2621,18 +2621,16 @@ skills a character has.
 
 *getpetinfo(<类型>)
 
-This function will return pet information for the pet the invoking character 
-currently has active. Valid types are:
+该功能返回关联角色的宠物信息，有效的类型有：
 
- 0 - Unique pet ID number as stored by the char server and distinguishing it 
-     from all other pets the characters actually have. This value is currently 
-     useless, at most you can use it to tell pets apart reliably.
- 1 - Pet class number as per 'db/pet_db.txt' - will tell you what kind of a pet it 
-     is.
- 2 - Pet name. Will return "null" if there's no pet. 
- 3 - Pet friendly level (intimacy score). 1000 is full loyalty.
- 4 - Pet hungry level. 100 is completely full.
- 5 - Pet rename flag. 0 means this pet has not been named yet.
+ 0 - 宠物在角色服务器中储存的唯一ID。
+ 1 - 宠物在 'db/pet_db.txt' 中的类型 。
+ 2 - 宠物名字。如果没有宠物返回null
+ 3 - 宠物亲密度。1000表示忠诚
+ 4 - 宠物饥饿度。100表示吃饱
+ 5 - 宠物是否改过名字。0表示没有
+ 6 - 宠物是否装备了装备。0表示没有装备
+ 7 - 宠物等级
 ---------------------------------------
 
 *gethominfo(<类型>)
