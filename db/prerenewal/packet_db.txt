@@ -1380,7 +1380,7 @@ packet_ver: 1
 //0x07d4,4
 //0x07d5,4
 //0x07d6,4
-//0x0447,2
+//0x0f,2
 
 //2009-06-03aRagexeRE
 0x07d7,8,partychangeoption,2:6
@@ -2318,3 +2318,4 @@ packet_ver: 22
 0x092B,26,friendslistadd,2
 0x0874,5,hommenu,2:4
 0x0860,36,storagepassword,2:4:20
+0x08c9,2,guildcheckmaster,0
