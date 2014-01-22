@@ -7271,8 +7271,8 @@
 18727,Sedora_Hat,Sedora Hat,5,20,,300,,13,,1,0xFFFFFFFF,7,2,256,,10,1,869,{},{},{}
 18728,Egir_Helm,Egir Helm,5,200000,,800,,10,,1,0xFFFFFFFF,7,2,256,,110,1,870,{ bonus bUnbreakableHelm,0; },{},{}
 18729,MVP_Basketball,MVP Basketball,5,20,,150,,6,,1,0xFFFFFFFF,7,2,256,,1,1,871,{},{},{}
-18742,C_MoonStar_Accessory,Moon and Stars,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,718; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
-18744,C_World_Star,Twilight,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,728; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
+18742,C_MoonStar_Accessory,Moon and Stars,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,SI_MOONSTAR; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
+18744,C_World_Star,Twilight,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,SI_SUPER_STAR; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
 18785,King_Poring_Hat,King Poring Hat,5,20,,600,,10,,1,0xFFFFFFFF,7,2,256,,10,1,905,{ bonus bDex,1; bonus bLuk,1; },{},{}
 18821,Rainbow_Feather_Deco,Rainbow Feather Deco,5,20,,300,,5,,1,0xFFFFFFFF,7,2,256,,1,1,934,{},{},{}
 18839,Poring_Sunglasses,Poring Sunglasses,5,0,,100,,10,,1,0xFFFFFFFF,7,2,512,,1,0,954,{ bonus bDex,1; },{},{}
