@@ -2190,6 +2190,7 @@ packet_ver: 18
 0x09B7,4	//open
 0x09B8,6,bankclose,2
 0x09B9,4	//close
+0x08c9,2,guildcheckmaster,0
 
 //2013-07-17
 packet_ver: 19
@@ -2318,4 +2319,3 @@ packet_ver: 22
 0x092B,26,friendslistadd,2
 0x0874,5,hommenu,2:4
 0x0860,36,storagepassword,2:4:20
-0x08c9,2,guildcheckmaster,0
