@@ -2222,7 +2222,8 @@ packet_ver: 19
 0x0863,26,friendslistadd,2
 0x088A,5,hommenu,2:4
 0x095B,36,storagepassword,2:4:20
-0x08c9,2,guildcheckmaster,0 //如果碰到过图断线，把这个移动到自己的封包版本下；如果碰到cashshop空白，把这个往后移动
+0x08c9,2,guildcheckmaster,0
+//如果碰到过图断线，把上面这个这个移动到自己的封包版本下；如果碰到cashshop空白，把这个往后续移动
 
 //2013-07-24
 packet_ver: 20
