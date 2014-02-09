@@ -21,6 +21,7 @@ Type:
 	10	Ammo (Arrows/Bullets/etc)
 	11	Usable with delayed consumption (item is lost from inventory
 		after selecting a target, for use with skills and pet lures)
+	12	护身符(授权版限定)
 	18	Another delayed consume that requires user confirmation before
 		using item. 
 
@@ -92,6 +93,18 @@ Loc: Equipment's placement. Values are:
 	2^6 064 = Footgear
 	2^3 008 = Accessory 1
 	2^7 128 = Accessory 2
+	2^10 1024 = 时装头上
+	2^11 2048 = 时装头中
+	2^12 4096 = 时装头下
+	2^13 8192 = 时装披肩
+	2^14 16384 = 时装地板/影子武器
+	2^15 32768 = 弹药
+	2^16 65536 = 影子盔甲
+	2^17 131072 = 影子武器/时装地板
+	2^18 262144 = 影子盾牌
+	2^19 524288 = 影子鞋子
+	2^20 1048576 = 影子装饰品右
+	2^21 2097152 = 影子装饰品左
 
 wLV: Weapon level.
 
