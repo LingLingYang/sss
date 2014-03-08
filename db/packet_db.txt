@@ -1843,7 +1843,7 @@ packet_ver: 9
 0x0447,2,booking_playcancel,0
 0x044A,6,clientversion,2
 0x0844,2,cashshopopen,0
-0x0848,-1,cashshopbuy,0
+0x0848,-1,cashshopbuy2,0
 0x084a,2,cashshopclose,0
 0x084b,19 //fallitem4
 0x085a,90,useskilltoposinfo,2:4:6:8:10
