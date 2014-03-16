@@ -7462,4 +7462,14 @@ The command returns 1 upon success, and these values upon failure:
 
 ---------------------------------------
 
+*getfamename(类型，排名)
+*getfame(类型，排名)
+
+类型：0:铁匠，1：炼金，2：跆拳
+排名：0-9表示1~10名
+
+getfamename显示名字，getfame显示声望值
+
+---------------------------------------
+
 结束。
