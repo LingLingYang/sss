@@ -40,8 +40,10 @@ OnTouch_		进入范围NPC的有效范围内时执行的事件，
 			该事件不对隐匿、伪装玩家执行，且一次只关联一个玩家直到该玩家隐匿/登出/走出范围后，自动关联范围内的下一个玩家。
 OnPCDieEvent		玩家死亡时，运行标签下的脚本。如果杀死你的是玩家，可以通过killerrid变量获得其aid，如果是魔物，可以获得gid， 如果是自然死亡，则killerrid值为0
 OnPCKillEvent		玩家杀死玩家时，运行标签下的脚本。可以通过killedrid变量获得被杀死玩家的aid
-OnNPCKillEvent		玩家杀死魔物时，运行标签下的脚本。该脚本仅对本身没有OnMobDead事件的魔物触发。可以通过killedrid变量获得杀死魔物的id
-			赋予关联者变量@killed_x，表示魔物x坐标，@killed_y，表示魔物y坐标
+OnNPCKillEvent		玩家杀死魔物时，运行标签下的脚本。该脚本仅对本身没有OnMobDead事件的魔物触发。可以通过killedrid变量获得死亡魔物的id，
+			可以通过killerrid变量获得杀死魔物玩家的aid，如果不是玩家杀死魔物，则killerrid表示对魔物造成伤害最多的玩家。
+			赋予关联者变量@killed_x，表示魔物x坐标，@killed_y，表示魔物y坐标。
+			killedrid, killerrid, @killed_x, @killed_y同时也对OnMobDead事件有效。
 OnPCLoginEvent		玩家登陆时，运行标签下的脚本。
 OnPCLogoutEvent		玩家登出时，运行标签下的脚本。
 OnPCLoadMapEvent	玩家登陆地图时，运行标签下的脚本，默认情况下只有loadevent标签的地图可以触发该标签下的脚本。
