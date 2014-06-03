@@ -831,7 +831,7 @@
 2301,7,6,2,0,0,0,3,1,yes,0,0,0,none,0,		SC_CHAOSPANIC,混乱恐慌
 2302,7,6,2,0,0,5,3,1,yes,0,0,0,none,0,		SC_MAELSTROM,吸能漩涡
 2303,7,6,2,0,0,0,3,1,yes,0,0,0,none,0,		SC_BLOODYLUST,血腥渴望
-2304,0,6,4,0,0x2,2,3,1,yes,0,0,0,weapon,3:6:9,	SC_FEINTBOMB,伪装炸弹
+2304,0,6,4,0,0x2,2,3,1,no,0,0,0,weapon,3:6:9,	SC_FEINTBOMB,伪装炸弹
 // 皇家卫士
 2307,11,6,1,-1,0x2,1,5,1,yes,0,0,10,weapon,0,	LG_CANNONSPEAR,重炮枪击
 2308,7,6,1,-1,0,0,10,0,yes,0,0,0,weapon,0,	LG_BANISHINGPOINT,驱逐点刺

@@ -7271,8 +7271,10 @@
 18727,Sedora_Hat,Sedora Hat,5,20,,300,,13,,1,0xFFFFFFFF,7,2,256,,10,1,869,{},{},{}
 18728,Egir_Helm,Egir Helm,5,200000,,800,,10,,1,0xFFFFFFFF,7,2,256,,110,1,870,{ bonus bUnbreakableHelm,0; },{},{}
 18729,MVP_Basketball,MVP Basketball,5,20,,150,,6,,1,0xFFFFFFFF,7,2,256,,1,1,871,{},{},{}
-18742,C_MoonStar_Accessory,Moon and Stars,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,SI_MOONSTAR; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
-18744,C_World_Star,Twilight,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADGEAR,SI_SUPER_STAR; },{ itembonus 1,"{ end; }",IBG_HEADGEAR,0; }
+18741,C_Will_O_Wisp,C Will O Wisp,4,10,,0,,,,0,0xFFFFFFFF,7,2,1024,,1,,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADTOP,SI_STRANGELIGHTS; },{ itembonus 0,"{ end; }",IBG_HEADTOP,0; }
+18742,C_MoonStar_Accessory,Moon and Stars,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADMID,SI_MOONSTAR; },{ itembonus 0,"{ end; }",IBG_HEADMID,0; }
+18743,Spirit_Of_Chung_E,Spirit Of Chung E,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,0,0,0,{},{},{}
+18744,C_World_Star,Twilight,5,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADMID,SI_SUPER_STAR; },{ itembonus 0,"{ end; }",IBG_HEADMID,0; }
 18785,King_Poring_Hat,King Poring Hat,5,20,,600,,10,,1,0xFFFFFFFF,7,2,256,,10,1,905,{ bonus bDex,1; bonus bLuk,1; },{},{}
 18821,Rainbow_Feather_Deco,Rainbow Feather Deco,5,20,,300,,5,,1,0xFFFFFFFF,7,2,256,,1,1,934,{},{},{}
 18839,Poring_Sunglasses,Poring Sunglasses,5,0,,100,,10,,1,0xFFFFFFFF,7,2,512,,1,0,954,{ bonus bDex,1; },{},{}
@@ -7330,6 +7332,7 @@
 19575,T_Black_Dragon,Black Dragon,5,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,863,{ autobonus "{ bonus bAspdRate,10; bonus bMonTransform,2022; }",1000,3000,BF_WEAPON,"{ end; unittalk getcharid(3),\"Dragon Power !!\"; }"; },{},{}
 19587,C_King_Poring_Hat,Costume King Poring Hat,5,0,,100,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,905,{ bonus bUnbreakableHelm,0; },{},{}
 19650,C_Rainbow_Feather_Deco,Costume Rainbow Feather Deco,5,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,1,934,{},{},{}
+19871,C_DecorationOfMusic_Accessory,服装 音乐的装饰,4,20,,0,,0,,0,0xFFFFFFFF,63,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADMID,SI_DECORATION_OF_MUSIC; },{ itembonus 0,"{ end; }",IBG_HEADMID,0; }
 20500,T_Archangel_Wing,Archangel Wing,5,0,,0,,0,,0,0xFFFFFFFF,7,2,8192,,1,0,1,{ bonus bUnbreakableHelm,0; },{},{}
 20600,Fantastic_Aura,Fantastic Aura,5,0,,0,,0,,0,0xFFFFFFFF,7,2,16384,,1,0,0,{ bonus bUnbreakableHelm,0; },{},{}
 20700,Egir_Manteau,Egir Manteau,5,200000,,300,,10,,1,0xFFFFFFFF,7,2,4,,110,1,0,{ bonus bUnbreakableHelm,0; },{},{}
