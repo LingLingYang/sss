@@ -83,4 +83,4 @@ OnPCViewEquipEvent	ÊÚÈ¨°æÏŞ¶¨¡£Íæ¼Ò²é¿´Íæ¼Ò×°±¸Ê±£¬ÔËĞĞ±êÇ©ÏÂµÄ½Å±¾¡£²é¿´Õß¸³Óè±
 OnPCPetCatchEvent	²¶×½Ä§ÎïÊ±³ö·¢µÄÊÂ¼ş£¬processhaltÓĞĞ§¡£¸³Óè±äÁ¿@petcatchid£¬±êÊ¾±»²¶×½µÄÄ§ÎïGID¡£
 OnPCZenyChangeEvent	½ğÇ®±ä»¯Ê±µÄÊÂ¼ş¡£
 OnPCDamageEvent		·¢³ö¼¼ÄÜºÍÆÕÍ¨¹¥»÷ºóµÄÊÂ¼ş¡£¹ØÁª¹¥»÷Õß£¬¸³Óè±äÁ¿@pcdamage_target£¬Îª±»¹¥»÷·½¡£
-OnPetLootItemEvent	³èÎïÊ°È¡ÎïÆ·Ê±µÄÊÂ¼ş£¬³èÎïÖ÷ÈË¸³Óè±äÁ¿@petloot_id, @petloot_amount¡£
+OnPetLootItemEvent	³èÎïÊ°È¡ÎïÆ·Ê±µÄÊÂ¼ş£¬³èÎïÖ÷ÈË¸³Óè±äÁ¿@petloot_id, @petloot_gid, @petloot_amount¡£
