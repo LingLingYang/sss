@@ -3733,6 +3733,26 @@ If the map name is given as "this", the map the invoking character is on will be
 
 ---------------------------------------
 
+*makeitem2 <item id>,<amount>,"<地图名>",<X>,<Y>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;
+*makeitem2 "<item name>",<amount>,"<地图名>",<X>,<Y>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;
+
+This command will create an item lying around on a specified map in the 
+specified location.
+
+ itemid   - Found in 'db/item_db.txt'
+ amount   - Amount you want produced
+ map name - The map name
+ X        - The X coordinate
+ Y        - The Y coordinate.
+
+This item will still disappear just like any other dropped item. Like 'getitem', 
+it also accepts an 'english name' field from the database and creates apples if 
+the name isn't found.
+If the map name is given as "this", the map the invoking character is on will be used.
+nameid为-X时，代表从X道具组随机一个物品。
+
+---------------------------------------
+
 *searchitem <array name>,"<item name>";
 
 This command will fill the given array with the ID of items whose name matches the given one. It returns the number of items found. For performance reasons, the results array is limited to 10 items.
