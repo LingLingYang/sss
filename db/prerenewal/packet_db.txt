@@ -1640,6 +1640,7 @@ packet_ver: 3
 0x083c,10,useskilltoid,2:4:6
 0x0893,5,changedir,2:4
 0x08ad,6,getcharnamerequest,2
+0x08b3,-1
 0x08d2,10
 0x08cf,10
 
@@ -1843,7 +1844,7 @@ packet_ver: 9
 0x0447,2,booking_playcancel,0
 0x044A,6,clientversion,2
 0x0844,2,cashshopopen,0
-0x0848,-1,cashshopbuy,0
+0x0848,-1,cashshopbuy2,0
 0x084a,2,cashshopclose,0
 0x084b,19 //fallitem4
 0x085a,90,useskilltoposinfo,2:4:6:8:10
@@ -2190,6 +2191,7 @@ packet_ver: 18
 0x09B7,4	//open
 0x09B8,6,bankclose,2
 0x09B9,4	//close
+0x09d4,2	//unknown. prevent from disconnection by client 13-12-23.
 
 //2013-07-17
 packet_ver: 19
