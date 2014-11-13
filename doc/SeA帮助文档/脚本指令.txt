@@ -3693,8 +3693,8 @@ Failure occurs when there is:
 
 ---------------------------------------
 
-*rentitem <item id>,<time>;
-*rentitem "<item name>",<time>;
+*rentitem <item id>,<time>{,<会消耗>};
+*rentitem "<item name>",<time>{,<会消耗>};
 
 Creates a rental item in the attached character's inventory. The item will expire 
 in <time> seconds and be automatically deleted. When receiving a rental item, 
@@ -3704,6 +3704,8 @@ also receive warning messages in their chat window before the item disappears.
 This command can not be used to rent stackable items. Rental items cannot be 
 removed from the character's inventory. (i.e. trade mask 123 in ../db/item_trade.txt)
 Note: 'delitem' in an NPC script can still remove rental items.
+
+如果<会消耗>为1，则租赁的可消耗物品在使用后即消失。
 
 ---------------------------------------
 
@@ -6560,12 +6562,53 @@ OnBarricadeBreak:
 	QTYPE_WARG2	狼(20120410之后)
 
 类型2:
-	0 = 黄色标记, 表情显示"quest"
-	1 = 橙色标记, 表情显示"job"
-	2 = 绿色标记, 表情显示"event"
-	3 = 蓝色标记, 没有表情，只有横幅显示MVP
+	0 = 无标记
+	1 = 黄色标记
+	2 = 绿色标记
+	3 = 蓝色标记
 
 ----------------------------------------
+
+*questinfo <任务id>,<类型1>, <类型2>{,<职业id>};
+
+显示NPC坐标在小地图中，并在NPC头上显示表情。
+
+类型1: (请使用常量，源码内置转换兼容120410前后客户端)
+	QTYPE_NONE	取消表情和标记
+	QTYPE_QUEST	感叹号任务(quest)表情
+	QTYPE_QUEST2	问号任务(quest)表情
+	QTYPE_JOB	感叹号职业任务(job)表情
+	QTYPE_JOB2	问号职业任务(job)表情
+	QTYPE_EVENT	感叹号活动(event)表情
+	QTYPE_EVENT2	问号活动(event)表情
+	QTYPE_WARG	狼
+	QTYPE_WARG2	狼(20120410之后)
+
+类型2:
+	0 = 无标记
+	1 = 黄色标记
+	2 = 绿色标记
+	3 = 蓝色标记
+
+在OnInit标签中使用。当玩家加载完地图后，如果NPC运行过questinfo，就会检查是否有
+该任务，如果没有，则会在NPC头上出现气泡提示。
+
+也可以指定职业ID来检测是否有特定职业的任务存在。
+
+举例：
+izlude,100,100,4	script	Test	844,{
+	mes "[Test]";
+	mes "Hello World.";
+	close;
+
+
+	OnInit:
+		questinfo 1001, QTYPE_QUEST, 0, Job_Novice;
+		end;
+}
+
+----------------------------------------
+
 
 ========================
 |7.- 副本系统指令.|
