@@ -6548,12 +6548,18 @@ OnBarricadeBreak:
 
 显示NPC坐标在小地图中，并在NPC头上显示表情。
 
-type1:
-	0 = 取消表情和标记
-	1 = 感叹号表情
-	2 = 问号表情
+类型1: (请使用常量，源码内置转换兼容120410前后客户端)
+	QTYPE_NONE	取消表情和标记
+	QTYPE_QUEST	感叹号任务(quest)表情
+	QTYPE_QUEST2	问号任务(quest)表情
+	QTYPE_JOB	感叹号职业任务(job)表情
+	QTYPE_JOB2	问号职业任务(job)表情
+	QTYPE_EVENT	感叹号活动(event)表情
+	QTYPE_EVENT2	问号活动(event)表情
+	QTYPE_WARG	狼
+	QTYPE_WARG2	狼(20120410之后)
 
-type2:
+类型2:
 	0 = 黄色标记, 表情显示"quest"
 	1 = 橙色标记, 表情显示"job"
 	2 = 绿色标记, 表情显示"event"
