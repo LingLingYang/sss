@@ -3693,8 +3693,8 @@ Failure occurs when there is:
 
 ---------------------------------------
 
-*rentitem <item id>,<time>{,<会消耗>};
-*rentitem "<item name>",<time>{,<会消耗>};
+*rentitem <item id>,<time>{,<会消耗>{,<数量>}};
+*rentitem "<item name>",<time>{,<会消耗>{,<数量>}};
 
 Creates a rental item in the attached character's inventory. The item will expire 
 in <time> seconds and be automatically deleted. When receiving a rental item, 
@@ -3706,6 +3706,7 @@ removed from the character's inventory. (i.e. trade mask 123 in ../db/item_trade
 Note: 'delitem' in an NPC script can still remove rental items.
 
 如果<会消耗>为1，则租赁的可消耗物品在使用后即消失。
+<数量>和<会消耗>，仅对可叠加物品有效。
 
 ---------------------------------------
 
