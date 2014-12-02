@@ -105,7 +105,7 @@
 //[The Quality Maker]
 2008,0x86,    , 0, 1:1:1:2:2:2:3:3:4:4,1000,enemy, 0x018	//RK_DRAGONBREATH
 
-2032,0xe1,    , 2, 0,  -1,enemy, 0x010	//GC_POISONSMOKE
+2032,0xe1,    , 2, 0,2000,enemy, 0x010	//GC_POISONSMOKE
 
 2044,0xca,    , 0, 3,3000,all,   0x018	//AB_EPICLESIS
 
