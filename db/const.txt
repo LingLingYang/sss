@@ -519,6 +519,8 @@ bSlingItem	1097
 bMonTransform	1098
 bSubShadowDamage	1099
 bAddShadowDamage	1100
+bSkillCriticalRate	1101
+bMakeUpLv	1102
 
 bFixDamage	1900
 bBonusDamage	1901
