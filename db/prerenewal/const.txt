@@ -343,6 +343,7 @@ mf_noitemconsumption	64
 mf_sumstartmiracle	65
 mf_nomineffect	66
 mf_nolockon	67
+mf_nobank	68
 
 cell_walkable	0
 cell_shootable	1
