@@ -2181,6 +2181,8 @@ packet_ver: 18
 0x0361,5,hommenu,2:4
 0x0880,36,storagepassword,2:4:20
 0x097C,4,ranking,2
+0x097D,288 //ZC_ACK_RANKING
+0x097E,12 //ZC_UPDATE_RANKING_POINT
 0x09A6,12	//check
 0x09A7,10,bankdeposit,2:6
 0x09A8,16	//deposit
