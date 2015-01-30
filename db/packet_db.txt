@@ -1643,6 +1643,10 @@ packet_ver: 3
 0x08b3,-1
 0x08d2,10
 0x08cf,10
+0x08D7,28,BGQueueRegister,2
+0x090A,26,BGQueueCheckState,2
+0x08DA,26,BGQueueRevokeReq,2
+0x08E0,51,BGQueueBattleBeginAck,2
 
 //2011-11-02aRagexeRE
 packet_ver: 4
@@ -1774,7 +1778,6 @@ packet_ver: 6
 0x08FB,6,bookingregreqpartyreject,2
 0x0907,5,moveitem,2:4
 0x0908,5
-0x08D7,28,bookingregreqbg,2:4 //≤ªƒ‹”√
 0x0977,14 //Monster HP Bar
 0x0916,26,guildinvite2,2
 
