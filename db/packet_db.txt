@@ -1647,6 +1647,9 @@ packet_ver: 3
 0x090A,26,BGQueueCheckState,2
 0x08DA,26,BGQueueRevokeReq,2
 0x08E0,51,BGQueueBattleBeginAck,2
+0x08d8,27
+0x08d9,30
+0x08df,50
 
 //2011-11-02aRagexeRE
 packet_ver: 4

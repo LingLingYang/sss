@@ -21,20 +21,11 @@
 bat_room,86,227,4	script	Lieutenant Ator	418,{
 	end;
 OnInit:
-	waitingroom "Battle Station",10,"start#bat_b01::OnReadyCheck",1,0,80,99;
-	end;
-OnEnterBG:
-	set $@FlaviusBG1_id1, waitingroom2bg("bat_b01",10,290,"start#bat_b01::OnGuillaumeQuit","");
+	createbgqueue "普拉比乌斯",2,80,99,"start#bat_b01::OnReadyCheck";
 	end;
 }
 
 bat_room,85,204,0	script	Lieutenant Thelokus	414,{
-	end;
-OnInit:
-	waitingroom "Battle Station",10,"start#bat_b01::OnReadyCheck",1,0,80,99;
-	end;
-OnEnterBG:
-	set $@FlaviusBG1_id2, waitingroom2bg("bat_b01",390,10,"start#bat_b01::OnCroixQuit","");
 	end;
 }
 
@@ -59,9 +50,8 @@ OnTimer1000:
 	set .@chk_bat_a01,getmapusers("bat_b01");
 	if (.@chk_bat_a01 < 1) {
 		set $@FlaviusBG1, 0;
-		if( $@FlaviusBG1_id1 ) { bg_destroy $@FlaviusBG1_id1; set $@FlaviusBG1_id1, 0; }
-		if( $@FlaviusBG1_id2 ) { bg_destroy $@FlaviusBG1_id2; set $@FlaviusBG1_id2, 0; }
-		donpcevent "start#bat_b01::OnReadyCheck";
+		if( $@FlaviusBG1_id1 ) { bg_destroy $@FlaviusBG1_id1; set $@FlaviusBG1_id1, 0; resetbgqueue "普拉比乌斯"; }
+		if( $@FlaviusBG1_id2 ) { bg_destroy $@FlaviusBG1_id2; set $@FlaviusBG1_id2, 0; resetbgqueue "普拉比乌斯"; }
 	}
 	end;
 }
@@ -77,22 +67,16 @@ OnInit:
 OnReadyCheck:
 	if( $@FlaviusBG1 )
 		end;
-	set .@Guillaume, getwaitingroomstate(0,"Lieutenant Ator");
-	set .@Croix, getwaitingroomstate(0,"Lieutenant Thelokus");
-	if( !.@Guillaume && !.@Croix ) {
-		donpcevent "#bat_b01_timer::OnStop";
-		end;
-	}
-	if( .@Guillaume < 10 || .@Croix < 10 )
-		end;
+
+	donpcevent "#bat_b01_timer::OnStop";
 	set $@FlaviusBG1, 1;
 	set $@FlaviusBG1_Victory, 0;
 	set $@Croix_ScoreBG1, 0;
 	set $@Guill_ScoreBG1, 0;
 	bg_updatescore "bat_b01",$@Guill_ScoreBG1,$@Croix_ScoreBG1;
-
-	donpcevent "Lieutenant Ator::OnEnterBG";
-	donpcevent "Lieutenant Thelokus::OnEnterBG";
+	bg_queue_enter("普拉比乌斯","bat_b01",10,290,"start#bat_b01::OnGuillaumeQuit","",390,10,"start#bat_b01::OnCroixQuit","");
+	set $@FlaviusBG1_id1, $@arenabgid1;
+	set $@FlaviusBG1_id2, $@arenabgid2;
 	donpcevent "OBJ#bat_b01_a::Onkill";
 	donpcevent "OBJ#bat_b01_a::OnEnable";
 	donpcevent "OBJ#bat_b01_b::Onkill";
@@ -155,6 +139,7 @@ Onkill:
 	end;
 
 OnMyMobDead:
+	announce "11",0;
 	if (mobcount("bat_b01","OBJ#bat_b01_a::OnMyMobDead") < 1) {
 		mapannounce "bat_b01", "Guillaume's Crystal has been destroyed.",bc_map,"0xFFCE00";
 		if ($@Croix_ScoreBG1 > 0) {
