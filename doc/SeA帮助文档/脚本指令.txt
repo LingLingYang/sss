@@ -3496,6 +3496,7 @@ Here are the possible look types:
  7 - Clothes color
  8 - Shield
  9 - Shoes
+ 12 - 披肩
 
 Whatever 'shoes' means is anybody's guess, ask Gravity - the client does nothing 
 with this value. It still wants it from the server though, so it is kept, but 
@@ -7592,6 +7593,12 @@ createbgqueue "战场名",人数,最小等级,最大等级,"事件";
 resetbgqueue "战场名";
 
 重新允许队列进入允许排队状态，战场结束时使用。
+
+---------------------------------------
+
+statuschangemapchange;
+
+地图转换时重新计算人物装备属性，一般用来刷新有地图限制的装备特效。
 
 ---------------------------------------
 
