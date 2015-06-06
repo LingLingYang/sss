@@ -139,7 +139,6 @@ Onkill:
 	end;
 
 OnMyMobDead:
-	announce "11",0;
 	if (mobcount("bat_b01","OBJ#bat_b01_a::OnMyMobDead") < 1) {
 		mapannounce "bat_b01", "Guillaume's Crystal has been destroyed.",bc_map,"0xFFCE00";
 		if ($@Croix_ScoreBG1 > 0) {

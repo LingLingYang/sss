@@ -7602,4 +7602,11 @@ statuschangemapchange;
 
 ---------------------------------------
 
+*getmobposition(<GID>,"<地图名变量>",<x坐标>,<y坐标>)
+
+This function will locate 魔物 coordinates 
+and place their coordinates into the variables specified when calling it. It 
+will return 0 if the search was successful, and -1 if the parameters given were 
+not variables or the search was not successful.
+
 结束。
