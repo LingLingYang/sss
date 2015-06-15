@@ -522,6 +522,7 @@ bSubShadowDamage	1099
 bAddShadowDamage	1100
 bSkillCriticalRate	1101
 bMakeUpLv	1102
+bSubSrcEle	1103
 
 bFixDamage	1900
 bBonusDamage	1901
