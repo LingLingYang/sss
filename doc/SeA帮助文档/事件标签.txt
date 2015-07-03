@@ -84,3 +84,4 @@ OnPCPetCatchEvent	捕捉魔物时出发的事件，processhalt有效。赋予变量@petcatchid，标
 OnPCZenyChangeEvent	金钱变化时的事件，赋予变量@zenychange_val，负数为金钱减少。
 OnPCDamageEvent		发出技能和普通攻击后的事件。关联攻击者，赋予变量@pcdamage_target，为被攻击方。
 OnPetLootItemEvent	宠物拾取物品时的事件，宠物主人赋予变量@petloot_id, @petloot_gid, @petloot_amount。
+OnBGQRegEvent		加入战场队列的事件，可用于检测ip是否重复。
