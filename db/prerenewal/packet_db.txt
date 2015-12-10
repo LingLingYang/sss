@@ -2332,3 +2332,439 @@ packet_ver: 22
 0x092B,26,friendslistadd,2
 0x0874,5,hommenu,2:4
 0x0860,36,storagepassword,2:4:20
+
+
+//20130814
+packet_ver: 23
+0x0874,7,actionrequest,2:6
+0x0947,10,useskilltoid,2:4:6
+0x093A,5,walktoxy,2
+0x088A,6,ticksend,2
+0x088C,5,changedir,2:4
+0x0926,6,takeitem,2
+0x095F,6,dropitem,2:4
+0x0202,8,movefromkafra,2:4
+0x0873,8,movefromkafra,2:4
+0x0887,10,useskilltopos,2:4:6:8
+0x0962,90,useskilltoposinfo,2:4:6:8:10
+0x0937,6,getcharnamerequest,2
+0x0923,6,solvecharname,2
+0x0868,12,searchstoreinfolistitemclick,2:6:10
+0x0941,2,searchstoreinfonextpage,0
+0x0889,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0835,-1,reqtradebuyingstore,2:4:8:12
+0x0895,6,reqclickbuyingstore,2
+0x094E,2,reqclosebuyingstore,0
+0x0936,-1,reqopenbuyingstore,2:4:8:9:89
+//#ifdef PACKETVER_RE
+//0x0365,41,bookingregreq,2:4:6
+0x0959,18,bookingregreq,2:4:6
+// packet(0x0896,8); // CZ_JOIN_BATTLE_FIELD
+0x08A4,-1,itemlistwindowselected,2:4:8:12
+0x0368,19,wanttoconnection,2:6:10:14:18
+0x0927,26,partyinvite2,2
+// packet(0x0815,4); // CZ_GANGSI_RANK
+0x0281,26,friendslistadd,2
+0x0958,5,hommenu,2:4
+0x0885,36,storagepassword,2:4:20
+
+// 2013-12-18bRagexe - Yommy
+//20131218
+packet_ver: 24
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0947,5,changedir,2:4
+0x07E4,6,takeitem,2
+0x0362,6,dropitem,2:4
+0x07EC,8,movefromkafra,2:4
+0x0364,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x022D,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0365,18,bookingregreq,2:4:6
+// packet(0x0363,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x092F,19,wanttoconnection,2:6:10:14:18
+0x0802,26,partyinvite2,2
+// packet(0x087B,4); // CZ_GANGSI_RANK
+0x08AB,26,friendslistadd,2
+0x0811,5,hommenu,2:4
+0x085C,36,storagepassword,2:4:20
+0x09ce,102,itemmonster,2
+0x09d4,2,NPCShopClosed,0
+//0x09d8,2,clif->pNPCMarketClosed);
+//0x09d6,-1,clif->pNPCMarketPurchase);
+
+// 2013-12-23cRagexe - Yommy
+//20131223
+packet_ver: 25
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0202,5,changedir,2:4
+0x07E4,6,takeitem,2
+0x0362,6,dropitem,2:4
+0x07EC,8,movefromkafra,2:4
+0x0364,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0365,18,bookingregreq,2:4:6
+// packet(0x0363,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x022d,19,wanttoconnection,2:6:10:14:18
+0x0802,26,partyinvite2,2
+// packet(0x0436,4); // CZ_GANGSI_RANK
+0x023B,26,friendslistadd,2
+0x0361,5,hommenu,2:4
+0x08A4,36,storagepassword,2:4:20
+0x09df,7
+
+// 2013-12-30aRagexe - Yommy
+//20131230
+packet_ver: 26
+0x0871,7,actionrequest,2:6
+0x02C4,10,useskilltoid,2:4:6
+0x035F,5,walktoxy,2
+0x0438,6,ticksend,2
+0x094A,5,changedir,2:4
+0x092A,6,takeitem,2
+0x0860,6,dropitem,2:4
+0x0968,8,movefromkafra,2:4
+0x0895,8,movefromkafra,2:4
+0x091E,10,useskilltopos,2:4:6:8
+0x096A,90,useskilltoposinfo,2:4:6:8:10
+0x0926,6,getcharnamerequest,2
+0x0898,6,solvecharname,2
+0x087B,12,searchstoreinfolistitemclick,2:6:10
+0x0369,2,searchstoreinfonextpage,0
+0x093D,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x087F,-1,reqtradebuyingstore,2:4:8:12
+0x0969,6,reqclickbuyingstore,2
+0x094C,2,reqclosebuyingstore,0
+0x0365,-1,reqopenbuyingstore,2:4:8:9:89
+0x091F,18,bookingregreq,2:4:6
+// packet(0x093E,8); // CZ_JOIN_BATTLE_FIELD
+0x022D,-1,itemlistwindowselected,2:4:8:12
+0x089C,19,wanttoconnection,2:6:10:14:18
+0x08A9,26,partyinvite2,2
+// packet(0x087E,4); // CZ_GANGSI_RANK
+0x0943,26,friendslistadd,2
+0x0949,5,hommenu,2:4
+0x091D,36,storagepassword,2:4:20
+
+// 2014 Packet Data
+
+// 2014-01-15eRagexe - YomRawr
+// 20140115
+packet_ver: 27
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x08A7,5,changedir,2:4
+0x0940,6,takeitem,2
+0x0361,6,dropitem,2:4
+0x088E,8,movefromkafra,2:4
+0x0367,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x0802,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0360,12,searchstoreinfolistitemclick,2:6:10
+0x0817,2,searchstoreinfonextpage,0
+0x0815,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x096A,-1,reqtradebuyingstore,2:4:8:12
+0x088A,6,reqclickbuyingstore,2
+0x0965,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x096A,18,bookingregreq,2:4:6
+// packet(0x088A,8); // CZ_JOIN_BATTLE_FIELD
+0x0965,-1,itemlistwindowselected,2:4:8:12
+0x0966,19,wanttoconnection,2:6:10:14:18
+0x095D,26,partyinvite2,2
+// packet(0x095B,4); // CZ_GANGSI_RANK
+0x089B,26,friendslistadd,2
+0x092D,5,hommenu,2:4
+0x0865,36,storagepassword,2:4:20
+
+// 2014-02-05bRagexe - Themon
+//20140205
+packet_ver: 28
+0x0369,7,clif->pActionRequest,2,6);
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0202,5,changedir,2:4
+0x07E4,6,takeitem,2
+0x0362,6,dropitem,2:4
+0x07EC,8,movefromkafra,2:4
+0x0364,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0365,18,bookingregreq,2:4:6
+// packet(0x0363,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x022D,19,wanttoconnection,2:6:10:14:18
+0x0802,26,partyinvite2,2
+// packet(0x0436,4); // CZ_GANGSI_RANK
+0x023B,26,friendslistadd,2
+0x0361,5,hommenu,2:4
+0x0938,36,storagepassword,2:4:20
+0x09DF,7
+
+// 2014-03-05bRagexe - Themon
+// 20140305
+packet_ver: 29
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0815,5,changedir,2:4
+0x0202,6,takeitem,2
+0x0362,6,dropitem,2:4
+0x07EC,8,movefromkafra,2:4
+0x0364,8,movefromkafra,2:4
+0x0436,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0361,-1,reqopenbuyingstore,2:4:8:9:89
+0x0365,18,bookingregreq,2:4:6
+// packet(0x0363,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x0438,19,wanttoconnection,2:6:10:14:18
+0x0802,26,partyinvite2,2
+// packet(0x0878,4); // CZ_GANGSI_RANK
+0x07E4,26,friendslistadd,2
+0x0934,5,hommenu,2:4
+0x095e,36,storagepassword,2:4:20
+0x09DF,7
+
+// 2014-04-02gRagexe - Themon
+//20140402
+packet_ver: 30
+0x0946,7,actionrequest,2:6
+0x0868,10,useskilltoid,2:4:6
+0x093F,5,walktoxy,2
+0x0950,6,ticksend,2
+0x0360,5,changedir,2:4
+0x0958,6,takeitem,2
+0x0882,6,dropitem,2:4
+0x095C,8,movefromkafra,2:4
+0x085B,8,movefromkafra,2:4
+0x0364,10,useskilltopos,2:4:6:8
+0x092D,90,useskilltoposinfo,2:4:6:8:10
+0x088A,6,getcharnamerequest,2
+0x07EC,6,solvecharname,2
+0x0965,12,searchstoreinfolistitemclick,2:6:10
+0x085D,2,searchstoreinfonextpage,0
+0x0933,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x091F,-1,reqtradebuyingstore,2:4:8:12
+0x023B,6,reqclickbuyingstore,2
+0x0867,2,reqclosebuyingstore,0
+0x0944,-1,reqopenbuyingstore,2:4:8:9:89
+0x08AC,18,bookingregreq,2:4:6
+// packet(0x094C,8); // CZ_JOIN_BATTLE_FIELD
+0x0883,-1,itemlistwindowselected,2:4:8:12
+0x0920,19,wanttoconnection,2:6:10:14:18
+0x0890,26,partyinvite2,2
+// packet(0x088C,4); // CZ_GANGSI_RANK
+0x089A,26,friendslistadd,2
+0x0896,5,hommenu,2:4
+0x0926,36,storagepassword,2:4:20
+0x09DF,7
+
+// 2014-04-16aRagexe - Themon
+//20140416
+packet_ver: 31
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0202,5,changedir,2:4
+0x07E4,6,takeitem,2
+0x0362,6,dropitem,2:4
+0x07EC,8,movefromkafra,2:4
+0x0364,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0365,18,bookingregreq,2:4:6
+// packet(0x0363,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x022D,19,wanttoconnection,2:6:10:14:18
+0x0802,26,partyinvite2,2
+// packet(0x0436,4); // CZ_GANGSI_RANK
+0x023B,26,friendslistadd,2
+0x0361,5,hommenu,2:4
+0x095C,36,storagepassword,2:4:20
+0x09DF,7
+
+// 2014-10-16aRagexe - YomRawr
+// 20141016
+packet_ver: 32
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0967,5,changedir,2:4
+0x07E4,6,takeitem,2
+0x0362,6,dropitem,2:4
+0x07EC,8,movefromkafra,2:4
+0x022D,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0365,18,bookingregreq,2:4:6
+// packet(0x0363,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x086E,19,wanttoconnection,2:6:10:14:18
+0x0802,26,partyinvite2,2
+// packet(0x0922,4); // CZ_GANGSI_RANK
+0x094B,26,friendslistadd,2
+0x0364,5,hommenu,2:4
+0x0936,36,storagepassword,2:4:20
+0x09DF,7
+0x0a00,269
+
+/* Roulette System [Yommy/Hercules] */
+//20141016
+//0x0A19,2,clif->pRouletteOpen,0);     // HEADER_CZ_REQ_OPEN_ROULETTE
+//0x0A1A,23);                          // HEADER_ZC_ACK_OPEN_ROULETTE
+//0x0A1B,2,clif->pRouletteInfo,0);     // HEADER_CZ_REQ_ROULETTE_INFO
+//0x0A1C,-1);                          // HEADER_ZC_ACK_ROULEITTE_INFO
+//0x0A1D,2,clif->pRouletteClose,0);    // HEADER_CZ_REQ_CLOSE_ROULETTE
+//0x0A1E,3);                           // HEADER_ZC_ACK_CLOSE_ROULETTE
+//0x0A1F,2,clif->pRouletteGenerate,0); // HEADER_CZ_REQ_GENERATE_ROULETTE
+//0x0A20,21);                          // HEADER_ZC_ACK_GENERATE_ROULETTE
+//0x0A21,3,clif->pRouletteRecvItem,2); // HEADER_CZ_RECV_ROULETTE_ITEM
+//0x0A22,5);                           // HEADER_ZC_RECV_ROULETTE_ITEM
+
+// 2014-10-22bRagexe - YomRawr
+//20141022
+packet_ver: 33
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x08AD,5,changedir,2:4
+0x094E,6,takeitem,2
+0x087D,6,dropitem,2:4
+0x0878,8,movefromkafra,2:4
+0x08AA,8,movefromkafra,2:4
+0x023B,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0835,12,searchstoreinfolistitemclick,2:6:10
+0x0940,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x0817,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0955,18,bookingregreq,2:4:6
+// packet(0x092B,8); // CZ_JOIN_BATTLE_FIELD
+0x0281,-1,itemlistwindowselected,2:4:8:12
+0x093B,19,wanttoconnection,2:6:10:14:18
+0x0896,26,partyinvite2,2
+// packet(0x08AB,4); // CZ_GANGSI_RANK
+0x091A,26,friendslistadd,2
+0x0899,5,hommenu,2:4
+0x0438,36,storagepassword,2:4:20
+0x0A01,3,HotkeyRowShift,2
+
+//20150226
+0x0A09,45
+0x0A0A,47
+0x0A0B,47
+0x0A0C,56
+0x0A0D,-1
+0x0A0F,-1
+0x0A10,-1
+
+// 2015-05-13aRagexe
+//20150513
+packet_ver: 34
+0x0369,7,actionrequest,2:6
+0x083C,10,useskilltoid,2:4:6
+0x0437,5,walktoxy,2
+0x035F,6,ticksend,2
+0x0924,5,changedir,2:4
+0x0958,6,takeitem,2
+0x0885,6,dropitem,2:4
+0x0879,8,movetokafra,2:4
+0x0864,8,movefromkafra,2:4
+0x0438,10,useskilltopos,2:4:6:8
+0x0366,90,useskilltoposinfo,2:4:6:8:10
+0x096A,6,getcharnamerequest,2
+0x0368,6,solvecharname,2
+0x0838,12,searchstoreinfolistitemclick,2:6:10
+0x0835,2,searchstoreinfonextpage,0
+0x0819,-1,searchstoreinfo,2:4:5:9:13:14:15
+0x0811,-1,reqtradebuyingstore,2:4:8:12
+0x0360,6,reqclickbuyingstore,2
+0x022D,2,reqclosebuyingstore,0
+0x0815,-1,reqopenbuyingstore,2:4:8:9:89
+0x0883,18,bookingregreq,2:4:6
+0x02C4,8	 // CZ_JOIN_BATTLE_FIELD
+0x0960,-1,itemlistwindowselected,2:4:8:12
+0x0363,19,wanttoconnection,2:6:10:14:18
+0x094A,26,partyinvite2,2
+0x0927,4	// CZ_GANGSI_RANK
+0x08A8,26,friendslistadd,2
+0x0817,5,hommenu,2:4
+0x0923,36,storagepassword,2:4:20
+//0x09e8,11,clif->pDull);	//CZ_OPEN_MAILBOX
+//0x0a2e,6,clif->pDull);	//TITLE
