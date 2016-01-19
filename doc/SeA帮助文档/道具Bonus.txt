@@ -266,10 +266,10 @@ bonus3 bAutoSpell,n,x,y;		攻击时 y/10% 几率自动咏唱等级 x 的技能 n (支持技能名)
 bonus3 bAutoSpellWhenHit,x,n,y;		被攻击时 y/10% 几率自动咏唱等级 x 的技能 n (支持技能名)
 bonus4 bAutoSpell,n,x,y,i;		攻击时 y/10% 几率在 i 条件下自动咏唱等级 x 的技能 n (支持技能名) (i值见备注9)
 bonus4 bAutoSpellWhenHit,n,x,y,i;	被攻击时 y/10% 几率在 i 条件下自动咏唱等级 x 的技能 n (支持技能名) (i值见备注9)
-bonus4 bAutoSpellOnSkill,x,y,n,i;	i/10% 几率在使用 x 技能时对技能对象自动咏唱 y 技能 n 级 (支持技能名)
+bonus4 bAutoSpellOnSkill,x,y,n,i;	i/10% 几率在使用 x 技能时对技能对象自动咏唱 y 技能 n 级 (支持技能名，技能id为负数对自己使用)
 bonus5 bAutoSpell,n,x,y,t,i;		攻击时 y/10% 几率在 i 和 t 条件下自动咏唱等级 x 的技能 n (支持技能名) (i值见备注9) (t值见备注10)					   
 bonus5 bAutoSpellWhenHit,n,x,y,t,i;	被攻击时 y/10% 几率在 i 和 t 条件下自动咏唱等级 x 的技能 n (支持技能名) (i值见备注9) (t值见备注10)
-bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱 y 技能 n 级 (支持技能名) (i值见备注9)
+bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱 y 技能 n 级 (支持技能名，技能id为负数对自己使用) (i值见备注9)
 
 //=========================================================
 //=备注
