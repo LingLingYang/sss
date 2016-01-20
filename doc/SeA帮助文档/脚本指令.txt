@@ -7608,5 +7608,10 @@ This function will locate 魔物 coordinates
 and place their coordinates into the variables specified when calling it. It 
 will return 0 if the search was successful, and -1 if the parameters given were 
 not variables or the search was not successful.
+---------------------------------------
+
+*next_autocast_check_condition;
+
+在itemdb使用该指令后，下一个autospell的bonus将在发动时检查气弹，物品需求等状态。仅一次有效。
 
 结束。
