@@ -3896,6 +3896,7 @@
 6523,Bakonawa_Soul_Fragments,Bakonawa Soul Fragments,3,20,,10,,,,,,,,,,,,,{},{},{}
 6524,Bangungot_Soul_Fragments,Bangungot Soul Fragments,3,20,,10,,,,,,,,,,,,,{},{},{}
 6525,Buwaya_Soul_Fragments,Buwaya Soul Fragments,3,20,,10,,,,,,,,,,,,,{},{},{}
+6606,Cute_Cart_Coupon,Cute Cart Remodel Coupon,3,0,,10,,,,,,,,,,,,,{},{},{} 
 //
 7001,Mould_Powder,Ã¹¾ú·ÛÄ©,3,466,,10,,,,,,,,,,,,,{},{},{}
 7002,Ogre_Tooth,ÊÞÈËÖ®ÑÀ,3,658,,10,,,,,,,,,,,,,{},{},{}

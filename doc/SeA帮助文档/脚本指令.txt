@@ -3486,17 +3486,18 @@ a palette number that exists/is usable by the client you use.
 
 Here are the possible look types:
  
- 0 - Base sprite
- 1 - Hairstyle
- 2 - Weapon
- 3 - Head bottom
- 4 - Head top
- 5 - Head mid
- 6 - Hair color
- 7 - Clothes color
- 8 - Shield
- 9 - Shoes
+ 0 - 职业
+ 1 - 发型
+ 2 - 武器
+ 3 - 头下
+ 4 - 头上
+ 5 - 头中
+ 6 - 头发颜色
+ 7 - 衣服颜色
+ 8 - 盾
+ 9 - 鞋子
  12 - 披肩
+ 13 - 衣服
 
 Whatever 'shoes' means is anybody's guess, ask Gravity - the client does nothing 
 with this value. It still wants it from the server though, so it is kept, but 
@@ -7609,10 +7610,18 @@ This function will locate 魔物 coordinates
 and place their coordinates into the variables specified when calling it. It 
 will return 0 if the search was successful, and -1 if the parameters given were 
 not variables or the search was not successful.
+
 ---------------------------------------
 
 *next_autocast_check_condition;
 
 在itemdb使用该指令后，下一个autospell的bonus将在发动时检查气弹，物品需求等状态。仅一次有效。
+
+---------------------------------------
+
+* openDressroom;
+  closeDressroom;
+
+打开关闭试衣间。
 
 结束。
