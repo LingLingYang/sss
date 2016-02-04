@@ -1898,6 +1898,7 @@ packet_ver: 9
 0x0999,11 // cz_wear_equipv5
 0x099a,9 // take_off_equipv5
 0x099b,8 //maptypeproperty2
+0x099f,23
 
 //2013-05-15a Ragexe (Yommy)
 packet_ver: 10
@@ -2200,7 +2201,6 @@ packet_ver: 18
 0x09B8,6,bankclose,2
 0x09B9,4	//close
 0x09d4,2
-0x099f,23
 //unknown. prevent from disconnection by client 13-12-23.
 
 //2013-07-17
@@ -2300,6 +2300,7 @@ packet_ver: 21
 0x022D,26,friendslistadd,2
 0x092D,5,hommenu,2:4
 0x0884,36,storagepassword,2:4:20
+0x09ca,23
 
 //2013-08-07
 packet_ver: 22
