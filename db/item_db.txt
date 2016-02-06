@@ -7334,7 +7334,7 @@
 19587,C_King_Poring_Hat,Costume King Poring Hat,5,0,,100,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,905,{ bonus bUnbreakableHelm,0; },{},{}
 19650,C_Rainbow_Feather_Deco,Costume Rainbow Feather Deco,5,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,1,934,{},{},{}
 19871,C_DecorationOfMusic_Accessory,服装 音乐的装饰,4,20,,0,,0,,0,0xFFFFFFFF,63,2,2048,,0,0,0,{},{ itembonus 86400000,"{ end; }",IBG_HEADMID_C,SI_DECORATION_OF_MUSIC; },{ itembonus 0,"{ end; }",IBG_HEADMID_C,0; }
-20404,[衣装] 天使たちの祝福,[时装] 天使们的祝福,5,20,,0,,0,,0,0xFFFFFFFF,7,2,512,,1,0,0,{},{itembonus 86400000,"{ end; }",IBG_HEADMID,SI_NEW_HEADGEAR,14; },{ itembonus 0,"{ end; }",IBG_HEADMID,0; }
+20404,[衣装] 天使たちの祝福,[时装] 天使们的祝福,5,20,,0,,0,,0,0xFFFFFFFF,7,2,512,,1,0,0,{},{itembonus 86400000,"{ end; }",IBG_HEADMID,SI_NEW_HEADGEAR,14; },{ itembonus 0,"{ end; }",IBG_HEADMID,SI_NEW_HEADGEAR,14; }
 20500,T_Archangel_Wing,Archangel Wing,5,0,,0,,0,,0,0xFFFFFFFF,7,2,8192,,1,0,1,{ bonus bUnbreakableHelm,0; },{},{}
 20600,Fantastic_Aura,Fantastic Aura,5,0,,0,,0,,0,0xFFFFFFFF,7,2,16384,,1,0,0,{ bonus bUnbreakableHelm,0; },{},{}
 20700,Egir_Manteau,Egir Manteau,5,200000,,300,,10,,1,0xFFFFFFFF,7,2,4,,110,1,0,{ bonus bUnbreakableHelm,0; },{},{}
