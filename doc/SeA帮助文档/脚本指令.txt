@@ -4210,6 +4210,7 @@ Used in reset NPC's (duh!)
 *sc_start4	<effect type>,<ticks>,<value 1>,<value 2>,<value 3>,<value 4>{,<target ID number>};
 *sc_end 	<effect type>{,<target ID number>};
 
+ ！！禁止用在装备中，可以用在OnEquip OnUnequip栏里。
 These command bestow a status effect on the invoking character. This command is 
 used a lot in the item scripts.
 
@@ -4412,6 +4413,7 @@ autobonus and autobonus3).
 
 *itembonus <持续时间>,状态编号(或{<脚本>}){,<组>{,<图标>{,<值>}}}
 
+ ！！禁止用在装备中，可以用在OnEquip OnUnequip栏里。
 作用类似于autobonus,但仅适用于消耗类道具。
 2个itembonus拥有相同组时，先使用者会被覆盖。
 
@@ -7623,5 +7625,11 @@ not variables or the search was not successful.
   closeDressroom;
 
 打开关闭试衣间。
+
+---------------------------------------
+
+* showeffect <SI>,<值>,<开关>;
+
+显示/关闭头饰效果。
 
 结束。
