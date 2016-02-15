@@ -64,7 +64,7 @@ Job: Equippable jobs. Uses the following bitmask table:
 	Gunslinger  (2^24): 0x01000000
 	Ninja       (2^25): 0x02000000
 	Rebellion   (2^26): 0x04000000
-	Summoner    (2^27): 0x10000000
+	Summoner    (2^27): 0x08000000
 
 Upper: Equippable upper-types. Uses the following bitmasks:
 	1:  ∆’Õ®÷∞“µ
