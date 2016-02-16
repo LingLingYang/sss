@@ -10,7 +10,7 @@ CREATE TABLE `picklog` (
   `time` datetime NOT NULL default '0000-00-00 00:00:00',
   `account_id` int(11) NOT NULL default '0',
   `char_id` int(11) NOT NULL default '0',
-  `type` enum('M','P','L','T','V','S','N','C','A','R','G','E','B') NOT NULL default 'P',
+  `type` enum('M','P','L','T','V','S','N','C','A','R','G','E','B','R') NOT NULL default 'P',
   `nameid` int(11) NOT NULL default '0',
   `amount` int(11) NOT NULL default '1',
   `refine` tinyint(3) unsigned NOT NULL default '0',

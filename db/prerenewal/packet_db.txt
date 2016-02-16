@@ -2684,16 +2684,16 @@ packet_ver: 32
 
 /* Roulette System [Yommy/Hercules] */
 //20141016
-//0x0A19,2,clif->pRouletteOpen,0);     // HEADER_CZ_REQ_OPEN_ROULETTE
-//0x0A1A,23);                          // HEADER_ZC_ACK_OPEN_ROULETTE
-//0x0A1B,2,clif->pRouletteInfo,0);     // HEADER_CZ_REQ_ROULETTE_INFO
-//0x0A1C,-1);                          // HEADER_ZC_ACK_ROULEITTE_INFO
-//0x0A1D,2,clif->pRouletteClose,0);    // HEADER_CZ_REQ_CLOSE_ROULETTE
-//0x0A1E,3);                           // HEADER_ZC_ACK_CLOSE_ROULETTE
-//0x0A1F,2,clif->pRouletteGenerate,0); // HEADER_CZ_REQ_GENERATE_ROULETTE
-//0x0A20,21);                          // HEADER_ZC_ACK_GENERATE_ROULETTE
-//0x0A21,3,clif->pRouletteRecvItem,2); // HEADER_CZ_RECV_ROULETTE_ITEM
-//0x0A22,5);                           // HEADER_ZC_RECV_ROULETTE_ITEM
+0x0A19,2,RouletteOpen,0		// HEADER_CZ_REQ_OPEN_ROULETTE
+0x0A1A,23			// HEADER_ZC_ACK_OPEN_ROULETTE
+0x0A1B,2,RouletteInfo,0		// HEADER_CZ_REQ_ROULETTE_INFO
+0x0A1C,-1			// HEADER_ZC_ACK_ROULEITTE_INFO
+0x0A1D,2,RouletteClose,0	// HEADER_CZ_REQ_CLOSE_ROULETTE
+0x0A1E,3			// HEADER_ZC_ACK_CLOSE_ROULETTE
+0x0A1F,2,RouletteGenerate,0	// HEADER_CZ_REQ_GENERATE_ROULETTE
+0x0A20,21			// HEADER_ZC_ACK_GENERATE_ROULETTE
+0x0A21,3,RouletteRecvItem,2	// HEADER_CZ_RECV_ROULETTE_ITEM
+0x0A22,5			// HEADER_ZC_RECV_ROULETTE_ITEM
 
 // 2014-10-22bRagexe - YomRawr
 //20141022
