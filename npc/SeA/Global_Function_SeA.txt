@@ -338,7 +338,7 @@ function	script	F_ALLRIDING	{
 
 -	script	ViewEquipEvent	-1,{
 OnPCViewEquipEvent:
-	viewequip @eqview_cid;
+	viewequip @eqview_id;
 	end;
 }
 
