@@ -2771,8 +2771,8 @@ packet_ver: 34
 0x08A8,26,friendslistadd,2
 0x0817,5,hommenu,2:4
 0x0923,36,storagepassword,2:4:20
-//0x09e8,11,clif->pDull);	//CZ_OPEN_MAILBOX
-//0x0a2e,6,clif->pDull);	//TITLE
+0x09e8,11,null
+0x0a2e,6,null
 0x0A35,4,oneclick_itemidentify,2
 
 //2015-09-16Ragexe  
