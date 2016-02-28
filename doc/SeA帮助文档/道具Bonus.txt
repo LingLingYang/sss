@@ -62,7 +62,9 @@ bonus2 bSCDef,n,x;			某状态 n 抵抗力 + x%
 bonus2 bNoSkill,n,x;			某技能 n 抵抗力 + x%
 bonus bChangeRace,n;			变成n种族
 bonus bMonTransform,n;			变身魔物n
-bonus2 bItemReqReduce,n,x;		道具id为n的物品在技能需求中的数量减少x
+bonus2 bItemReqReduce,n,x;		道具id为n的物品在技能需求中的数量减少x。
+					减少到0为要求携带但不消耗。
+					减少到负数为要求不携带。
 
 //=========================================================
 //=攻击修正

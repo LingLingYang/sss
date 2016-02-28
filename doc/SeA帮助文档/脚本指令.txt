@@ -7615,9 +7615,13 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
-*next_autocast_check_condition;
+*next_autocast_check_condition{ <参数>};
 
 在itemdb使用该指令后，下一个autospell的bonus将在发动时检查气弹，物品需求等状态。仅一次有效。
+不指定参数则默认1
+参数：
+  1：检查消耗物品
+  2: 检查最大可用数量
 
 ---------------------------------------
 
