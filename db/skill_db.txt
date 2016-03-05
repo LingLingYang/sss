@@ -643,6 +643,12 @@
 698,0,6,4,0,0x01,0,1,1,no,0,0x2,0,none,0,	ALL_WEWISH,Ê¥µ®ËÌ¸è
 //699,0,0,0,0,0,0,9,0,no,0,0x2,0,none,0,	ALL_SONKRAN,ALL_SONKRAN
 
+706,0,6,4,0,0x0,0,10,1,no,0,0x2,0,misc,0,	NPC_VENOMFOG,¶¾ÐÔÄàÕÓ
+709,0,6,4,3,0x0,0,5,1,no,0,0x2,0,misc,0,	NPC_ICEMINE,Ëª¶³µØÀ×
+711,0,6,4,3,0x0,0,5,1,no,0,0x2,0,magic,0,	NPC_FLAMECROSS,»ðÑæÊ®×Ö
+713,9:10:11:12:13,8,2,-1,0x2,3,5,-5,no,0,0,0,weapon,0,	NPC_DANCINGBLADE,ÈÐÎè
+715,5,8,1,7,0,0,5,5,no,0,0,0,weapon,0,		NPC_DARKPIERCING,éœºÚÍ»´Ì
+
 1001,14,6,1,-1,0,0,1,1,no,0,0x1,0,weapon,1,	KN_CHARGEATK,³å·æ¹¥»÷
 1002,0,6,4,0,0x1,0,1,0,no,0,0x1,0,weapon,2,	CR_SHRINK,ÍËËõ
 1003,0,0,0,0,0,0,1,0,no,0,0x1,0,weapon,0,	AS_SONICACCEL,³¬ÒôËÙÍ¶ÖÀ
@@ -1172,6 +1178,7 @@
 8238,9,6,16,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_KYRIE,ò¯³ÏÆíµ»
 8239,9,6,16,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_BLESSING,×£¸£
 8240,9,6,16,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_INCAGI,Ãô½ÝÔö¼Ó
+8241,2,6,2,0,0,0,1,1,no,0,0,0,none,0,		MER_INVINCIBLEOFF2,ÐÄÁé³å»÷
 
 // Elemental Spirits Skills
 8401,9,6,16,0,0x1,0,1,1,no,0,0,0,none,3,	EL_CIRCLE_OF_FIRE,ÁÒÑæÖ®»·
