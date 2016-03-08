@@ -4106,7 +4106,7 @@ Produce_Weaponlvl3	3
 Produce_Materials	21
 Produce_Runestone	24
 
-MAX_MOB_DB	10000
+MAX_MOB_DB	20000
 
 IBG_HPPOTION	1
 IBG_SPPOTION	2
