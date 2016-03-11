@@ -16,6 +16,24 @@
 //测试版570-579为itembonus预留状态
 //授权版570-619为itembonus预留状态
 
+//SC_ID,标签{,禁用地图标签{,Itembonus脚本}}
+
+// Legend for '禁用地图标签' field (bitmask):  
+// 1    - 普通地图禁用 
+// 2    - PVP地图禁用 
+// 4    - GVG地图禁用 
+// 8    - 战场地图禁用 
+// 16   - 城镇地图禁用 
+// Restricted zones - configured by 'restricted <number>' mapflag  
+// 32   - restricted in zone 1  
+// 64   - restricted in zone 2  
+// 128  - restricted in zone 3  
+// 256  - restricted in zone 4  
+// 512  - restricted in zone 5  
+// 1024 - restricted in zone 6  
+// 2048 - restricted in zone 7  
+
+
 28,4	//SC_QUAGMIRE
 31,4	//SC_SIGNUMCRUCIS
 33,4	//SC_DECREASEAGI
@@ -172,16 +190,16 @@
 519,126	//SC_TRANSFORM
 521,1	//SC_LIGHT_OF_REGENE
 525,124	//SC_FIGHT_MODE
-570,126,{ bonus bASPDRate,10; }	//SC_CEROMAIN_SOUP
-571,126,{ bonus bMaxSPrate,5; bonus bSPrecovRate,20; }	//SC_VITATA_500
-572,126,{ bonus bMaxHP,500+BaseLevel*4/3; } //SC_HP_POTION_S
-573,126,{ bonus bMaxHP,1500+BaseLevel*4/3; } //SC_HP_POTION_M
-574,126,{ bonus bMaxHP,2500+BaseLevel*4/3; } //SC_HP_POTION_L
-575,126,{ bonus bMaxSPrate,BaseLevel/10-5; } //SC_SP_POTION_S
-576,126,{ bonus bMaxSPrate,BaseLevel/10; } //SC_SP_POTION_M
-577,126,{ bonus bMaxSPrate,BaseLevel/10+5; } //SC_SP_POTION_L
-578,126,{ bonus bHPrecovRate,20; }	//SC_C_WHITE_POTION_Z
-579,126,{ bonus bFixedDef,1; bonus bFixedDef2,1; bonus bFixedMdef,1; bonus bFixedMdef2,1; }	//SC_FIXED_DEF
+570,126,0,{ bonus bASPDRate,10; }	//SC_CEROMAIN_SOUP
+571,126,0,{ bonus bMaxSPrate,5; bonus bSPrecovRate,20; }	//SC_VITATA_500
+572,126,0,{ bonus bMaxHP,500+BaseLevel*4/3; } //SC_HP_POTION_S
+573,126,0,{ bonus bMaxHP,1500+BaseLevel*4/3; } //SC_HP_POTION_M
+574,126,0,{ bonus bMaxHP,2500+BaseLevel*4/3; } //SC_HP_POTION_L
+575,126,0,{ bonus bMaxSPrate,BaseLevel/10-5; } //SC_SP_POTION_S
+576,126,0,{ bonus bMaxSPrate,BaseLevel/10; } //SC_SP_POTION_M
+577,126,0,{ bonus bMaxSPrate,BaseLevel/10+5; } //SC_SP_POTION_L
+578,126,0,{ bonus bHPrecovRate,20; }	//SC_C_WHITE_POTION_Z
+579,126,0,{ bonus bFixedDef,1; bonus bFixedDef2,1; bonus bFixedMdef,1; bonus bFixedMdef2,1; }	//SC_FIXED_DEF
 718,24	//SC_TELEKINESIS_INTENSE	718
 719,24	//SC_FULL_THROTTLE	719
 720,24	//SC_REBOUND
