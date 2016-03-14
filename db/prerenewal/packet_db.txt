@@ -2902,7 +2902,7 @@ packet_ver: 38
 0x02C4,-1,reqopenbuyingstore,2:4:8:9:89
 0x0942,18,bookingregreq,2:4:6
 // 0x0958,8 CZ_JOIN_BATTLE_FIELD
-0x085D,-1,takeitem,2:4:8:12
+0x085D,-1,itemlistwindowselected,2:4:8:12
 0x0967,19,wanttoconnection,2:6:10:14:18
 0x0815,26,partyinvite2,2
 // 0x0802,4 CZ_GANGSI_RANK
