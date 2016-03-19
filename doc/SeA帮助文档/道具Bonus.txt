@@ -258,9 +258,9 @@ bonus3 bAddEff,n,x,y;			¹¥»÷Ê± x/100% ¼¸ÂÊÔÚ y Ìõ¼þÏÂ²úÉú n ×´Ì¬ (nÖµ¼û±¸×¢4)(yÖ
 bonus3 bAddEffWhenHit,n,x,y;		ÊÜµ½¹¥»÷Ê± x/100% ¼¸ÂÊÔÚ y Ìõ¼þÏÂ²úÉú n ×´Ì¬ (nÖµ¼û±¸×¢4)(yÖµ¼û±¸×¢8)
 bonus3 bAddEffOnSkill,s,x,y;		y/100% ¼¸ÂÊÔÚÊ¹ÓÃ s ¼¼ÄÜÊ±¶Ô¼¼ÄÜ¶ÔÏó²úÉú x ×´Ì¬ (Ö§³Ö¼¼ÄÜÃû)(xÖµ¼û±¸×¢4)
 bonus4 bAddEffOnSkill,s,x,y,t;		y/100% ¼¸ÂÊÔÚÊ¹ÓÃ s ¼¼ÄÜÊ±ÔÚ t Ìõ¼þÏÂ²úÉú x ×´Ì¬ (Ö§³Ö¼¼ÄÜÃû)(xÖµ¼û±¸×¢4)(tÖµ¼û±¸×¢8)
-bonus4 bAddEff,n,x,y,z;			¹¥»÷Ê± x/100% ¼¸ÂÊÔÚ y Ìõ¼þÏÂ²úÉú n ×´Ì¬ z ºÁÃë(nÖµ¼û±¸×¢4)(yÖµ¼û±¸×¢8)
-bonus4 bAddEffWhenHit,n,x,y,z;		ÊÜµ½¹¥»÷Ê± x/100% ¼¸ÂÊÔÚ y Ìõ¼þÏÂ²úÉú n ×´Ì¬ z ºÁÃë (nÖµ¼û±¸×¢4)(yÖµ¼û±¸×¢8)
-bonus5 bAddEffOnSkill,s,x,y,t,z;	y/100% ¼¸ÂÊÔÚÊ¹ÓÃ s ¼¼ÄÜÊ±ÔÚ t Ìõ¼þÏÂ²úÉú x ×´Ì¬ z ºÁÃë (Ö§³Ö¼¼ÄÜÃû)(xÖµ¼û±¸×¢4)(tÖµ¼û±¸×¢8)
+bonus4 bAddEff,n,x,y,z;			¹¥»÷Ê± x/100% ¼¸ÂÊÔÚ y Ìõ¼þÏÂ²úÉú n ×´Ì¬ z ºÁÃë(nÖµ¼û±¸×¢4)(yÖµ¼û±¸×¢8)(zÖµ¼û±¸×¢14)
+bonus4 bAddEffWhenHit,n,x,y,z;		ÊÜµ½¹¥»÷Ê± x/100% ¼¸ÂÊÔÚ y Ìõ¼þÏÂ²úÉú n ×´Ì¬ z ºÁÃë (nÖµ¼û±¸×¢4)(yÖµ¼û±¸×¢8)(zÖµ¼û±¸×¢14)
+bonus5 bAddEffOnSkill,s,x,y,t,z;	y/100% ¼¸ÂÊÔÚÊ¹ÓÃ s ¼¼ÄÜÊ±ÔÚ t Ìõ¼þÏÂ²úÉú x ×´Ì¬ z ºÁÃë (Ö§³Ö¼¼ÄÜÃû)(xÖµ¼û±¸×¢4)(tÖµ¼û±¸×¢8)(zÖµ¼û±¸×¢14)
 
 //=========================================================
 //=×Ô¶¯Ó½³ª
@@ -338,3 +338,5 @@ bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% ¼¸ÂÊÔÚÊ¹ÓÃ x ¼¼ÄÜÊ±ÔÚ i Ìõ¼þÏÂ×Ô¶¯Ó½³ª
 	¼ýÊ¸ÄÜÊ¹ÓÃµÄÐ§¹ûÖ»ÓÐ bCritical¡¢bAtkEle¡¢bHit¡¢bAtkRange¡¢bAddEle¡¢bAddRace¡¢bAddEnemy, bAddSize¡¢bAddEff£¬ÆäËû¶¼±»ÎÞÊÓ
 ×¢13£º
 	bAutoSpell£¬bAutoSelfWhenHit£¬³ý·ÇÊÇ¶Ô×Ô¼ºÊ¹ÓÃµÄ¼¼ÄÜ»òÕßÐ­Öú¼¼ÄÜ(inf = 4/16)£¬·ñÔò¶¼¶Ô¶Ô·½Ó½³ª¡£
+×¢14:
+	Èç¹û¶¨Òå³ÖÐøÊ±¼äµÄ×´Ì¬ÓÐ¶ÔÓ¦µÄ¼¼ÄÜ£¬ÔòÈç¹û¸Ã¼¼ÄÜµÄ7¼¶³ÖÐøÊ±¼ä´óÓÚµÈÓÚ¶¨ÒåµÄÊ±¼ä£¬Ôò¶¨ÒåµÄÊ±¼ä²»ÉúÐ§¡£ÒªÇ¿ÖÆÉúÐ§£¬ÇëÐÞ¸Ä¸Ã×´Ì¬¶ÔÓ¦¼¼ÄÜµÄ7¼¶³ÖÐøÊ±¼ä¡£
