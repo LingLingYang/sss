@@ -215,7 +215,7 @@
 170,-9,6,1,-1,0x20,0,10,1,no,0,0x2,0,weapon,0,	NPC_CRITICALSLASH,必杀一击
 171,-9,8,1,-1,0,0,10,-2:-3:-4:-5:-6:-7:-8:-9:-10:-11,no,0,0x2,0,weapon,0,	NPC_COMBOATTACK,连锁攻击
 172,-9,6,1,-1,0x40,0,10,1,no,0,0x2,0,weapon,0,	NPC_GUIDEDATTACK,必中攻击
-173,5,6,4,3,0xFA,5,10,1,no,0,0x2,0,weapon,3,	NPC_SELFDESTRUCTION,自我毁灭
+173,5,6,4,3,0xD2,5,10,1,no,0,0x2,0,misc,3,	NPC_SELFDESTRUCTION,自我毁灭
 174,-9,6,1,-1,0x2,3,1,1,no,0,0x2,0,weapon,0,	NPC_SPLASHATTACK,喷溅攻击
 175,0,0,4,0,0x41,0,10,1,no,0,0x2,0,misc,0,	NPC_SUICIDE,自杀
 176,-9,6,1,-1,0,0,5,1,no,0,0x2,0,weapon,0,	NPC_POISON,毒化攻击
@@ -799,7 +799,7 @@
 2264,0,6,4,0,0x1,0,1,1,no,0,0,0,none,7,		NC_F_SIDESLIDE,前侧滑
 2265,0,6,4,0,0x1,0,1,1,no,0,0,0,none,7,		NC_B_SIDESLIDE,后侧滑
 2266,0,0,0,0,0,0,4,0,no,0,0,0,none,0,		NC_MAINFRAME,机械结构改造
-2267,0,6,4,0,0xC2,2:3:4,3,1,no,0,0,0,misc,0,	NC_SELFDESTRUCTION,自爆
+2267,0,6,4,0,0xEA,2:3:4,3,1,no,0,0,0,weapon,0,	NC_SELFDESTRUCTION,自爆
 2268,0,6,4,3:2:4:1,0x1,0,4,0,no,0,0,0,none,0,	NC_SHAPESHIFT,装甲变更
 2269,0,6,4,0,0x1,0,1,0,no,0,0,0,none,0,		NC_EMERGENCYCOOL,紧急制冷
 2270,0,6,4,0,0x3,7,1,0,no,0,0,0,weapon,0,	NC_INFRAREDSCAN,红外扫描
