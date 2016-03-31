@@ -2201,6 +2201,7 @@ packet_ver: 18
 0x09B8,6,bankclose,2
 0x09B9,4	//close
 0x09d4,2
+0x09c1,10
 //unknown. prevent from disconnection by client 13-12-23.
 
 //2013-07-17
