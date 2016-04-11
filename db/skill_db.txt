@@ -1178,7 +1178,7 @@
 8238,9,6,16,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_KYRIE,ò¯³ÏÆíµ»
 8239,9,6,16,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_BLESSING,×£¸£
 8240,9,6,16,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_INCAGI,Ãô½ÝÔö¼Ó
-8241,2,6,2,0,0,0,1,1,no,0,0,0,none,0,		MER_INVINCIBLEOFF2,ÐÄÁé³å»÷
+8241,2,0,1,0,0x1,0,1,1,no,0,0,0,none,0,		MER_INVINCIBLEOFF2,ÐÄÁé³å»÷
 
 // Elemental Spirits Skills
 8401,9,6,16,0,0x1,0,1,1,no,0,0,0,none,3,	EL_CIRCLE_OF_FIRE,ÁÒÑæÖ®»·
