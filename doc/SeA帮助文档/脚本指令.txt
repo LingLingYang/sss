@@ -4205,9 +4205,9 @@ Used in reset NPC's (duh!)
 
 ---------------------------------------
 
-*sc_start 	<effect type>,<ticks>,<extra argument>{,<target ID number>};
-*sc_start2 	<effect type>,<ticks>,<extra argument>,<percent chance>{,<target ID number>};
-*sc_start4	<effect type>,<ticks>,<value 1>,<value 2>,<value 3>,<value 4>{,<target ID number>};
+*sc_start 	<effect type>,<ticks>,<extra argument>{,<rate>{,<flag>{,<GID>}}};
+*sc_start2 	<effect type>,<ticks>,<extra argument>,<percent chance>{,<flag>{,<GID>}};
+*sc_start4	<effect type>,<ticks>,<value 1>,<value 2>,<value 3>,<value 4>{,<rate>{,<flag>{,<GID>}}};
 *sc_end 	<effect type>{,<target ID number>};
 
  ！！禁止用在装备中，可以用在OnEquip OnUnequip栏里。
@@ -5504,6 +5504,13 @@ This command would kick everybody out of a specified waiting room chat. IF it
 was properly linked into the script interpreter which it isn't, even though the 
 code for it is in place. Expect this to become available in upcoming SVN 
 releases.
+
+---------------------------------------
+
+*kickwaitingroom {"<AID>"};
+
+该指令会把脚本关联的玩家从聊天室中踢出（如果指定AID则是该指定玩家）。
+踢出成功返回0。返回-1或1都是不成功。
 
 ---------------------------------------
 
@@ -7620,8 +7627,10 @@ not variables or the search was not successful.
 在itemdb使用该指令后，下一个autospell的bonus将在发动时检查气弹，物品需求等状态。仅一次有效。
 不指定参数则默认1
 参数：
-  1：检查消耗物品
+  1：检查所有在咏唱结束时检查的项目，如消耗物品
   2: 检查最大可用数量
+  4: 检查所有在咏唱开始时检查的项目，如检查状态（skill_require_db中的手推车，老鹰等的栏位）
+  8: 不检查skill_nocast_db中的项目。
 
 ---------------------------------------
 
