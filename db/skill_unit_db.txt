@@ -168,6 +168,10 @@
 5006,0x101,   , 0, 3, 500,enemy, 0x018	//NC_MAGMA_ERUPTION
 5010,0xfe,    , 0, 2,  -1,enemy, 0x000	//SC_ESCAPE
 
+5027,0x106,   ,  0, 1:1:2:2:3,  -1,enemy, 0x010 // SU_CN_POWDERING  
+5028,0x86,    ,  1, 0,1000,enemy, 0x010 // SU_CN_METEOR  
+5029,0x107,   ,  0, 0,1000,enemy, 0x010 // SU_SV_ROOTTWIST  
+
 8403,0xed,   , -1, 0,  20,enemy, 0x010	//EL_FIRE_MANTLE
 8406,0xee,   ,  0, 1,1000,all,   0x000	//EL_WATER_BARRIER
 8409,0xef,   ,  0, 1,1000,all,	 0x000	//EL_ZEPHYR
