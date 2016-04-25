@@ -3719,8 +3719,8 @@ Note: 'delitem' in an NPC script can still remove rental items.
 
 ---------------------------------------
 
-*makeitem <item id>,<amount>,"<地图名>",<X>,<Y>;
-*makeitem "<item name>",<amount>,"<地图名>",<X>,<Y>;
+*makeitem <item id>,<amount>,"<地图名>",<X>,<Y>{,<时间>};
+*makeitem "<item name>",<amount>,"<地图名>",<X>,<Y>{,<时间>};
 
 This command will create an item lying around on a specified map in the 
 specified location.
@@ -3730,6 +3730,7 @@ specified location.
  map name - The map name
  X        - The X coordinate
  Y        - The Y coordinate.
+ 时间     - 过多久会在地面清除，单位毫秒
 
 This item will still disappear just like any other dropped item. Like 'getitem', 
 it also accepts an 'english name' field from the database and creates apples if 
@@ -3738,8 +3739,8 @@ If the map name is given as "this", the map the invoking character is on will be
 
 ---------------------------------------
 
-*makeitem2 <item id>,<amount>,"<地图名>",<X>,<Y>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;
-*makeitem2 "<item name>",<amount>,"<地图名>",<X>,<Y>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>;
+*makeitem2 <item id>,<amount>,"<地图名>",<X>,<Y>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<时间>};
+*makeitem2 "<item name>",<amount>,"<地图名>",<X>,<Y>,<identify>,<refine>,<attribute>,<card1>,<card2>,<card3>,<card4>{,<时间>};
 
 This command will create an item lying around on a specified map in the 
 specified location.
@@ -3749,6 +3750,7 @@ specified location.
  map name - The map name
  X        - The X coordinate
  Y        - The Y coordinate.
+ 时间     - 过多久会在地面清除，单位毫秒
 
 This item will still disappear just like any other dropped item. Like 'getitem', 
 it also accepts an 'english name' field from the database and creates apples if 
