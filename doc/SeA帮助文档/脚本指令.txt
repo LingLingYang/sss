@@ -7660,4 +7660,10 @@ not variables or the search was not successful.
   3: 身上没有空位。
   4: 身上没有足够负重。
 
+---------------------------------------
+
+* clearcooldown{ <技能id>};
+
+技能不设，则清空所有。注意，是不设，不是为0。
+
 结束。
