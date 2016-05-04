@@ -3159,7 +3159,7 @@ There are also three special 'map names' you can use.
 
 ---------------------------------------
 
-*areawarp "<from map name>",<x1>,<y1>,<x2>,<y2>,"<to map name>",<x3>,<y3>;
+*areawarp "<from map name>",<x1>,<y1>,<x2>,<y2>,"<to map name>",<x3>,<y3>{,<x4>,<y4>};
 
 This command is similar to 'warp', however, it will not refer to the invoking 
 character, but instead, all characters within a specified area, defined by the 
@@ -3179,6 +3179,8 @@ the affected area to a random set of co-ordinates on "place2".
 
 Like 'warp', areawarp will also explicitly warp characters randomly into the 
 current map if you give the 'to map name' as "Random".
+
+    如果有x4,y4，则传送套x3,x4,y3,y4组成的区域里。
 
 See also 'warp'.
 
