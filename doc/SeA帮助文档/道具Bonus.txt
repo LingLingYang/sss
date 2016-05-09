@@ -266,7 +266,7 @@ bonus5 bAddEffOnSkill,s,x,y,t,z;	y/100% ¼¸ÂÊÔÚÊ¹ÓÃ s ¼¼ÄÜÊ±ÔÚ t Ìõ¼þÏÂ²úÉú x ×´Ì
 //=×Ô¶¯Ó½³ª
 //=========================================================
 bonus3 bAutoSpell,n,x,y;		¹¥»÷Ê± y/10% ¼¸ÂÊ×Ô¶¯Ó½³ªµÈ¼¶ x µÄ¼¼ÄÜ n (Ö§³Ö¼¼ÄÜÃû)					
-bonus3 bAutoSpellWhenHit,x,n,y;		±»¹¥»÷Ê± y/10% ¼¸ÂÊ×Ô¶¯Ó½³ªµÈ¼¶ x µÄ¼¼ÄÜ n (Ö§³Ö¼¼ÄÜÃû)
+bonus3 bAutoSpellWhenHit,n,x,y;		±»¹¥»÷Ê± y/10% ¼¸ÂÊ×Ô¶¯Ó½³ªµÈ¼¶ x µÄ¼¼ÄÜ n (Ö§³Ö¼¼ÄÜÃû)
 bonus4 bAutoSpell,n,x,y,i;		¹¥»÷Ê± y/10% ¼¸ÂÊÔÚ i Ìõ¼þÏÂ×Ô¶¯Ó½³ªµÈ¼¶ x µÄ¼¼ÄÜ n (Ö§³Ö¼¼ÄÜÃû) (iÖµ¼û±¸×¢9)
 bonus4 bAutoSpellWhenHit,n,x,y,i;	±»¹¥»÷Ê± y/10% ¼¸ÂÊÔÚ i Ìõ¼þÏÂ×Ô¶¯Ó½³ªµÈ¼¶ x µÄ¼¼ÄÜ n (Ö§³Ö¼¼ÄÜÃû) (iÖµ¼û±¸×¢9)
 bonus4 bAutoSpellOnSkill,x,y,n,i;	i/10% ¼¸ÂÊÔÚÊ¹ÓÃ x ¼¼ÄÜÊ±¶Ô¼¼ÄÜ¶ÔÏó×Ô¶¯Ó½³ª y ¼¼ÄÜ n ¼¶ (Ö§³Ö¼¼ÄÜÃû£¬¼¼ÄÜidÎª¸ºÊý¶Ô×Ô¼ºÊ¹ÓÃ)
