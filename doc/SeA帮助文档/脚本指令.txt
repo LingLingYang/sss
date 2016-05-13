@@ -4902,6 +4902,8 @@ GID为0表示脚本关联的对象。
 
 *disablenpc "<NPC object name>";
 *enablenpc "<NPC object name>";
+*hideonnpc "<NPC object name>";
+*hideoffnpc "<NPC object name>";
 
 These two commands will disable and enable, respectively, an NPC object 
 specified by name. The disabled NPC will disappear from sight and will no longer 
@@ -4916,10 +4918,12 @@ between several locations, which is often better than actually moving the NPC -
 create one NPC object with a visible and a hidden part to their name, make a few 
 copies, and then disable all except one.
 
+hideonnpc和disablenpc一样都不会触发脚本，只是客户端效果不同，hide有一个隐匿效果。
+
 ---------------------------------------
 
-*hideonnpc "<NPC object name>";
-*hideoffnpc "<NPC object name>";
+*hideonnpc2 "<NPC object name>";
+*hideoffnpc2 "<NPC object name>";
 
 These commands will make the NPC object specified display as hidden/visible, 
 even though not actually disabled per se. Hidden as in thief Hide skill, but 

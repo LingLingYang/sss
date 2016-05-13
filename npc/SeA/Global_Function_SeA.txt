@@ -407,3 +407,34 @@ function	script	instance_mapname	{
 	else
 		return has_instance(getarg(0));
 }
+ 
+//&0x001 = invisible
+//&0x002 = visible
+//&0x004 = hide
+//&0x008 = reveal
+//&0x010 = disable
+//&0x020 = enable
+function	script	disablenpc	{
+	npc_enable(getarg(0),0x11);
+	return;
+}
+function	script	enablenpc	{
+	npc_enable(getarg(0),0x22);
+	return;
+}
+function	script	hideonnpc	{
+	npc_enable(getarg(0),0x14);
+	return;
+}
+function	script	hideoffnpc	{
+	npc_enable(getarg(0),0x28);
+	return;
+}
+function	script	hideonnpc2	{
+	npc_enable(getarg(0),0x4);
+	return;
+}
+function	script	hideoffnpc2	{
+	npc_enable(getarg(0),0x8);
+	return;
+}
