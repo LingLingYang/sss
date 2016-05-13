@@ -4918,7 +4918,7 @@ between several locations, which is often better than actually moving the NPC -
 create one NPC object with a visible and a hidden part to their name, make a few 
 copies, and then disable all except one.
 
-hideonnpc和disablenpc一样都不会触发脚本，只是客户端效果不同，hide有一个隐匿效果。
+hideonnpc和disablenpc一样都不会触发disablenpc不会触发的脚本，只是客户端效果不同，hide有一个隐匿效果。
 
 ---------------------------------------
 
