@@ -223,6 +223,7 @@ bonus2 bFixDamageWhenHit,t,n;		在 t 条件下受到攻击伤害固定为 n (t值见备注10)
 bonus3 bAddEle,n,x,t;			在 t 条件下 对n属性 增加x% 物理伤害 (t值见备注10)(n值见备注2)
 bonus3 bSubEle,n,x,t;			在 t 条件下 对n属性 减少x% 物理伤害 (t值见备注10)(n值见备注2)
 bonus2 bEleMagicAddRate,x,n;		x 属性魔法的攻击力增加 n% (x值见备注2)
+bonus bAbsorbDMGMaxHp,n;		当伤害大于MaxHP的n%时，伤害减少MaxHP的MaxHP的n%
 
 //=========================================================
 //=技能效果修正

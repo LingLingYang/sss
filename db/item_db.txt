@@ -2381,6 +2381,42 @@
 4591,Bakonawa_Card,Bakonawa Card,6,20,,10,,,,,,,,16,,,,,{ bonus bStr,4; bonus3 bAddEffWhenHit,Eff_Bleeding,100,ATF_WEAPON; },{},{}
 4592,Buwaya_Card,Buwaya Card,6,20,,10,,,,,,,,16,,,,,{ bonus bVit,4; bonus3 bAddEffWhenHit,Eff_Stone,500,ATF_MAGIC; },{},{}
 
+4593,Menblatt_Card,Menblatt Card,6,20,,10,,,,,,,,4,,,,1,{ bonus bLongAtkRate,readparam(bDex)/10; },{},{}
+4594,Petal_Card,Petal Card,6,20,,10,,,,,,,,4,,,,1,{ bonus bCritAtkRate,2*(readparam(bLuk)/10); },{},{}
+4595,Cenere_Card,Cenere Card,6,20,,10,,,,,,,,4,,,,1,{ bonus bAspdRate,2*(readparam(bAgi)/10); },{},{}
+4596,AntiqueBook_Card,Antique Book Card,6,20,,10,,,,,,,,4,,,,1,{ bonus bMatk,5*(readparam(bInt)/10); },{},{}
+4597,LichternB_Card,Lichtern Blue Card,6,20,,10,,,,,,,,769,,,,1,{ bonus bMatk,10; bonus2 bEleMagicAddRate,Ele_Water,(getrefine()>=9)?10:5; },{},{}
+4598,LichternG_Card,Lichtern Green Card,6,20,,10,,,,,,,,769,,,,1,{ bonus bMatk,10; bonus2 bEleMagicAddRate,Ele_Ghost,(getrefine()>=9)?10:5; },{},{}
+4599,LichternR_Card,Lichtern Red Card,6,20,,10,,,,,,,,769,,,,1,{ bonus bMatk,10; bonus2 bEleMagicAddRate,Ele_Fire,(getrefine()>=9)?10:5; },{},{}
+4600,LichternY_Card,Lichtern Yellow Card,6,20,,10,,,,,,,,769,,,,1,{ bonus bMatk,10; bonus2 bEleMagicAddRate,Ele_Earth,(getrefine()>=9)?10:5; },{},{}
+4601,Amdarais_Card,Amdarais Card,6,20,,10,,,,,,,,16,,,,1,{ bonus2 bAddRace,RC_NonBoss,15; bonus2 bAddRace,RC_Boss,15; bonus2 bMagicAddRace,RC_NonBoss,15; bonus2 bMagicAddRace,RC_Boss,15; bonus2 bHPLossRate,666,4000; bonus2 bSPLossRate,66,4000; },{},{ heal -6666,-666; }
+4602,AmdaraisH_Card,Realized Amdarais Card,6,20,,10,,,,,,,,16,,,,1,{ bonus2 bAddRace,RC_NonBoss,20; bonus2 bAddRace,RC_Boss,20; bonus2 bMagicAddRace,RC_NonBoss,20; bonus2 bMagicAddRace,RC_Boss,20; bonus2 bHPLossRate,666,6000; bonus2 bSPLossRate,66,6000; },{},{ heal -6666,-666; }
+4603,CorruptionRoot_Card,Corruption Root Card,6,20,,10,,,,,,,,2,,,,1,{ bonus bBaseAtk,20; bonus5 bAutoSpell,"NPC_WIDESTONE",1,70,BF_WEAPON,0; bonus5 bAutoSpell,"NPC_WIDESLEEP",1,70,BF_WEAPON,0; bonus5 bAutoSpell,"NPC_WIDECURSE",1,70,BF_WEAPON,0; },{},{}
+4604,CorruptionRootH_Card,Realized Corruption Root Card,6,20,,10,,,,,,,,2,,,,1,{ bonus bBaseAtk,30; bonus5 bAutoSpell,"NPC_WIDESTONE",2,70,BF_WEAPON,0; bonus5 bAutoSpell,"NPC_WIDESLEEP",2,70,BF_WEAPON,0; bonus5 bAutoSpell,"NPC_WIDECURSE",2,70,BF_WEAPON,0; },{},{}
+4605,UndeadKnightM_Card,Agony of Royal Knight Card,6,20,,10,,,,,,,,16,,,,1,{ bonus bMaxHPrate,-44; bonus bHPGainValue,200+(10*getrefine()); if(isequipped(4606)) { bonus2 bSubEle,Ele_Neutral,20; bonus bFlee,20; bonus2 bHPLossRate,100,6000; bonus2 bSPLossRate,6,6000; } },{},{ heal -4444,0; }
+4606,UndeadKnightF_Card,Grudge of Royal Knight Card,6,20,,10,,,,,,,,4,,,,1,{ bonus bMaxSPrate,-44; bonus bSPGainValue,20+(getrefine()/2); },{},{ heal 0,-444; }
+4607,FaithfulManager_Card,Faithful Manager Card,6,20,,10,,,,,,,,2,,,,1,{ set .@temp,(getrefine()>=10)+(getrefine()>=14); if(getiteminfo(getequipid(EQI_HAND_R),11) == 15) { bonus bBaseAtk,20*.@temp; bonus bMatk,20*.@temp; } },{},{}
+4608,White_Knight_Card,White Knight Card,6,20,,10,,,,,,,,2,,,,1,{ bonus bBaseAtk,15; bonus2 bAddSize,1,20+(15*isequipped(4609)); bonus2 bAddSize,2,20+(15*isequipped(4609)); },{},{}
+4609,Khalitzburg_Knight_Card,Khalitzburg Knight Card,6,20,,10,,,,,,,,32,,,,1,{ bonus bDef,20; bonus2 bSubSize,1,25+(5*isequipped(4608)); bonus2 bSubSize,2,25+(5*isequipped(4608)); },{},{}
+4610,Sarah_Card,Sarah Card,6,20,,10,,,,,,,,16,,,,1,{ bonus bAbsorbDmgMaxHP,100; },{},{}
+
+4625,Timeholder_Card,Timeholder Card,6,20,,10,,,,,,,,2,,,,1,{ bonus bMatkRate,20; bonus bUseSPrate,10; },{},{}
+4626,Big_Ben_Card,Big Ben Card,6,20,,10,,,,,,,,2,,,,1,{ bonus2 bMagicAddRace,RC_Formless,5; bonus2 bMagicAddRace,RC_Demon,5; if(isequipped(4628)) { bonus2 bIgnoreMdefRate,RC_Formless,50; bonus2 bIgnoreMdefRate,RC_Demon,50; } },{},{}
+4627,Big_Bell_Card,Big Bell Card,6,20,,10,,,,,,,,2,,,,1,{ bonus2 bAddRace,RC_Formless,10; bonus2 bAddRace,RC_Demon,10; if(isequipped(4628)) { bonus2 bIgnoreDefRate,RC_Formless,50; bonus2 bIgnoreDefRate,RC_Demon,50; } },{},{}
+4628,Neo_Punk_Card,Neo Punk Card,6,20,,10,,,,,,,,32,,,,1,{ bonus2 bSubRace,RC_Formless,20+(5*isequipped(4626))+(5*isequipped(4627)); bonus2 bSubRace,RC_Demon,20+(5*isequipped(4626))+(5*isequipped(4627)); },{},{}
+4629,Arc_Elder_Card,Arc Elder Card,6,20,,10,,,,,,,,4,,,,1,{ bonus2 bSubEle,Ele_Neutral,15+(5*isequipped(4630)); bonus2 bEleMagicAddRate,Ele_Earth,3*(getrefine()/2); },{},{}
+4630,Time_Keeper_Card,Time Keeper Card,6,20,,10,,,,,,,,64,,,,1,{ bonus5 bAutoSpellWhenHit,"NPC_WIDECURSE",2,20+(50*isequipped(4629)),BF_WEAPON|BF_MAGIC,0; },{},{}
+4631,Owl_Viscount_Card,Owl Viscount Card,6,20,,10,,,,,,,,136,,,,1,{ bonus bAspdRate,3; },{},{}
+4632,Owl_Marquees_Card,Owl Marquis Card,6,20,,10,,,,,,,,136,,,,1,{ bonus3 bAutoSpell,"SA_VIOLENTGALE",1+4*(getskilllv("SA_VIOLENTGALE")==5),20; if(isequipped(4631)) { bonus3 bAutoSpell,"WZ_VERMILION",10,20; } },{},{}
+4633,Powerful_Archer_Skeleton_Card,Powerful Archer Skeleton Card,6,20,,10,,,,,,,,2,,,,1,{ bonus bBaseAtk,15; bonus bLongAtkRate,10+((BaseLevel>=100)*2); },{},{}
+4634,Powerful_Soldier_Skeleton_Card,Powerful Soldier Skeleton Card,6,20,,10,,,,,,,,2,,,,1,{ bonus bBaseAtk,15; bonus bCritical,9+(BaseLevel>=100); bonus bCritAtkRate,(BaseLevel>=100)*5; },{},{}
+4635,Powerful_Amdarais_Card,Powerful Amdarais Card,6,20,,10,,,,,,,,16,,,,1,{ bonus bDef,getrefine()*10; bonus bFlee,-(getrefine()*2); bonus bMaxHP,(BaseLevel>=100)*500; },{},{}
+4636,Bijou_Card,Bijou Card,6,20,,10,,,,,,,,32,,,,1,{ bonus2 bResEff,Eff_Freeze,10000; bonus bAtkRate,10; bonus bMatkRate,10; if(isequipped(4635)) { bonus2 bSubEle,Ele_Dark,100; bonus2 bSubEle,Ele_Undead,100; } },{},{}
+4637,Immotal_Corps_Card,Immortal Corps Card,6,20,,10,,,,,,,,4,,,,1,{ bonus bHPGainValue,10; bonus bSPGainValue,5; bonus bHPrecovRate,-100; bonus bSPrecovRate,-100; },{},{ heal -1000,100; }
+4638,Watcher_Card,Watcher Card,6,20,,10,,,,,,,,16,,,,1,{ bonus bBaseAtk,30; bonus bSPDrainValue,-5; },{},{}
+4639,Tappy_Card,Taffy Card,6,20,,10,,,,,,,,136,,,,1,{ bonus bAtkRate,1; },{},{}
+4640,Frozenwolf_Card,Frozen Wolf Card,6,20,,10,,,,,,,,136,,,,1,{ bonus bMatkRate,1; },{},{}
+4641,Zombie_Guard_Card,Zombie Guard Card,6,20,,10,,,,,,,,32,,,,1,{ bonus bSPrecovRate,-100; bonus bSPDrainValue,1; },{},{}
 // Armor Enchant System
 //===================================================================
 4700,Strength1,STR+1,6,20,,10,,,,,,,,16,,,,,{ bonus bStr,1; },{},{}

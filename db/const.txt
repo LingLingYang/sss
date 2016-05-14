@@ -526,6 +526,7 @@ bSkillCriticalRate	1101
 bMakeUpLv	1102
 bSubSrcEle	1103
 bItemReqReduce	1104
+bAbsorbDmgMaxHP	1105
 
 bFixDamage	1900
 bBonusDamage	1901
