@@ -110,8 +110,8 @@ adopt,3,3,{ if( !isloggedin(getcharid(3,@cmd_para$[0])) ) dispmes "玩家"+@cmd_pa
 changesex,0,0,{ changesex; }
 
 //顯示/隱藏npc
-shownpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { enablenpc @cmd_para$[0]; dispmes msg(110); } }
-hidenpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { disablenpc @cmd_para$[0]; dispmes msg(112); } }
+shownpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { npc_enable @cmd_para$[0],0x22; dispmes msg(110); } }
+hidenpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { npc_enable @cmd_para$[0],0x11; dispmes msg(112); } }
 
 //坐騎(包括鳥，龍，機器人)
 mount,0,1,{ if( checkriding() ) { setriding 0; dispmes msg(214); } else if( checkdisguise() ) dispmes msg(212); else { setriding !atoi(@cmd_para$[0])?1:atoi(@cmd_para$[0]); if( checkriding() ) dispmes msg(102); else dispmes msg(213); } }
