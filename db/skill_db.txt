@@ -1051,7 +1051,7 @@
 // EP 14.3 Part 2 3rd Job Skills
 5001,1,8,1,-1,0,0,5,3,no,0,0,0,weapon,0,	GC_DARKCROW,漆黑之爪
 5002,0,6,4,0,0x1,0,5,1,no,0,0,0,none,0,		RA_UNLIMIT,无限射击
-5003,7,6,1,-1,0x2,4:5:6:7:8,5,1,no,0,0,0,weapon,0,	GN_ILLUSIONDOPING,致幻剂
+5003,7,6,1,-1,0x2,4:5:6:7:14,5,1,no,0,0,0,weapon,0,	GN_ILLUSIONDOPING,致幻剂
 5004,9,6,2,1,0x16A,1:1:1:2:2:2:3:3:4:4,10,1,no,0,0,0,weapon,0,	RK_DRAGONBREATH_WATER,龙之吐息-水
 5005,0,6,4,0,0x3,3,1,1,no,0,0,0,none,0,		RK_LUXANIMA,光魂符文石
 5006,1,6,2,3,0x2,3,5,1,no,0,0,3,weapon,0,		NC_MAGMA_ERUPTION,熔岩喷发
