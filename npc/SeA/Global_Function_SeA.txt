@@ -438,3 +438,10 @@ function	script	hideoffnpc2	{
 	npc_enable(getarg(0),0x8);
 	return;
 }
+/*
+-	script	AcidBombHalfDmgonPC	-1,{
+OnPCStatCalcEvent:
+	bonus bonus2 bSkillDef,"CR_ACIDDEMONSTRATION",50;
+	end;
+}
+*/
