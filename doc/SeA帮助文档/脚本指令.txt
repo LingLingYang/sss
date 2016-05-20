@@ -7673,4 +7673,33 @@ not variables or the search was not successful.
 
 技能不设，则清空所有。注意，是不设，不是为0。
 
+---------------------------------------
+
+* gettimetick_date(<年>,<月>,<日>,<时>,<分>,<秒>);
+
+获取指定日期的timetick。
+例:
+	rentitem 2115,gettimetick_date(2017,7,21,15,0,0)-gettimetick(2);
+	获取巴基力盾，过期时间为2017年7月21日15点。
+
+---------------------------------------
+
+* gettimetick_nextday(<日>,<时>);
+
+获取过几天的几点时刻的timetick。
+例:
+	rentitem 2115,gettimetick_nextday(2,21)-gettimetick(2);
+	获取巴基力盾，过期时间为两天后的晚上9点。
+
+---------------------------------------
+
+* gettimetick_nextweek(<几次>,<周几>,<时>);
+
+获取过今天之后第几个的星期几的几点时刻的timetick。
+例:
+	rentitem 2115,gettimetick_nextweek(1,1,0)-gettimetick(2);
+	获取巴基力盾，过期时间为第一个星期一凌晨0点。
+
+---------------------------------------
+
 结束。
