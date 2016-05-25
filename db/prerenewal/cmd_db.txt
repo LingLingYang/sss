@@ -54,13 +54,13 @@ cash,1,1,{ set .@i, atoi(@cmd_para$[0]); set #CASHPOINTS, #CASHPOINTS+.@i; dispm
 points,1,1,{ set .@i, atoi(@cmd_para$[0]); set #KAFRAPOINTS, #KAFRAPOINTS+.@i; dispmes "得到"+.@i+"卡普拉点数, 总共"+#KAFRAPOINTS+"点"; }
 
 // 增加金钱
-zeny,1,1,{ set .@i, atoi(@cmd_para$[0]); set ZENY, ZENY + .@i; dispmes msg(176); }
+zeny,1,1,{ set .@i, atoi(@cmd_para$[0]); set ZENY, ZENY + .@i; dispmes msg(176,.@i); }
 
 // 创造一个道具，用名称或者ID都可以
 item,1,2,{ set .@i, atoi(@cmd_para$[0]); set .@j, atoi(@cmd_para$[1]); if(.@j < 1) set .@j, 1; if( existitem(.@i) ){ if( !checkweight(.@i,.@j) ) { dispmes "物品栏已满或负重太小"; end; }  getitem .@i, .@j; } else if( existitem(@cmd_para$[0]) ) { if( !checkweight(@cmd_para$[0],.@j) ) { dispmes "物品栏已满或负重太小"; end; } getitem @cmd_para$[0], .@j; } else { dispmes msg(19); end; } dispmes msg(18); }
 
 // 创造一个附带条件的道具，可以设定刷新的数量、鉴定、精炼值、是否破坏、卡片1、卡片2、卡片3、卡片4
-item2,9,9,{ set .@i, atoi(@cmd_para$[0]); if( !checkweight(.@i,atoi(@cmd_para$[1])) ) { dispmes "物品栏已满或负重太小"; end; } if( existitem(.@i) ) getitem2 .@i, atoi(@cmd_para$[1]), atoi(@cmd_para$[2]), atoi(@cmd_para$[3]), atoi(@cmd_para$[4]), atoi(@cmd_para$[5]), atoi(@cmd_para$[6]), atoi(@cmd_para$[7]), atoi(@cmd_para$[8]); else if( existitem(@cmd_para$[0]) ) getitem2 @cmd_para$[0], atoi(@cmd_para$[1]), atoi(@cmd_para$[2]), atoi(@cmd_para$[3]), atoi(@cmd_para$[4]), atoi(@cmd_para$[5]), atoi(@cmd_para$[6]), atoi(@cmd_para$[7]), atoi(@cmd_para$[8]); else { dispmes msg(19); end; } dispmes msg(18); }
+item2,9,9,{ set .@amount,atoi(@cmd_para$[1]); if(.@amount <= 0) { dispmes "道具数量不正确"; end; } set .@id,atoi(@cmd_para$[0]); if( existitem(.@id) ) { if( !checkweight(.@id,.@amount) ) { dispmes "物品栏已满或负重太小"; end; } getitem2 .@id, .@amount, atoi(@cmd_para$[2]), atoi(@cmd_para$[3]), atoi(@cmd_para$[4]), atoi(@cmd_para$[5]), atoi(@cmd_para$[6]), atoi(@cmd_para$[7]), atoi(@cmd_para$[8]); } else if( existitem(@cmd_para$[0]) ) { if( !checkweight(@cmd_para$[0],.@amount) ) { dispmes "物品栏已满或负重太小"+@cmd_para$[0]; end; } getitem2 @cmd_para$[0], .@amount, atoi(@cmd_para$[2]), atoi(@cmd_para$[3]), atoi(@cmd_para$[4]), atoi(@cmd_para$[5]), atoi(@cmd_para$[6]), atoi(@cmd_para$[7]), atoi(@cmd_para$[8]); } else { dispmes msg(19); end; } dispmes msg(18); }
 
 // 删除一个道具，用名称或者ID都可以
 delitem,2,2,{ callfunc "cmd_delitem"; }
@@ -110,8 +110,8 @@ adopt,3,3,{ if( !isloggedin(getcharid(3,@cmd_para$[0])) ) dispmes "玩家"+@cmd_pa
 changesex,0,0,{ changesex; }
 
 //顯示/隱藏npc
-shownpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { enablenpc @cmd_para$[0]; dispmes msg(110); } }
-hidenpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { disablenpc @cmd_para$[0]; dispmes msg(112); } }
+shownpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { npc_enable @cmd_para$[0],0x22; dispmes msg(110); } }
+hidenpc,0,0,{ if(getnpcdata(0,@cmd_para$[0]) == -1) dispmes msg(111); else { npc_enable @cmd_para$[0],0x11; dispmes msg(112); } }
 
 //坐騎(包括鳥，龍，機器人)
 mount,0,1,{ if( checkriding() ) { setriding 0; dispmes msg(214); } else if( checkdisguise() ) dispmes msg(212); else { setriding !atoi(@cmd_para$[0])?1:atoi(@cmd_para$[0]); if( checkriding() ) dispmes msg(102); else dispmes msg(213); } }
@@ -153,6 +153,8 @@ aura,1,4,{ setaura atoi(@cmd_para$[0]),atoi(@cmd_para$[1]),atoi(@cmd_para$[2]),a
 title,0,1,{ if(getstrlen(@cmd_para$[0]) > 12) { dispmes "称号不允许超过12字节！"; end; } settitle @cmd_para$[0]; if( @cmd_pcount != 0 ) dispmes "显示角色称号"; else dispmes "关闭显示角色称号"; }
 makeegg,1,1,{ if(!set(.@id,existitem(@cmd_para$[0]))) if(!set(.@id,existmob(@cmd_para$[0]))) set .@id, atoi(@cmd_para$[0]); if( .@id < 0 )set .@id,.@id*-1; if(!makepet(.@id)) dispmes msg(180); }
 hatch,0,0,{ if(!getpetinfo(0)) bpet; else dispmes msg(181); }
+
+main,0,0,{ doevent "Channel_System::OnMainBind"; }
 
 //======================= 以下为自定义指令 =========================
 // 打开悬赏窗口

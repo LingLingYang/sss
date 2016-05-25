@@ -28,7 +28,7 @@ OnAgitStart2		公会战二期开始时执行的事件
 OnAgitEnd2		公会战二期结束时执行的事件
 OnAgitInit2		在服务器请求公会城堡二期的相关信息时执行的事件。用于初始化与公会城堡二期相关的NPC
 OnAgitBreak		破坏华丽金属后，公会城主改变时执行的事件
-OnGuildBreak		公会解散时执行的事件
+OnGuildBreak		公会解散时执行的非玩家关联NPC事件，仅执行城堡里的NPC带有该标签的脚本
 OnTimer<Tick>		NPC计时器到tick(毫秒)时执行的事件
 OnTimerQuit		关联玩家的NPC计时器，在玩家退出时执行的事件
 OnWhisperGlobal		密语此npc执行的事件。<NPC:"NPC名"><内容1#内容2#内容3>
@@ -85,3 +85,6 @@ OnPCZenyChangeEvent	金钱变化时的事件，赋予变量@zenychange_val，负数为金钱减少。
 OnPCDamageEvent		发出技能和普通攻击后的事件。关联攻击者，赋予变量@pcdamage_target，为被攻击方。
 OnPetLootItemEvent	宠物拾取物品时的事件，宠物主人赋予变量@petloot_id, @petloot_gid, @petloot_amount。
 OnBGQRegEvent		加入战场队列的事件，可用于检测ip是否重复。
+OnPCAllyDelEvent	公会同盟删除时的事件。删除的公会变量@allychange_gid
+OnPCAllyAddEvent	公会同盟加入时的事件。添加的公会变量@allychange_gid
+OnPCGuildBreakEvent	玩家公会解散时，运行标签下的脚本。脚本对每个在线的原公会成员运行。

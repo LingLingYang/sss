@@ -154,6 +154,8 @@ title,0,1,{ if(getstrlen(@cmd_para$[0]) > 12) { dispmes "称号不允许超过12字节！"
 makeegg,1,1,{ if(!set(.@id,existitem(@cmd_para$[0]))) if(!set(.@id,existmob(@cmd_para$[0]))) set .@id, atoi(@cmd_para$[0]); if( .@id < 0 )set .@id,.@id*-1; if(!makepet(.@id)) dispmes msg(180); }
 hatch,0,0,{ if(!getpetinfo(0)) bpet; else dispmes msg(181); }
 
+main,0,0,{ doevent "Channel_System::OnMainBind"; }
+
 //======================= 以下为自定义指令 =========================
 // 打开悬赏窗口
 w&r,0,0,{ if((getcmduserlv() < getbattleflag("gm_cant_drop_min_lv") && getbattleflag("gm_cant_drop_min_lv"))||(getcmduserlv() > getbattleflag("gm_cant_drop_max_lv") && getbattleflag("gm_cant_drop_max_lv"))) doevent "Wanted_Reward::OnFunc"; else dispmes "您不能使用悬赏系统"; }

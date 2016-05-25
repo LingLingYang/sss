@@ -445,3 +445,77 @@ OnPCStatCalcEvent:
 	end;
 }
 */
+
+function	script	Channel_Ally_Join	{
+	channel_create $@ally_chat_nick$+getarg(0),$@channel_pass$,$@ally_chat_color,$@ally_chat_delay;//doesn't matter if create repeatedly.[Inkfish]
+	channel_join $@ally_chat_nick$+getarg(0),$@channel_pass$;
+	return;
+}
+
+-	script	Channel_System	-1,{
+OnInterIfInitOnce:
+	set $@main_chat_nick$,"广播";
+	set $@ally_chat_nick$,"同盟";
+	set $@map_chat_nick$,"地图";
+	set $@main_chat_color,0xffffff;//白色
+	set $@ally_chat_color,0xe57c00;//橘色
+	set $@map_chat_color,0x28bf00;//墨绿色
+	set $@main_chat_delay,100;
+	set $@ally_chat_delay,100;
+	set $@map_chat_delay,100;
+	set $@channel_pass$,rand(100000,999999);
+	//创建世界频道
+	channel_create $@main_chat_nick$,"",$@main_chat_color,$@main_chat_delay;
+	end;
+
+OnPCLoginEvent:
+	//channel_join $@main_chat_nick$,"";	//加入世界频道，默认不加入
+OnPCGuildJoinEvent:
+	if(getcharid(2) == 0) end;
+	getguildallies getcharid(2);
+	for( .@i = 0; .@i < $@guildalliescount; .@i++ )
+		Channel_Ally_Join($@guildidallies);//加入同盟公会频道。
+OnPCGuildCreateEvent:
+	Channel_Ally_Join(getcharid(2));//加入自己公会的频道
+	channel_bindname($@ally_chat_nick$,$@ally_chat_nick$+getcharid(2));//绑定#同盟为自己公会频道
+	end;
+
+OnPCAllyAddEvent:
+	Channel_Ally_Join(@allychange_gid);//加入同盟公会频道
+	end;
+OnPCAllyDelEvent:
+	channel_leave $@ally_chat_nick$+@allychange_gid;//离开同盟公会频道
+	end;
+
+OnPCGuildLeaveEvent:
+OnPCGuildBreakEvent:
+	getguildallies getcharid(2);
+	for( .@i = 0; .@i < $@guildalliescount; .@i++ )
+		channel_leave $@ally_chat_nick$+$@guildidallies;//离开同盟公会频道
+	channel_leave $@ally_chat_nick$+getcharid(2);//离开自己公会频道
+	end;
+
+//@main 指令的事件
+OnMainBind:
+	if(!@mainbinded) {
+		channel_join $@main_chat_nick$,"";
+		channel_bind $@main_chat_nick$;	
+		@mainbinded = 1;
+		dispmes "开启世界频道模式！"; end;
+	}
+	else
+	{
+		channel_unbind;
+		@mainbinded = 0;
+		dispmes "关闭世界频道模式！"; end;
+	}
+	end;
+
+//地图频道。请在要使用的地图激活loadmapevent或全部地图激活
+OnPCLoadMapEvent:	//使用“#地图名”在地图频道中发言
+	channel_leave @premap$;//没加入退出没关系。
+	channel_create strcharinfo(3),$@map_chat_pass$,$@map_chat_color,$@map_chat_delay;//重复创建没关系。
+	channel_join strcharinfo(3),$@channel_pass$;
+	channel_bindname $@map_chat_nick$,strcharinfo(3);
+	end;
+}
