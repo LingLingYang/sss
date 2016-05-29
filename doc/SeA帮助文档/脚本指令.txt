@@ -7765,4 +7765,10 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
+* identify;
+
+鉴定物品。该指令会在双击列表中物品后，触发OnPCIdentifyEvent事件，而不会真的鉴定物品。
+
+---------------------------------------
+
 结束。

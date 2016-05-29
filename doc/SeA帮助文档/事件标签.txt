@@ -83,6 +83,7 @@ OnPCViewEquipEvent	ÊÚÈ¨°æÏŞ¶¨¡£Íæ¼Ò²é¿´Íæ¼Ò×°±¸Ê±£¬ÔËĞĞ±êÇ©ÏÂµÄ½Å±¾¡£²é¿´Õß¸³Óè±
 OnPCPetCatchEvent	²¶×½Ä§ÎïÊ±³ö·¢µÄÊÂ¼ş£¬processhaltÓĞĞ§¡£¸³Óè±äÁ¿@petcatchid£¬±êÊ¾±»²¶×½µÄÄ§ÎïGID¡£
 OnPCZenyChangeEvent	½ğÇ®±ä»¯Ê±µÄÊÂ¼ş£¬¸³Óè±äÁ¿@zenychange_val£¬¸ºÊıÎª½ğÇ®¼õÉÙ¡£
 OnPCDamageEvent		·¢³ö¼¼ÄÜºÍÆÕÍ¨¹¥»÷ºóµÄÊÂ¼ş¡£¹ØÁª¹¥»÷Õß£¬¸³Óè±äÁ¿@pcdamage_target£¬Îª±»¹¥»÷·½¡£
+OnPCIdentifyEvent	¼ø¶¨Ê±µÄÊÂ¼ş¡£¸³Óè±äÁ¿@identify_index£¬ÎªÎïÆ·ÔÚÎïÆ·À¸ÖĞµÄÎ»ÖÃĞòºÅ¡£ÓÃgetinventoryinfo»ñµÃµÄÄÇ¸ö¶ø²»ÊÇgetinventorylist¡£
 OnPetLootItemEvent	³èÎïÊ°È¡ÎïÆ·Ê±µÄÊÂ¼ş£¬³èÎïÖ÷ÈË¸³Óè±äÁ¿@petloot_id, @petloot_gid, @petloot_amount¡£
 OnBGQRegEvent		¼ÓÈëÕ½³¡¶ÓÁĞµÄÊÂ¼ş£¬¿ÉÓÃÓÚ¼ì²âipÊÇ·ñÖØ¸´¡£
 OnPCAllyDelEvent	¹«»áÍ¬ÃËÉ¾³ıÊ±µÄÊÂ¼ş¡£É¾³ıµÄ¹«»á±äÁ¿@allychange_gid
