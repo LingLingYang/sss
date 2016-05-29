@@ -2303,6 +2303,8 @@ packet_ver: 21
 0x0884,36,storagepassword,2:4:20
 0x09ca,23
 
+0x09cb,17
+
 //2013-08-07
 packet_ver: 22
 0x0876,7,actionrequest,2:6
