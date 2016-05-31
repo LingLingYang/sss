@@ -7642,9 +7642,9 @@ not variables or the search was not successful.
 在itemdb使用该指令后，下一个autospell的bonus将在发动时检查气弹，物品需求等状态。仅一次有效。
 不指定参数则默认1
 参数：
-  1：检查所有在咏唱结束时检查的项目，如消耗物品
+  1：检查消耗物品
   2: 检查最大可用数量
-  4: 检查所有在咏唱开始时检查的项目，如检查状态（skill_require_db中的手推车，老鹰等的栏位）
+  4: 检查状态（skill_require_db中的手推车，老鹰等的栏位）
   8: 不检查skill_nocast_db中的项目。
   16: 不检查地面技能的UF_NOREITERATION。
 
