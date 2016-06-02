@@ -7765,9 +7765,10 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
-* identify;
+* identify {<类型>};
 
-鉴定物品。该指令会在双击列表中物品后，触发OnPCIdentifyEvent事件，而不会真的鉴定物品。
+对已鉴定物品进行强制操作。该指令会在双击列表中物品后，触发OnPCIdentifyEvent事件，而不会真的鉴定物品。
+类型是item_db里的物品类型，设置后只有该类型的物品会显示在列表里。
 
 ---------------------------------------
 
