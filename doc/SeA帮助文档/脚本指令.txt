@@ -3119,11 +3119,18 @@ Note: rid2name may not produce correct character names since rid = account id.
 
 ---------------------------------------
 
-*message "<character name>","<message>";
+*message "<character name>","<message>"{,"<类型或密语名>"};
 
 That command will send a message to the chat window of the character specified 
 by name. The text will also appear above the head of that character. It will not 
 be seen by anyone else.
+
+类型:
+0: 对自己显示
+1: 公共聊天
+2: 组队聊天
+3: 公会聊天
+指定密语名，则为悄悄话，密语名支持频道名。
 
 ---------------------------------------
 

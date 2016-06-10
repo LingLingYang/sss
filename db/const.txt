@@ -548,6 +548,8 @@ bFixedDef2	1917
 bFixedMdef	1918
 bFixedMdef2	1919
 bAddEleRace	1920
+bAddAtkRate	1923
+bAddMatkRate	1924
 bSkillAtkRace	1925
 bSkillAtkEle	1926
 bSkillDef	1927

@@ -65,6 +65,7 @@ bonus bMonTransform,n;			变身魔物n
 bonus2 bItemReqReduce,n,x;		道具id为n的物品在技能需求中的数量减少x。
 					减少到0为要求携带但不消耗。
 					减少到负数为要求不携带。
+bonus bMagicFleeRate,r;              	r%回避魔法伤害
 
 //=========================================================
 //=攻击修正
@@ -75,6 +76,8 @@ bonus bMatk,n;				魔法攻击力 + n (仅复兴版有效)
 bonus bAtkRate,n;			物理攻击力 + n%
 bonus bBaseAtk,n;			基础攻击力 + n
 bonus bMatkRate,n;			魔法攻击力 + n%
+bonus2 bAddAtkRate,n,r			r%几率增加n%物理伤害
+bonus2 bAddMatkRate,n,r			r%几率增加n%魔法伤害
 
 //=========================================================
 //=防御修正
@@ -317,8 +320,8 @@ bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱
 	ATF_TARGET	作用在对方(不指定时默认此项)
 	其他ATF_*同注10，原ATF_*仍然有效
 注9：
-	 0：作用在bonus持有方的对方
-	&1：作用在bonus持有方
+	 0：作用在自己(AutoSpellOnSkill作用在对方)
+	&1：作用在对方(AutoSpellOnSkill作用在自己)
 	&2：使用随机技能等级[1~条件等级]
 
 注10：
