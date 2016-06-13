@@ -27,6 +27,9 @@ Job_Gunslinger	24
 Job_Ninja	25
 Job_Xmas	26
 Job_Summer	27
+Job_Hanbok	28
+Job_Oktoberfest	29
+Job_Summer2	30
 
 Job_Novice_High	4001
 Job_Swordman_High	4002
@@ -268,6 +271,9 @@ EAJ_SHADOW_CHASER_T	0x1A06
 Option_Wedding	0x1000
 Option_Xmas	0x10000
 Option_Summer	0x40000
+Option_Hanbok	0x80000
+Option_OKTOBERFEST	0x100000
+Option_SUMMER2	0x200000
 
 bc_all	0
 bc_map	1
@@ -1274,6 +1280,8 @@ SC_FRESHSHRIMP	744
 SC_MAGICALBULLET	745
 SC_INCWSKILLRATIO	746
 SC_INCMSKILLRATIO	747
+SC_OKTOBERFEST	748
+SC_SUMMER2	749
 
 e_gasp	0
 e_what	1
