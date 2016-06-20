@@ -7779,4 +7779,15 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
+* rndopt_next_getitem <位置>,<编号>,<值1>,<值2>
+
+对getitem rentitem makeitem getitem2 rentequip makeitem2有效
+位置是0-4（即1-5个随机槽）
+编号从1开始，与客户端说明对应。
+功能与下列bonus相同：
+bonus <编号>,<值1>;
+bonus2 <编号>,<值1>,<值2>;
+
+---------------------------------------
+
 结束。
