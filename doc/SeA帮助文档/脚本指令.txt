@@ -7779,14 +7779,18 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
-* rndopt_next_getitem <位置>,<编号>,<值1>,<值2>
+* rndopt_next_getitem <位置>,<类型>,<值1>,<值2>
 
-对getitem rentitem makeitem getitem2 rentequip makeitem2有效
+对getitem, rentitem, makeitem, getitem2, rentequip, makeitem2有效
 位置是0-4（即1-5个随机槽）
-编号从1开始，与客户端说明对应。
-功能与下列bonus相同：
-bonus <编号>,<值1>;
-bonus2 <编号>,<值1>,<值2>;
+类型为bonus类型。
+
+举例：
+	rndopt_next_getitem 0,bMaxHp,10,0;
+	客户端设置第23条为MaxHp +%d
+	item_random_option.txt设置23,bMaxHp
+	效果等同于bonus bMaxHp,10; 客户端也会正常显示
+	如果item_random_option.txt没有设置bMaxHp对应的客户端条目位置，则脚本不会生效。
 
 ---------------------------------------
 
