@@ -1867,7 +1867,7 @@ packet_ver: 9
 0x0898,6,getcharnamerequest,2
 0x089b,10,useskilltoid,2:4:6
 0x08ac,8,movetokafra,2:4
-0x08c9,4,cashshopitemlist,0
+0x08c9,2,cashshopitemlist,0
 0x08d2,10
 0x0907,5,moveitem,2:4
 0x0908,5
@@ -2235,8 +2235,6 @@ packet_ver: 19
 0x0863,26,friendslistadd,2
 0x088A,5,hommenu,2:4
 0x095B,36,storagepassword,2:4:20
-0x08c9,2,guildcheckmaster,0
-//如果碰到过图断线，把上面这个这个移动到自己的封包版本下；如果碰到cashshop空白，把这个往后续移动
 
 //2013-07-24
 packet_ver: 20
@@ -2477,10 +2475,6 @@ packet_ver: 26
 0x091D,36,storagepassword,2:4:20
 
 // 2014 Packet Data
-
-0x08c9,4,cashshopitemlist,0
-//过图断线，删除上面这个
-
 // 2014-01-15eRagexe - YomRawr
 // 20140115
 packet_ver: 27
