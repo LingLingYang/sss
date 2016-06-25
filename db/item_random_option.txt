@@ -22,67 +22,68 @@
 22,bFlee
 23,bFlee2
 24,bCritical
-//  [EnumVAR.ATTR_TOLERACE_NOTHING[1]] = "Increases resistance against Neutral property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_WATER[1]] = "Increases resistance against Water property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_GROUND[1]] = "Increases resistance against Earth property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_FIRE[1]] = "Increases resistance against Fire property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_WIND[1]] = "Increases resistance against Wind property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_POISON[1]] = "Increases resistance against Poison property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_SAINT[1]] = "Increases resistance against Holy property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_DARKNESS[1]] = "Increases resistance against Shadow property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_TELEKINESIS[1]] = "Increases resistance against Ghost property attack by %d%%",
-//  [EnumVAR.ATTR_TOLERACE_UNDEAD[1]] = "Increases resistance against Undead property attack by %d%%",
+25,bSubEle,Ele_Neutral
+26,bSubEle,Ele_Water
+27,bSubEle,Ele_Earth
+28,bSubEle,Ele_Fire
+29,bSubEle,Ele_Wind
+30,bSubEle,Ele_Poison
+31,bSubEle,Ele_Holy
+32,bSubEle,Ele_Dark
+33,bSubEle,Ele_Ghost
+34,bSubEle,Ele_Undead
 //  [EnumVAR.ATTR_TOLERACE_ALL[1]] = "Increases resistance against all properties attack by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_NOTHING_USER[1]] = "Decreases physical damage received from Neutral property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_NOTHING_TARGET[1]] = "Increases physical damage inflicted on Neutral property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_WATER_USER[1]] = "Decreases physical damage received from Water property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_WATER_TARGET[1]] = "Increases physical damage inflicted on Water property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_GROUND_USER[1]] = "Decreases physical damage received from Earth property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_GROUND_TARGET[1]] = "Increases physical damage inflicted on Earth property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_FIRE_USER[1]] = "Decreases physical damage received from Fire property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_FIRE_TARGET[1]] = "Increases physical damage inflicted on Fire property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_WIND_USER[1]] = "Decreases physical damage received from Wind property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_WIND_TARGET[1]] = "Increases physical damage inflicted on Wind property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_POISON_USER[1]] = "Decreases physical damage received from Poison property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_POISON_TARGET[1]] = "Increases physical damage inflicted on Poison property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_SAINT_USER[1]] = "Decreases physical damage received from Holy property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_SAINT_TARGET[1]] = "Increases physical damage inflicted on Holy property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_DARKNESS_USER[1]] = "Decreases physical damage received from Shadow property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_DARKNESS_TARGET[1]] = "Increases physical damage inflicted on Shadow property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_TELEKINESIS_USER[1]] = "Decreases physical damage received from Ghost property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_TELEKINESIS_TARGET[1]] = "Increases physical damage inflicted on Ghost property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_UNDEAD_USER[1]] = "Decreases physical damage received from Undead property monster by %d%%",
-//  [EnumVAR.DAMAGE_PROPERTY_UNDEAD_TARGET[1]] = "Increases physical damage inflicted on Undead property monster by %d%%",
+36,bSubSrcEle,Ele_Neutral
+37,bAddEle,Ele_Neutral
+38,bSubSrcEle,Ele_Water
+39,bAddEle,Ele_Water
+40,bSubSrcEle,Ele_Earth
+41,bAddEle,Ele_Earth
+42,bSubSrcEle,Ele_Fire
+43,bAddEle,Ele_Fire
+44,bSubSrcEle,Ele_Wind
+45,bAddEle,Ele_Wind
+46,bSubSrcEle,Ele_Poison
+47,bAddEle,Ele_Poison
+48,bSubSrcEle,Ele_Holy
+49,bAddEle,Ele_Holy
+50,bSubSrcEle,Ele_Dark
+51,bAddEle,Ele_Dark
+52,bSubSrcEle,Ele_Ghost
+53,bAddEle,Ele_Ghost
+54,bSubSrcEle,Ele_Undead
+55,bAddEle,Ele_Undead
 //  [EnumVAR.MDAMAGE_PROPERTY_NOTHING_USER[1]] = "Decreases magical damage received from Neutral property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_NOTHING_TARGET[1]] = "Increases magical damage inflicted on Neutral property monster by %d%%",
+57,bMagicAddEle,Ele_Neutral
 //  [EnumVAR.MDAMAGE_PROPERTY_WATER_USER[1]] = "Decreases magical damage received from Water property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_WATER_TARGET[1]] = "Increases magical damage inflicted on Water property monster by %d%%",
+59,bMagicAddEle,Ele_Water
 //  [EnumVAR.MDAMAGE_PROPERTY_GROUND_USER[1]] = "Decreases magical damage received from Earth property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_GROUND_TARGET[1]] = "Increases magical damage inflicted on Earth property monster by %d%%",
+61,bMagicAddEle,Ele_Earth
 //  [EnumVAR.MDAMAGE_PROPERTY_FIRE_USER[1]] = "Decreases magical damage received from Fire property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_FIRE_TARGET[1]] = "Increases magical damage inflicted on Fire property monster by %d%%",
+63,bMagicAddEle,Ele_Fire
 //  [EnumVAR.MDAMAGE_PROPERTY_WIND_USER[1]] = "Decreases magical damage received from Wind property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_WIND_TARGET[1]] = "Increases magical damage inflicted on Wind property monster by %d%%",
+65,bMagicAddEle,Ele_Wind
 //  [EnumVAR.MDAMAGE_PROPERTY_POISON_USER[1]] = "Decreases magical damage received from Poison property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_POISON_TARGET[1]] = "Increases magical damage inflicted on Poison property monster by %d%%",
+67,bMagicAddEle,Ele_Poison
 //  [EnumVAR.MDAMAGE_PROPERTY_SAINT_USER[1]] = "Decreases magical damage received from Holy property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_SAINT_TARGET[1]] = "Increases magical damage inflicted on Holy property monster by %d%%",
+69,bMagicAddEle,Ele_Holy
 //  [EnumVAR.MDAMAGE_PROPERTY_DARKNESS_USER[1]] = "Decreases magical damage received from Shadow property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_DARKNESS_TARGET[1]] = "Increases magical damage inflicted on Shadow property monster by %d%%",
+71,bMagicAddEle,Ele_Dark
 //  [EnumVAR.MDAMAGE_PROPERTY_TELEKINESIS_USER[1]] = "Decreases magical damage received from Ghost property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_TELEKINESIS_TARGET[1]] = "Increases magical damage inflicted on Ghost property monster by %d%%",
+73,bMagicAddEle,Ele_Ghost
 //  [EnumVAR.MDAMAGE_PROPERTY_UNDEAD_USER[1]] = "Decreases magical damage received from Undead property monster by %d%%",
-//  [EnumVAR.MDAMAGE_PROPERTY_UNDEAD_TARGET[1]] = "Increases magical damage inflicted on Undead property monster by %d%%",
-//  [EnumVAR.BODY_ATTR_NOTHING[1]] = "Grant armor with Neutral property",
-//  [EnumVAR.BODY_ATTR_WATER[1]] = "Grant armor with Water property",
-//  [EnumVAR.BODY_ATTR_GROUND[1]] = "Grant armor with Earth property",
-//  [EnumVAR.BODY_ATTR_FIRE[1]] = "Grant armor with Fire property",
-//  [EnumVAR.BODY_ATTR_WIND[1]] = "Grant armor with Wind property",
-//  [EnumVAR.BODY_ATTR_POISON[1]] = "Grant armor with Poison property",
-//  [EnumVAR.BODY_ATTR_SAINT[1]] = "Grant armor with Holy property",
-//  [EnumVAR.BODY_ATTR_DARKNESS[1]] = "Grant armor with Shadow property",
-//  [EnumVAR.BODY_ATTR_TELEKINESIS[1]] = "Grant armor with Ghost property",
-//  [EnumVAR.BODY_ATTR_UNDEAD[1]] = "Grant armor with Undead property",
+75,bMagicAddEle,Ele_Undead
+76,bDefEle,Ele_Neutral
+77,bDefEle,Ele_Water
+78,bDefEle,Ele_Earth
+79,bDefEle,Ele_Fire
+80,bDefEle,Ele_Wind
+81,bDefEle,Ele_Poison
+82,bDefEle,Ele_Holy
+83,bDefEle,Ele_Dark
+84,bDefEle,Ele_Ghost
+85,bDefEle,Ele_Undead
+//¿Õ°×
 //  [EnumVAR.RACE_TOLERACE_NOTHING[1]] = "Increases resistance against Formless monster by %d%%",
 //  [EnumVAR.RACE_TOLERACE_UNDEAD[1]] = "Increases resistance against Undead monster by %d%%",
 //  [EnumVAR.RACE_TOLERACE_ANIMAL[1]] = "Increases resistance against Brute monster by %d%%",
@@ -159,25 +160,27 @@
 //  [EnumVAR.DAMAGE_SIZE_SMALL_USER[1]] = "Decreases damage received from Small size monster by %d%%",
 //  [EnumVAR.DAMAGE_SIZE_MIDIUM_USER[1]] = "Decreases damage received from Medium size monster by %d%%",
 //  [EnumVAR.DAMAGE_SIZE_LARGE_USER[1]] = "Decreases damage received from Large size monster by %d%%",
-//  [EnumVAR.DAMAGE_SIZE_PERFECT[1]] = "Remove weapon's size penalty",
+163,bNoSizeFix
 //  [EnumVAR.DAMAGE_CRI_TARGET[1]] = "Increases critical damage by %d%%",
 //  [EnumVAR.DAMAGE_CRI_USER[1]] = "Decreases critical damage by %d%%",
 //  [EnumVAR.RANGE_ATTACK_DAMAGE_TARGET[1]] = "Increases ranged physical damage by %d%%",
 //  [EnumVAR.RANGE_ATTACK_DAMAGE_USER[1]] = "Decreases ranged physical damage by %d%%",
-//  [EnumVAR.HEAL_VALUE[1]] = "Increases healing skill by %d%%",
-//  [EnumVAR.HEAL_MODIFY_PERCENT[1]] = "Increases heal received effectiveness by %d%%",
-//  [EnumVAR.DEC_SPELL_CAST_TIME[1]] = "Reduce variable cast time by %d%%",
-//  [EnumVAR.DEC_SPELL_DELAY_TIME[1]] = "Reduce after cast delay by %d%%",
-//  [EnumVAR.DEC_SP_CONSUMPTION[1]] = "Decreases SP consumption by %d%%",
-//  [EnumVAR.WEAPON_ATTR_NOTHING[1]] = "Grant weapon with Neutral property",
-//  [EnumVAR.WEAPON_ATTR_WATER[1]] = "Grant weapon with Water property",
-//  [EnumVAR.WEAPON_ATTR_GROUND[1]] = "Grant weapon with Earth property",
-//  [EnumVAR.WEAPON_ATTR_FIRE[1]] = "Grant weapon with Fire property",
-//  [EnumVAR.WEAPON_ATTR_WIND[1]] = "Grant weapon with Wind property",
-//  [EnumVAR.WEAPON_ATTR_POISON[1]] = "Grant weapon with Poison property",
-//  [EnumVAR.WEAPON_ATTR_SAINT[1]] = "Grant weapon with Holy property",
-//  [EnumVAR.WEAPON_ATTR_DARKNESS[1]] = "Grant weapon with Shadow property",
-//  [EnumVAR.WEAPON_ATTR_TELEKINESIS[1]] = "Grant weapon with Ghost property",
-//  [EnumVAR.WEAPON_ATTR_UNDEAD[1]] = "Grant weapon with Undead property",
-//  [EnumVAR.WEAPON_INDESTRUCTIBLE[1]] = "Indestructible",
-//  [EnumVAR.BODY_INDESTRUCTIBLE[1]] = "Indestructible",
+168,bHealPower
+169,bHealPower2
+170,bCastRate
+171,bDelayRate
+172,bUseSPrate
+//¿Õ°×
+//¿Õ°×
+175,bAtkEle,Ele_Neutral
+176,bAtkEle,Ele_Water
+177,bAtkEle,Ele_Earth
+178,bAtkEle,Ele_Fire
+179,bAtkEle,Ele_Wind
+180,bAtkEle,Ele_Poison
+181,bAtkEle,Ele_Holy
+182,bAtkEle,Ele_Dark
+183,bAtkEle,Ele_Ghost
+184,bAtkEle,Ele_Undead
+185,bUnbreakableWeapon
+186,bUnbreakableArmor

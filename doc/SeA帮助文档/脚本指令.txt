@@ -7779,21 +7779,20 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
-* rndopt_next_getitem <位置>,<类型>,<值1>,<值2>
+* rndopt_next_getitem <位置>,<类型>,<值1>{,<值2>}
 
 对getitem, rentitem, makeitem, getitem2, rentequip, makeitem2有效
 位置是0-4（即1-5个随机槽）
 类型为bonus类型。
 
 举例1：
-	rndopt_next_getitem 0,bMaxHp,10,0;
-	rndopt_next_getitem 1,bSubRace,10,RC_DEMIHUMAN;
+	rndopt_next_getitem 0,bMaxHp,10;
+	rndopt_next_getitem 1,bSubRace,RC_DEMIHUMAN,10;
 	客户端设置第23条为MaxHp +%d
 	客户端设置第183条为对人形系伤害减少 %d
 	item_random_option.txt设置23,bMaxHp
-	item_random_option.txt设置183,bSubRace
+	item_random_option.txt设置183,bSubRace,RC_DEMIHUMAN
 	效果等同于bonus bMaxHp,10; bonus2 bSubRace,RC_DemiHuman,10;客户端也会正常显示
-	这里没有看错，数值永远是值1。
 	如果item_random_option.txt没有设置bMaxHp对应的客户端条目位置，则脚本不会生效。
 
 ---------------------------------------
