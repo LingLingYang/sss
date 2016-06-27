@@ -7787,13 +7787,13 @@ not variables or the search was not successful.
 
 举例1：
 	rndopt_next_getitem 0,bMaxHp,10;
-	rndopt_next_getitem 1,bSubRace,RC_DEMIHUMAN,10;
-	客户端设置第23条为MaxHp +%d
-	客户端设置第183条为对人形系伤害减少 %d
-	item_random_option.txt设置23,bMaxHp
-	item_random_option.txt设置183,bSubRace,RC_DEMIHUMAN
-	效果等同于bonus bMaxHp,10; bonus2 bSubRace,RC_DemiHuman,10;客户端也会正常显示
-	如果item_random_option.txt没有设置bMaxHp对应的客户端条目位置，则脚本不会生效。
+	rndopt_next_getitem 1,bSubEle,Ele_Ghost,10;
+	客户端设置第1条为MaxHp +%d
+	客户端设置第33条为对念属性攻击伤害减少 %d
+	item_rndopt_id.txt设置1,bMaxHp
+	item_rndopt_id.txt设置33,bSubEle,Ele_Ghost
+	效果等同于{ bonus bMaxHp,10; bonus2 bSubEle,Ele_Ghost,10; }客户端也会正常显示
+	如果item_rndopt_id.txt没有设置bMaxHp或bSubEle,Ele_Ghost对应的客户端条目位置，则相应的脚本不会生效。
 
 ---------------------------------------
 
