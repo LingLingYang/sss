@@ -7652,7 +7652,7 @@ not variables or the search was not successful.
   1：检查消耗物品
   2: 检查最大可用数量
   4: 检查状态（skill_require_db中的手推车，老鹰等的栏位）
-  8: 检查skill_nocast_db中的项目。(包括技能冷却)
+  8: 检查skill_nocast_db中的项目。
   16: 不检查地面技能的UF_NOREITERATION。
 
 ---------------------------------------
