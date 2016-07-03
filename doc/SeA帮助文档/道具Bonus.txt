@@ -258,13 +258,13 @@ bonus2 bResEff,e,x;			减少 x/100% 产生 e 状态的几率。(e值见备注4)
 bonus2 bAddEff,e,x;			攻击时 x/100% 使对方产生 e 状态。(e值见备注4)
 bonus2 bAddEff2,e,x;			攻击时 x/100% 使自己产生 e 状态。(e值见备注4)
 bonus2 bAddEffWhenHit,e,x;		受到攻击时 x/100% 使对方产生 e 状态。(e值见备注4)
-bonus3 bAddEff,n,x,y;			攻击时 x/100% 几率在 y 条件下产生 n 状态 (n值见备注4)(y值见备注8)
-bonus3 bAddEffWhenHit,n,x,y;		受到攻击时 x/100% 几率在 y 条件下产生 n 状态 (n值见备注4)(y值见备注8)
+bonus3 bAddEff,n,x,y;			攻击时 x/100% 几率在 y 条件下产生 n 状态 (n值见备注4)(y值见备注8或10)
+bonus3 bAddEffWhenHit,n,x,y;		受到攻击时 x/100% 几率在 y 条件下产生 n 状态 (n值见备注4)(y值见备注8或10)
 bonus3 bAddEffOnSkill,s,x,y;		y/100% 几率在使用 s 技能时对技能对象产生 x 状态 (支持技能名)(x值见备注4)
-bonus4 bAddEffOnSkill,s,x,y,t;		y/100% 几率在使用 s 技能时在 t 条件下产生 x 状态 (支持技能名)(x值见备注4)(t值见备注8)
-bonus4 bAddEff,n,x,y,z;			攻击时 x/100% 几率在 y 条件下产生 n 状态 z 毫秒(n值见备注4)(y值见备注8)(z值见备注14)
-bonus4 bAddEffWhenHit,n,x,y,z;		受到攻击时 x/100% 几率在 y 条件下产生 n 状态 z 毫秒 (n值见备注4)(y值见备注8)(z值见备注14)
-bonus5 bAddEffOnSkill,s,x,y,t,z;	y/100% 几率在使用 s 技能时在 t 条件下产生 x 状态 z 毫秒 (支持技能名)(x值见备注4)(t值见备注8)(z值见备注14)
+bonus4 bAddEffOnSkill,s,x,y,t;		y/100% 几率在使用 s 技能时在 t 条件下产生 x 状态 (支持技能名)(x值见备注4)(t值见备注8或10)
+bonus4 bAddEff,n,x,y,z;			攻击时 x/100% 几率在 y 条件下产生 n 状态 z 毫秒(n值见备注4)(y值见备注8或10)
+bonus4 bAddEffWhenHit,n,x,y,z;		受到攻击时 x/100% 几率在 y 条件下产生 n 状态 z 毫秒 (n值见备注4)(y值见备注8或10)
+bonus5 bAddEffOnSkill,s,x,y,t,z;	y/100% 几率在使用 s 技能时在 t 条件下产生 x 状态 z 毫秒 (支持技能名)(x值见备注4)(t值见备注8或10)
 
 //=========================================================
 //=自动咏唱
@@ -341,5 +341,3 @@ bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱
 	箭矢能使用的效果只有 bCritical、bAtkEle、bHit、bAtkRange、bAddEle、bAddRace、bAddEnemy, bAddSize、bAddEff，其他都被无视
 注13：
 	bAutoSpell，bAutoSelfWhenHit，除非是对自己使用的技能或者协助技能(inf = 4/16)，否则都对对方咏唱。
-注14:
-	如果定义持续时间的状态有对应的技能，则如果该技能的7级持续时间大于等于定义的时间，则定义的时间不生效。要强制生效，请修改该状态对应技能的7级持续时间。
