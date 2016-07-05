@@ -4,6 +4,7 @@
 //
 
 -	script	SeA服务员::Son_SeA	-1,{
+	set $@renewal, 1;
 	cutin "son",2;
 	mes "[SeA服务员]";
 	mes "请你跟我说需要什么样的服务呢？";
@@ -271,7 +272,7 @@
 		mes "我还负责相关的一些工作。";
 		mes "请问你是来做什么的呢？";
 		next;
-		switch(select( "转职","转生","学习新技能","租用职业道具","点数重置","^FF0000领取三转职业道具^000000" ))
+		switch(select( "转职","转生","学习新技能","租用职业道具","点数重置",$@renewal?"^FF0000领取三转职业道具^000000":"" ))
 		{
 			case 1:
 				if( !BaseJob )
@@ -298,7 +299,7 @@
 					mes "[SeA服务员]";
 					mes "你的Job等级不够或者技能点数没有加完";
 				} else {
-					if(Class >= 4054) {
+					if(Class >= 4054 || (!renewal && ((Class >= 4008 && Class <= 4022) || (Class >= 4030 && Class <= 4045) || (Class >= 4047 && Class <= 4049)) )) {
 						mes "[SeA服务员]";
 						mes "您的职业不能转职了";
 						break;
@@ -464,12 +465,12 @@
 				switch(BaseJob)
 				{
 					case Job_Blacksmith:
-						if(Upper&4 && !checkriding()) { setarray .@option[0],2500,2,2255; break; }
+						if(Upper&4 && !checkriding() && $@renewal) { setarray .@option[0],2500,2,2255; break; }
 					case Job_Alchemist:
 					case Job_SuperNovice:
 						setarray .@option[0],800,1,39; break;
 					case Job_Knight:
-						if(Upper&4) { setarray .@option[0],800,2,2007; break; }
+						if(Upper&4 && $@renewal) { setarray .@option[0],800,2,2007; break; }
 					case Job_Crusader:
 						setarray .@option[0],2500,2,63; break;
 					case Job_Hunter:
