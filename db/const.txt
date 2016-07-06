@@ -681,7 +681,7 @@ RC_Boss	10
 RC_NonBoss	11
 RC_NonDemiHuman	12
 RC_Player	13
-RC_DemiHuman2	14
+RC_DemiHumanNPC	14
 
 RC2_None	0
 RC2_Goblin	1
