@@ -36,6 +36,7 @@
 //    0x0400- 仅组队可用技能 (攻击技能：则仅敌人有效)
 //    0x0800- 仅公会可用技能 (攻击技能：则仅敌人有效)
 //    0x1000- 禁止使用在敌人身上 (仅非攻击能有效).
+//    0x2000- 再次使用为取消状态的技能.
 // 13 最大施放数量: 
 //    在(玩家允许施放数量)player_land_skill_limit/(魔物允许施放数量)monster_land_skill_limit
 //    在battle_athena.conf中启用时, 限制发动个数
@@ -93,7 +94,7 @@
 48,-1,8,0,-1,0,0,10,2,no,0,0,0,weapon,0,	TF_DOUBLE,二刀连击
 49,0,0,0,0,0,0,10,0,no,0,0,0,weapon,0,		TF_MISS,残影
 50,1,6,1,0,1,0,10,1,no,0,0,0,weapon,0,		TF_STEAL,偷窃
-51,1,6,4,0,1,0,10,1,no,0,0,0,none,0,		TF_HIDING,隐匿
+51,1,6,4,0,1,0,10,1,no,0,0x2000,0,none,0,		TF_HIDING,隐匿
 52,-2,6,1,5,0,0,10,1,no,0,0,0,weapon,0,		TF_POISON,施毒
 53,9,6,16,5,0x1,0,1,1,no,0,0,0,weapon,0,	TF_DETOXIFY,解毒
 54,9,6,16,6,0x1,0,4,1,yes,0,0,0,magic,0,	ALL_RESURRECTION,复活术
@@ -156,7 +157,7 @@
 111,0,6,4,0,0x3,-1,5,1,no,0,0,0,weapon,0,	BS_ADRENALINE,速度激发
 112,0,6,4,0,0x3,-1,5,1,no,0,0,0,weapon,0,	BS_WEAPONPERFECT,无视体型攻击
 113,0,6,4,0,0x3,-1,5,1,no,0,0,0,weapon,0,	BS_OVERTHRUST,凶砍
-114,0,6,4,0,0x1,0,5,1,no,0,0,0,weapon,0,	BS_MAXIMIZE,武器值最大化
+114,0,6,4,0,0x1,0,5,1,no,0,0x2000,0,weapon,0,	BS_MAXIMIZE,武器值最大化
 115,3,6,2,0,0x1,0,5,1,no,0,0x80,0,misc,6:7:8:9:10,	HT_SKIDTRAP,滑动陷阱
 116,3,6,2,2,0xC2,1,5,1,no,0,0x80,0,misc,0,	HT_LANDMINE,地雷陷阱
 117,3,6,2,0,0x1,0,5,1,no,0,0x80,0,misc,0,	HT_ANKLESNARE,定位陷阱
@@ -177,7 +178,7 @@
 132,0,0,0,0,0,0,5,0,no,0,0,0,weapon,0,		AS_RIGHT,右手-修练
 133,0,0,0,0,0,0,5,0,no,0,0,0,weapon,0,		AS_LEFT,左手-修练
 134,0,0,0,0,0,0,10,0,no,0,0,0,weapon,0,		AS_KATAR,拳刃-修练
-135,0,6,4,0,0x1,0,10,1,no,0,0,0,weapon,0,	AS_CLOAKING,伪装
+135,0,6,4,0,0x1,0,10,1,no,0,0x2000,0,weapon,0,	AS_CLOAKING,伪装
 136,-1,8,1,-1,0,0,10,8,no,0,0,0,weapon,0,	AS_SONICBLOW,音速投掷
 137,3:4:5:6:7,6,1,-1,0x2,1,5,1,no,0,0,0,weapon,0,AS_GRIMTOOTH,无影之牙
 138,1,6,16,5,0x1,0,10,1,no,0,0x400,0,weapon,0,	AS_ENCHANTPOISON,涂毒
@@ -185,10 +186,10 @@
 140,2,6,2,5,0x1,0,10,1,no,0,0,0,weapon,0,	AS_VENOMDUST,病毒散拨
 141,1,6,1,-1,0xF,2,10,1,yes,0,0,0,weapon,0,	AS_SPLASHER,毒性感染
 142,0,6,4,0,0x1,0,1,1,no,0,0x1,0,none,0,	NV_FIRSTAID,紧急治疗
-143,0,6,4,0,0x1,0,1,1,no,0,0x1,0,none,0,	NV_TRICKDEAD,装死
+143,0,6,4,0,0x1,0,1,1,no,0,0x2001,0,none,0,	NV_TRICKDEAD,装死
 144,0,0,0,0,0,0,1,0,no,0,0x1,0,none,0,		SM_MOVINGRECOVERY,移动时恢复HP
 145,0,0,0,0,0,0,1,0,no,0,0x1,0,weapon,0,	SM_FATALBLOW,攻击弱点
-146,0,6,4,0,0x1,0,1,1,no,0,0x1,0,weapon,0,	SM_AUTOBERSERK,狂暴状态
+146,0,6,4,0,0x1,0,1,1,no,0,0x2001,0,weapon,0,	SM_AUTOBERSERK,狂暴状态
 147,0,0,4,0,0x1,0,1,0,no,0,0x1,0,weapon,0,	AC_MAKINGARROW,制作箭
 148,-9,6,1,-1,0x2,0,1,1,no,0,0x1,0,weapon,6,	AC_CHARGEARROW,冲锋箭
 149,1,6,1,2,0,0,1,1,no,0,0x1,0,weapon,0,	TF_SPRINKLESAND,喷砂
@@ -291,7 +292,7 @@
 //246,9,0,0,0,0,0,10,0,no,0,0,0,none,0,		AM_HEALHOMUN,治愈生命体
 247,9,6,4,0,0x1,1,5,0,no,0,0,0,none,0,		AM_RESURRECTHOMUN,复活生命体
 248,0,0,0,0,0,0,10,0,no,0,0,0,none,0,		CR_TRUST,信任
-249,0,6,4,0,0x1,0,10,1,no,0,0,0,weapon,0,	CR_AUTOGUARD,自动防御
+249,0,6,4,0,0x1,0,10,1,no,0,0x2000,0,weapon,0,	CR_AUTOGUARD,自动防御
 250,3,6,1,0,0,0,5,1,no,0,0,0,weapon,5:6:7:8:9,	CR_SHIELDCHARGE,盾击
 251,3:5:7:9:11,6,1,0,0,0,5,1,no,0,0,0,weapon,0,	CR_SHIELDBOOMERANG,回旋盾击
 252,0,6,4,0,0,0,10,1,no,0,0,0,weapon,0,		CR_REFLECTSHIELD,反射盾
@@ -299,7 +300,7 @@
 254,5,6,4,6,0x68,0,10,1,no,33,0x100,0,magic,0,	CR_GRANDCROSS,圣十字审判
 255,7:8:9:10:11,6,16,0,0x1,0,5,1,yes,0,0x600,0,none,0,	CR_DEVOTION,牺牲
 256,9,6,16,0,0x1,0,5,1,yes,0,0x200,0,none,0,	CR_PROVIDENCE,神佑之光
-257,0,6,4,0,0x1,0,5,1,no,0,0,0,weapon,0,	CR_DEFENDER,光之盾
+257,0,6,4,0,0x1,0,5,1,no,0,0x2000,0,weapon,0,	CR_DEFENDER,光之盾
 258,0,6,4,0,0x1,0,10,1,no,0,0,0,weapon,0,	CR_SPEARQUICKEN,长矛加速术
 259,0,0,0,0,0,0,10,0,no,0,0,0,weapon,0,		MO_IRONHAND,铁沙掌
 260,0,0,0,0,0,0,5,0,no,0,0,0,weapon,0,		MO_SPIRITSRECOVERY,运气调息
@@ -411,7 +412,7 @@
 366,0,6,4,0,0x1,0,10,1,no,0,0,0,magic,0,	HW_MAGICPOWER,魔力增幅
 367,9,8,1,0,0xD0,0,5,1,no,0,0,0,misc,0,		PA_PRESSURE,神之威压
 368,0,6,4,0,0x69,0,5,1,yes,0,0,0,weapon,0,	PA_SACRIFICE,舍命攻击
-369,0,6,4,0,0x41,0,10,1,yes,0,0,0,misc,0,	PA_GOSPEL,圣音
+369,0,6,4,0,0x41,0,10,1,yes,0,0x2000,0,misc,0,	PA_GOSPEL,圣音
 370,-2,6,1,-1,0,0,5,1,yes,0,0,0,weapon,3,	CH_PALMSTRIKE,猛虎硬爬山
 371,-2,8,4,-1,0,0,5,1,no,0,0x200,0,weapon,0,	CH_TIGERFIST,伏虎拳
 372,-2,8,4,-1,0,0,10,-1:-1:-2:-2:-3:-3:-4:-4:-5:-5,no,0,0x200,0,weapon,0,	CH_CHAINCRUSH,气绝崩击
@@ -431,7 +432,7 @@
 //386,0,0,4,0,0x1,0,1,1,yes,0,0,0,none,0,	WS_CREATENUGGET,Create Nuggets
 387,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	WS_CARTBOOST,手推车加速
 //388,9,6,2,0,0x1,0,5,1,no,0,0,0,none,0,	WS_SYSTEMCREATE,Auto Attack System
-389,0,6,4,0,0x1,0,5,1,no,0,0,0,none,0,		ST_CHASEWALK,暗影追踪
+389,0,6,4,0,0x1,0,5,1,no,0,0x2000,0,none,0,		ST_CHASEWALK,暗影追踪
 390,0,0,4,0,0,0,5,1,yes,0,0,0,weapon,0,		ST_REJECTSWORD,霸王魂
 //391,0,0,4,0,1,0,1,1,yes,0,0,0,magic,0,	ST_STEALBACKPACK,ST_STEALBACKPACK
 392,0,0,4,0,0x1,0,1,1,yes,0,0,0,none,0,		CR_ALCHEMY,融合试验
@@ -453,16 +454,16 @@
 408,9,6,4,0,0x1,0,1,1,yes,0,0x4,0,none,0,	WE_BABY,爸妈我爱您
 409,9,6,4,0,0x1,3,1,1,yes,0,0x4,1,none,0,	WE_CALLPARENT,爸妈我想念您
 410,9,6,4,0,0x1,3,1,1,yes,0,0x4,1,none,0,	WE_CALLBABY,宝贝请来这里
-411,0,6,4,0,0x1,0,10,1,yes,0,0,0,misc,4,	TK_RUN,跑步
-412,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	TK_READYSTORM,回旋准备
+411,0,6,4,0,0x1,0,10,1,yes,0,0x2000,0,misc,4,	TK_RUN,跑步
+412,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	TK_READYSTORM,回旋准备
 413,-2,8,4,-1,0x2,2,7,-3,no,0,0x200,0,weapon,0,	TK_STORMKICK,回旋踢
-414,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	TK_READYDOWN,砸踢准备
+414,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	TK_READYDOWN,砸踢准备
 415,-2,8,4,-1,0,0,7,-3,no,0,0x200,0,weapon,0,	TK_DOWNKICK,砸踢
-416,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	TK_READYTURN,踢准备
+416,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	TK_READYTURN,踢准备
 417,-2,8,4,-1,0x2,1,7,-3,no,0,0x200,0,weapon,2,	TK_TURNKICK,转身踢
-418,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	TK_READYCOUNTER,还击准备
+418,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	TK_READYCOUNTER,还击准备
 419,-2,8,4,-1,0x40,0,7,-3,no,0,0x200,0,weapon,0,	TK_COUNTER,还击踢
-420,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	TK_DODGE,落法
+420,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	TK_DODGE,落法
 421,9,8,1,-1,0,0,7,-3,no,0,0,0,weapon,0,	TK_JUMPKICK,飞脚踢
 422,0,0,0,0,0,1,10,0,no,0,0,0,none,0,		TK_HPTIME,平安的休息
 423,0,0,0,0,0,1,10,0,no,0,0,0,none,0,		TK_SPTIME,快乐的休息
@@ -486,7 +487,7 @@
 441,0,0,0,0,0,0,10,0,no,0,0,0,none,0,		SG_DEVIL,太阳和月亮和星星的恶魔
 442,0,0,0,0,0,0,3,0,no,0,0,0,none,0,		SG_FRIEND,太阳和月亮和星星的朋友
 443,0,0,0,0,0,0,10,0,no,0,0,0,none,0,		SG_KNOWLEDGE,太阳和月亮和星星的知识
-444,0,6,4,0,0x1,0,1,1,no,0,0,0,misc,0,		SG_FUSION,太阳和月亮和星星的融合
+444,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,misc,0,		SG_FUSION,太阳和月亮和星星的融合
 445,9,6,16,0,0x1,0,5,1,yes,0,0x200,0,magic,0,	SL_ALCHEMIST,炼金术师的灵魂
 446,9,6,16,0,0x1,0,1,1,yes,0,0xC08,0,none,0,	AM_BERSERKPITCHER,菠色克投掷
 447,9,6,16,0,0x1,0,5,1,yes,0,0x200,0,magic,0,	SL_MONK,武道家的灵魂
@@ -546,7 +547,7 @@
 501,9,6,1,-1,0x50,0,1,1,no,0,0,0,misc,0,	GS_FLING,投掷硬币
 502,-9,8,1,-1,0,0,1,3,no,0,0,0,weapon,0,	GS_TRIPLEACTION,三连攻击
 503,-9,6,1,-1,0x8,0,1,1,no,0,0,0,weapon,0,	GS_BULLSEYE,公牛之眼
-504,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	GS_MADNESSCANCEL,疯狂凯斯乐
+504,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	GS_MADNESSCANCEL,疯狂凯斯乐
 505,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	GS_ADJUSTMENT,终极闪躲
 506,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	GS_INCREASING,命中率递增
 507,-9,6,1,8,0,0,1,1,no,0,0,0,weapon,0,		GS_MAGICALBULLET,魔术弹
@@ -560,7 +561,7 @@
 514,-9,6,1,-1,0x20,0,5,1,no,0,0,0,weapon,0,	GS_PIERCINGSHOT,霹雳弹
 515,-9,8,1,-1,0,0,10,5,no,0,0,0,weapon,0,	GS_RAPIDSHOWER,五连击
 516,0,8,4,-1,0x2,3,10,1,no,0,0,0,weapon,0,	GS_DESPERADO,亡命之徒
-517,0,6,4,-1,0x1,0,10,1,no,0,0,0,weapon,0,	GS_GATLINGFEVER,格林狂热
+517,0,6,4,-1,0x1,0,10,1,no,0,0x2000,0,weapon,0,	GS_GATLINGFEVER,格林狂热
 518,2,6,1,-1,0,0,10,1,no,0,0,0,weapon,5,	GS_DUST,弹片四射
 519,-9,6,1,-1,0,0,10,1,yes,0,0,0,weapon,0,	GS_FULLBUSTER,全面破坏
 520,-9,6,1,-1,0x2,1:1:1:2:2:2:3:3:3:4,10,1,no,0,0,0,weapon,0,	GS_SPREADATTACK,火力全开
@@ -651,7 +652,7 @@
 715,5,8,1,7,0,0,5,5,no,0,0,0,weapon,0,		NPC_DARKPIERCING,闇黑突刺
 
 1001,14,6,1,-1,0,0,1,1,no,0,0x1,0,weapon,1,	KN_CHARGEATK,冲锋攻击
-1002,0,6,4,0,0x1,0,1,0,no,0,0x1,0,weapon,2,	CR_SHRINK,退缩
+1002,0,6,4,0,0x1,0,1,0,no,0,0x2001,0,weapon,2,	CR_SHRINK,退缩
 1003,0,0,0,0,0,0,1,0,no,0,0x1,0,weapon,0,	AS_SONICACCEL,超音速投掷
 1004,9,8,1,0,0x8,0,1,1,no,0,0x1,0,weapon,0,	AS_VENOMKNIFE,毒刃
 1005,1,6,1,0,0x1,0,1,1,no,0,0x1,0,weapon,0,	RG_CLOSECONFINE,紧密的约束
@@ -700,12 +701,12 @@
 2025,0,6,4,0,0x1,0,1,0,no,0,0,0,none,0,		GC_CREATENEWPOISON,新毒制造
 2026,9,6,16,5,0x1,0,1,1,no,0,0,0,weapon,0,	GC_ANTIDOTE,高级解毒
 2027,0,6,4,0,0,0,5,0,no,0,0,0,none,0,		GC_POISONINGWEAPON,剧毒武器
-2028,0,0,4,0,0,0,5,1,yes,0,0,0,weapon,0,	GC_WEAPONBLOCKING,武器格挡
+2028,0,0,4,0,0,0,5,1,yes,0,0x2000,0,weapon,0,	GC_WEAPONBLOCKING,武器格挡
 2029,0,6,4,-1,0x2,1,5,1,no,0,0,0,weapon,1,	GC_COUNTERSLASH,反击斩
 2030,9,6,4,-1,0x1,0,5,1,no,0,0x200,0,none,0,	GC_WEAPONCRUSH,解除武装
 2031,-1,6,1,5,0,0,5,1,no,0,0,0,weapon,0,	GC_VENOMPRESSURE,剧毒压制
 2032,5,8,2,5,0,0,5,1,no,0,0,0,weapon,0,		GC_POISONSMOKE,毒雾
-2033,0,6,4,0,0x1,0,5,1,no,0,0,0,weapon,0,	GC_CLOAKINGEXCEED,高级伪装
+2033,0,6,4,0,0x1,0,5,1,no,0,0x2000,0,weapon,0,	GC_CLOAKINGEXCEED,高级伪装
 2034,5,6,4,-1,0x02,3,1,1,no,0,0,0,weapon,0,	GC_PHANTOMMENACE,鬼魅之舞
 2035,0,6,4,0,0x01,0,5,0,no,0,0,0,none,0,	GC_HALLUCINATIONWALK,疾风步
 2036,0,6,4,-1,0x02,2,5,0,no,0,0,0,weapon,0,	GC_ROLLINGCUTTER,回旋利刃
@@ -774,12 +775,12 @@
 2239,3,6,2,0,0xC2,3,5,1,no,0,0x80,3,misc,0,	RA_CLUSTERBOMB,集束炸弹
 2240,0,0,4,0,0,0,1,0,no,0,0,0,misc,0,		RA_WUGMASTERY,训狼术
 2241,0,0,4,0,0,0,3,0,no,0,0,0,misc,0,		RA_WUGRIDER,骑狼术
-2242,3,6,4,0,0xA,1,1,0,no,0,0,0,weapon,0,	RA_WUGDASH,狼疾走
+2242,3,6,4,0,0xA,1,1,0,no,0,0x2000,0,weapon,0,	RA_WUGDASH,狼疾走
 2243,-9,6,1,0,0x88,0,5,1,no,0,0,0,weapon,0,	RA_WUGSTRIKE,狼突击
 2244,-9,8,1,0,0x8A,1,5,1,no,0,0,0,weapon,0,	RA_WUGBITE,狼撕咬
 2245,0,0,0,0,0,0,10,0,no,0,0,0,none,0,		RA_TOOTHOFWUG,狼牙
 2246,5,6,4,3,0x2,3:4:5:6:7,5,1,no,0,0,0,weapon,0,	RA_SENSITIVEKEEN,敏锐嗅觉
-2247,0,6,4,0,0,0,5,0,no,0,0,0,none,0,		RA_CAMOUFLAGE,隐蔽战术
+2247,0,6,4,0,0,0,5,0,no,0,0x2000,0,none,0,		RA_CAMOUFLAGE,隐蔽战术
 2248,0,0,0,0,0,0,5,0,no,0,0,0,misc,0,		RA_RESEARCHTRAP,陷阱研究
 2249,3,6,2,3,0x1,1,5,1,no,0,0x80,1,misc,0,	RA_MAGENTATRAP,紫红陷阱
 2250,3,6,2,1,0x1,1,5,1,no,0,0x80,1,misc,0,	RA_COBALTTRAP,深蓝陷阱
@@ -819,12 +820,12 @@
 2283,-5,6,16,0,0,0,1,0,no,0,0,2,none,0,		NC_DISJOINT,FAW 解除
 // 逐影
 2284,1,6,1,-1,0x2,1,5,0,no,0,0,0,weapon,0,	SC_FATALMENACE,致命威胁
-2285,0,6,4,0,0x1,0,10,0,no,0,0,0,none,0,	SC_REPRODUCE,复制
+2285,0,6,4,0,0x1,0,10,0,no,0,0x2000,0,none,0,	SC_REPRODUCE,复制
 2286,0,6,4,0,0x1,0,10,0,yes,0,0,0,none,0,	SC_AUTOSHADOWSPELL,自动影咒
 2287,9,6,16,0,0x1,0,5,0,no,0,0,0,none,0,	SC_SHADOWFORM,暗影附身
 2288,7:7:7:9:9:9:9:11:11:11,8,1,-1,0,0,10,-3,yes,0,0,0,weapon,3,	SC_TRIANGLESHOT,三连矢
 2289,9,6,4,0,0x3,2,5,1,no,0,0,0,none,0,		SC_BODYPAINT,人体彩绘
-2290,0,6,4,0,0x1,0,5,1,yes,0,0,0,none,0,	SC_INVISIBILITY,隐形
+2290,0,6,4,0,0x1,0,5,1,yes,0,0x2000,0,none,0,	SC_INVISIBILITY,隐形
 2291,0,6,4,0,0x1,0,5,1,no,0,0,0,none,0,		SC_DEADLYINFECT,致命感染
 2292,3,6,1,0,0x1,0,3,1,yes,0,0,0,none,0,	SC_ENERVATION,假面-虚脱
 2293,3,6,1,0,0x1,0,3,1,yes,0,0,0,none,0,	SC_GROOMY,假面-忧郁
@@ -846,13 +847,13 @@
 2310,3,6,1,0,0,0,5,1,no,0,0,0,weapon,0,		LG_SHIELDPRESS,盾牌压制
 2311,0,0,4,0,0x01,5,5,0,yes,0,0x0,0,none,0,	LG_REFLECTDAMAGE,荆棘光环
 2312,5,6,1,-1,0x0,0,5,1,yes,0,0x0,0,weapon,0,	LG_PINPOINTATTACK,精准穿刺
-2313,0,0,4,0,0x1,0,5,0,yes,0,0x0,0,none,0,	LG_FORCEOFVANGUARD,先锋之力
+2313,0,0,4,0,0x1,0,5,0,yes,0,0x2000,0,none,0,	LG_FORCEOFVANGUARD,先锋之力
 2314,2,6,1,0,0x0,0,1,1,yes,0,0x0,0,weapon,0,	LG_RAGEBURST,怒气爆发
 2315,0,6,4,0:0:0:6:6:6,0x2,1:2:3:1:2:3,3,1,yes,0,0,0,weapon,2:2:2:0:0:0,	LG_SHIELDSPELL,盾牌咏唱
 2316,0,6,4,-1,0x1,0,5,1,no,0,0,0,weapon,0,	LG_EXEEDBREAK,蓄势待发
 2317,-1,6,2,-1,0x2,5,5,1,yes,0,0,2,weapon,0,	LG_OVERBRAND,枪阵-血十字
 2318,0,0,4,0,0x1,0,5,0,yes,0,0x0,0,none,0,	LG_PRESTIGE,威望
-2319,0,0,4,0,0x1,3,5,0,yes,0,0x0,0,none,0,	LG_BANDING,联合
+2319,0,0,4,0,0x1,3,5,0,yes,0,0x2000,0,none,0,	LG_BANDING,联合
 2320,0,6,4,0,0x2,3,5,1,yes,0,0x0,0,weapon,0,	LG_MOONSLASHER,枪阵-圆月
 2321,7,8,2,6,0x2,5,5,-7,yes,0,0x0,0,weapon,0,	LG_RAYOFGENESIS,起源之光
 2322,9,0,16,0,0x3,1,5,0,yes,0,0,0,none,0,	LG_PIETY,虔诚
@@ -1014,7 +1015,7 @@
 //2574,0,6,1,-1,0,0,10,1,no,0,0,0,weapon,0,	RL_GLITTERING_GREED_ATK,Flip The Coin Greed Attack
 
 // 影狼/胧
-3001,1,6,4,0,1,0,1,1,no,0,0,0,none,0,		KO_YAMIKUMO,暗云
+3001,1,6,4,0,1,0,1,1,no,0,0x2000,0,none,0,		KO_YAMIKUMO,暗云
 3002,0,0,0,0,0,0,5,0,no,0,0,0,none,0,		KO_RIGHT,右手修练
 3003,0,0,0,0,0,0,5,0,no,0,0,0,none,0,		KO_LEFT,左手修练
 3004,3:4:5:6:7,8,1,-1,0x0,0,5,-2,no,0,0,0,weapon,0,	KO_JYUMONJIKIRI,十文字斩
@@ -1079,7 +1080,7 @@
 // Summoner
 5018,0,0,0,0,0,0,1,0,no,0,0,0,none,0,		SU_BASIC_SKILL,New Basic Skill
 5019,2,6,1,-1,0,0,1,1,yes,0,0,0,weapon,0,	SU_BITE,Bite
-5020,0,6,4,0,0x1,0,1,1,yes,0,0,0,none,0,	SU_HIDE,Hide
+5020,0,6,4,0,0x1,0,1,1,yes,0,0x2000,0,none,0,	SU_HIDE,Hide
 5021,2,6,1,-1,0x2,1,3,1,yes,0,0,0,weapon,0,	SU_SCRATCH,Scratch
 5022,0,6,4,0,0x1,0,1,1,yes,0,0,0,none,0,	SU_STOOP,Stoop
 5023,6:10:14,6,2,0,0x1,0,3,1,yes,0,0,0,none,0,	SU_LOPE,Lope
@@ -1164,8 +1165,8 @@
 8216,-2,8,1,-1,0,0,10,3,no,0,0,0,weapon,0,	ML_PIERCE,连刺攻击
 8217,-2,6,1,-1,0x1,0,10,1,no,33,0,0,weapon,3,	ML_BRANDISH,骑乘攻击
 8218,5,8,1,-1,0,0,5,5,no,0,0,0,weapon,0,	ML_SPIRALPIERCE,螺旋击刺
-8219,0,6,4,0,0x1,0,5,1,no,0,0,0,weapon,0,	ML_DEFENDER,光之盾
-8220,0,6,4,0,0x1,0,10,1,no,0,0,0,weapon,0,	ML_AUTOGUARD,自动防御
+8219,0,6,4,0,0x1,0,5,1,no,0,0x2000,0,weapon,0,	ML_DEFENDER,光之盾
+8220,0,6,4,0,0x1,0,10,1,no,0,0x2000,0,weapon,0,	ML_AUTOGUARD,自动防御
 8221,7:8:9:10:11,6,16,0,0x1,0,5,1,yes,0,0x600,0,none,0,	ML_DEVOTION,牺牲
 8222,0,6,4,0,0x3,-1,5,1,yes,0,0,0,magic,0,	MER_MAGNIFICAT,莫纳的祝福
 8223,0,6,4,0,0x1,0,10,1,no,0,0,0,weapon,0,	MER_QUICKEN,加速武器
@@ -1178,7 +1179,7 @@
 8230,9,6,16,0,0x1,0,1,1,yes,0,0x1000,0,magic,0,	MER_MENTALCURE,精神治愈
 8231,9,6,16,0,0x1,0,1,1,yes,0,0x1000,0,magic,0,	MER_COMPRESS,压制
 8232,9,6,1,0,0x1,0,10,1,no,0,0,0,none,0,	MER_PROVOKE,挑衅
-8233,0,6,4,0,0x1,0,1,1,no,0,0,0,weapon,0,	MER_AUTOBERSERK,狂暴状态
+8233,0,6,4,0,0x1,0,1,1,no,0,0x2000,0,weapon,0,	MER_AUTOBERSERK,狂暴状态
 8234,9,6,1,0,0x1,0,10,1,yes,0,0,0,magic,0,	MER_DECAGI,缓速术
 8235,0,6,4,0,0x1,0,1,1,yes,0,0,0,none,0,	MER_SCAPEGOAT,替罪羊
 8236,5,6,1,0,0x1,0,10,0,yes,0,0,0,magic,0,	MER_LEXDIVINA,沉默之术
