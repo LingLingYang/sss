@@ -7779,21 +7779,33 @@ not variables or the search was not successful.
 
 ---------------------------------------
 
-* rndopt_next_getitem <位置>,<类型>,<值1>{,<值2>}
+* rndopt_next_getitem <位置>,<类型>{,<参数>},<值1>,<值2>
 
 对getitem, rentitem, makeitem, getitem2, rentequip, makeitem2有效
 位置是0-4（即1-5个随机槽）
 类型为bonus类型。
+客户端支持值1最大32767，值2最大255。
 
 举例1：
-	rndopt_next_getitem 0,bMaxHp,10;
-	rndopt_next_getitem 1,bSubEle,Ele_Ghost,10;
+	rndopt_next_getitem 0,bMaxHp,10,0;
+	rndopt_next_getitem 1,bSubEle,Ele_Ghost,10,0;
 	客户端设置第1条为MaxHp +%d
 	客户端设置第33条为对念属性攻击伤害减少 %d
-	item_rndopt_id.txt设置1,bMaxHp
-	item_rndopt_id.txt设置33,bSubEle,Ele_Ghost
+	item_random_option.txt设置1,bMaxHp
+	item_random_option.txt设置33,bSubEle,Ele_Ghost
 	效果等同于{ bonus bMaxHp,10; bonus2 bSubEle,Ele_Ghost,10; }客户端也会正常显示
 	如果item_rndopt_id.txt没有设置bMaxHp或bSubEle,Ele_Ghost对应的客户端条目位置，则相应的脚本不会生效。
+
+举例2:
+	rndopt_next_getitem 0,bGetZenyNum,100,1;	
+	在item_random_option设置为x,bGetZenyNum时(x为任意id，是否可以显示不再此次讨论范围)将运行：
+	bonus2 bGetZenyNum,100,1;
+
+举例3:
+	rndopt_next_getitem 0,bSubEle,Ele_Earth,20,BF_LONG;	
+	在item_random_option设置为x,bSubEle,Ele_Earth时(x为任意id，是否可以显示不再此次讨论范围)将运行：
+	bonus3 bSubEle,Ele_Earth,20,BF_LONG;
+	
 
 ---------------------------------------
 
