@@ -474,7 +474,9 @@ bAddGetZenyNum	1042
 bAddDamageClass	1043
 bAddMagicDamageClass	1044
 bAddDefClass	1045
+bSubDamageClass	1045
 bAddMdefClass	1046
+bSubMagicDamageClass	1046
 bAddMonsterDropItem	1047
 bDefRatioAtkEle	1048
 bDefRatioAtkRace	1049
@@ -586,7 +588,7 @@ bAutoSpellOnSkill	2020
 bSPGainValue	2021
 bHPRegenRate	2022
 bHPLossRate	2023
-bAddRace2	2024
+bAddDamageGroup	2024
 bHPGainValue	2025
 bSubSize	2026
 bHPDrainValueRace	2027
@@ -594,7 +596,8 @@ bAddItemHealRate	2028
 bSPDrainValueRace	2029
 bExpAddRace	2030
 bSPGainRace	2031
-bSubRace2	2032
+bSubDamageGroup	2032
+bAddMdefGroup		2032
 bUnbreakableShoes	2033
 bUnstripableWeapon	2034
 bUnstripableArmor	2035
@@ -683,13 +686,12 @@ RC_NonDemiHuman	12
 RC_Player	13
 RC_DemiHumanNPC	14
 
-RC2_None	0
-RC2_Goblin	1
-RC2_Kobold	2
-RC2_Orc	3
-RC2_Golem	4
-RC2_Guardian	5
-RC2_Ninja	6
+Group_Goblin	1
+Group_Kobold	2
+Group_Orc	3
+Group_Golem	4
+Group_Guardian	5
+Group_Ninja	6
 
 BF_WEAPON	0x0001
 BF_MAGIC	0x0002

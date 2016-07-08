@@ -1,0 +1,50 @@
+//============================================================
+// eAthena Chinese Translation Project 汉化组
+//============================================================
+// 魔物组 数据
+//
+// 最新汉化修正日期: 2016.07.08
+//------------------------------------------------------------
+// 数据结构:
+// <魔物ID>,<组代号>
+//------------------------------------------------------------
+// 
+//------------------------------------------------------------
+// 哥不林系列
+1122,Group_Goblin
+1123,Group_Goblin
+1124,Group_Goblin
+1125,Group_Goblin
+1126,Group_Goblin
+1258,Group_Goblin
+1299,Group_Goblin
+// 犬妖系列
+1133,Group_Kobold
+1134,Group_Kobold
+1135,Group_Kobold
+1282,Group_Kobold
+1296,Group_Kobold
+// 兽人系列
+1023,Group_Orc
+1152,Group_Orc
+1153,Group_Orc
+1189,Group_Orc
+1213,Group_Orc
+1273,Group_Orc
+// 石头魔物系列
+1040,Group_Golem
+1278,Group_Golem
+1366,Group_Golem
+1497,Group_Golem
+2024,Group_Golem
+// 公会守卫系列
+1285,Group_Guardian
+1286,Group_Guardian
+1287,Group_Guardian
+1899,Group_Guardian
+1900,Group_Guardian
+// 忍者系列 (Pirate's_Pride)
+1315,Group_Ninja
+1364,Group_Ninja
+1401,Group_Ninja
+1560,Group_Ninja
