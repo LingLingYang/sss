@@ -672,12 +672,12 @@ RC_Undead	1
 RC_Brute	2
 RC_Plant	3
 RC_Insect	4
-RC_Fish	5
+RC_Fish		5
 RC_Demon	6
 RC_DemiHuman	7
 RC_Angel	8
 RC_Dragon	9
-RC_Boss	10
+RC_Boss		10
 RC_NonBoss	11
 RC_NonDemiHuman	12
 RC_Player	13
