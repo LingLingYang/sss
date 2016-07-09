@@ -530,8 +530,3 @@ function	script	bonus2_DemiHuman	{
 	bonus2 getarg(0),RC_Player,getarg(1);
 	return;
 }
-function	script	bonus3_DemiHuman	{
-	bonus3 getarg(0),RC_DemiHuman,getarg(1),getarg(2);
-	bonus3 getarg(0),RC_Player,getarg(1),getarg(2);
-	return;
-}
