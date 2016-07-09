@@ -519,3 +519,19 @@ OnPCLoadMapEvent:	//使用“#地图名”在地图频道中发言
 	channel_bindname $@map_chat_nick$,strcharinfo(3);
 	end;
 }
+
+function	script	bonus_DemiHuman	{
+	bonus getarg(0),RC_DemiHuman;
+	bonus getarg(0),RC_Player;
+	return;
+}
+function	script	bonus2_DemiHuman	{
+	bonus2 getarg(0),RC_DemiHuman,getarg(1);
+	bonus2 getarg(0),RC_Player,getarg(1);
+	return;
+}
+function	script	bonus3_DemiHuman	{
+	bonus3 getarg(0),RC_DemiHuman,getarg(1),getarg(2);
+	bonus3 getarg(0),RC_Player,getarg(1),getarg(2);
+	return;
+}

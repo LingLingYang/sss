@@ -536,6 +536,13 @@ bMakeUpLv	1102
 bSubSrcEle	1103
 bItemReqReduce	1104
 bAbsorbDmgMaxHP	1105
+bAddClass	1106
+bSubClass	1107
+bIgnoreDefClass	1108
+bIgnoreMdefClass	1109
+bDefRatioAtkClass	1110
+bIgnoreDefRateClass	1111
+bIgnoreMdefRateClass	1112
 
 bFixDamage	1900
 bBonusDamage	1901
@@ -680,11 +687,14 @@ RC_Demon	6
 RC_DemiHuman	7
 RC_Angel	8
 RC_Dragon	9
-RC_Boss		10
-RC_NonBoss	11
-RC_NonDemiHuman	12
-RC_Player	13
-RC_DemiHumanNPC	14
+RC_Player	10
+
+Class_Normal	0
+Class_Boss	1
+Class_Guardian	2
+Class_Invisible	3
+Class_BattleGround	4
+Class_FixedItemDrop	5
 
 Group_Goblin	1
 Group_Kobold	2
