@@ -5974,9 +5974,9 @@
 13157,Drifter,Æ¯Á÷,5,80000,,2300,50,,9,1,0x05000000,7,2,34,2,55,1,19,{},{},{}
 13158,Butcher,¹ô×ÓÊÖ,5,130000,,2500,75,,9,0,0x05000000,7,2,34,3,68,1,19,{ bonus2 bCriticalAddRace,RC_Brute,10; },{},{}
 13159,Butcher_,¹ô×ÓÊÖ,5,130000,,2500,75,,9,1,0x05000000,7,2,34,3,68,1,19,{ bonus2 bCriticalAddRace,RC_Brute,10; },{},{}
-13160,Destroyer,ºäÕ¨»ú,5,110000,,1200,220,,9,0,0x05000000,7,2,34,2,52,1,21,{ bonus bBreakArmorRate,200; },{},{}
-13161,Destroyer_,ºäÕ¨»ú,5,110000,,1200,220,,9,1,0x05000000,7,2,34,2,52,1,21,{ bonus bBreakArmorRate,200; },{},{}
-13162,Inferno,Åç»ð,5,230000,,1250,280,,9,1,0x05000000,7,2,34,2,65,1,21,{},{},{}
+13160,Destroyer,ºäÕ¨»ú,5,110000,,1200,220,,9,0,0x05000000,7,2,34,2,52,1,20,{ bonus bBreakArmorRate,200; },{},{}
+13161,Destroyer_,ºäÕ¨»ú,5,110000,,1200,220,,9,1,0x05000000,7,2,34,2,52,1,20,{ bonus bBreakArmorRate,200; },{},{}
+13162,Inferno,Åç»ð,5,230000,,1250,280,,9,1,0x05000000,7,2,34,2,65,1,20,{},{},{}
 13163,Long_Barrel,³¤Éí ²½Ç¹,5,40000,,1000,150,,9,0,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,20; bonus bAspdRate,-3; bonus3 bAutoSpell,"GS_TRACKING",5,20; },{},{}
 13164,Long_Barrel_,³¤Éí ²½Ç¹,5,40000,,1000,150,,9,1,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,20; bonus bAspdRate,-3; bonus3 bAutoSpell,"GS_TRACKING",5,20; },{},{}
 13165,Jungle_Carbine,¶Ì ¿¨±ö,5,56000,,700,170,,9,0,0x05000000,7,2,34,3,70,1,18,{ bonus bHit,10; bonus bCritical,4; bonus bAspdRate,10; bonus bHit,-readparam(bDex)/3; },{},{}
@@ -5988,12 +5988,12 @@
 13171,BF_Rifle1,½Ç¶·Ê¿µÄÀ´¸´Ç¹,5,0,,0,50,,9,0,0x05000000,7,2,34,3,80,1,18,{ bonus bDex,2; bonus bHit,10; bonus bCritical,10; callfunc "bonus2_DemiHuman",bAddRace,75; bonus2 bCastRate,512,-25; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; bonus bUnbreakableWeapon,0; },{},{}
 13172,BF_Gatling_Gun1,½Ç¶·Ê¿µÄ¸ñÁÖ»ú¹ØÇ¹,5,0,,0,80,,9,0,0x05000000,7,2,34,3,80,1,19,{ bonus bDex,2; callfunc "bonus2_DemiHuman",bAddRace,35; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; autobonus "{ bonus bBaseAtk,80; bonus2 bHPLossRate,120,1000; }",10,6000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
 13173,BF_Shotgun1,½Ç¶·Ê¿µÄÉ¢µ¯Ç¹,5,0,,0,100,,9,0,0x05000000,7,2,34,3,80,1,20,{ bonus bDex,2; bonus bSplashRange,1; callfunc "bonus2_DemiHuman",bAddRace,55; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; autobonus "{ bonus bBaseAtk,80; bonus2 bHPLossRate,100,1000; }",30,6000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
-13174,BF_Launcher1,½Ç¶·Ê¿µÄÁñµ¯·¢ÉäÆ÷,5,0,,0,300,,9,0,0x05000000,7,2,34,3,80,1,21,{ bonus bDex,2; callfunc "bonus2_DemiHuman",bAddRace,35; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; autobonus "{ bonus bBaseAtk,300; bonus2 bHPLossRate,120,1000; }",30,9000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
+13174,BF_Launcher1,½Ç¶·Ê¿µÄÁñµ¯·¢ÉäÆ÷,5,0,,0,300,,9,0,0x05000000,7,2,34,3,80,1,20,{ bonus bDex,2; callfunc "bonus2_DemiHuman",bAddRace,35; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; autobonus "{ bonus bBaseAtk,300; bonus2 bHPLossRate,120,1000; }",30,9000,BF_WEAPON,"{ specialeffect2 EF_BASH3D; }"; bonus bUnbreakableWeapon,0; },{},{}
 //13175,Lever_Action_Rifle_C
 13176,Krieger_Rifle1,ÈÙ¹âÀ´¸£Ç¹,5,0,,0,90,,9,0,0x05000000,7,2,34,4,80,1,18,{ callfunc "bonus2_DemiHuman",bAddRace,75; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { callfunc "bonus2_DemiHuman",bAddRace,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); callfunc "bonus2_DemiHuman",bIgnoreDefRate,5; } if(getrefine() > 8) { bonus2 bCastrate,"GS_TRACKING",25; bonus2 bSkillAtk,"GS_TRACKING",getrefine() * 3; } },{},{}
 13177,Krieger_Gatling1,ÈÙ¹âÖØ»úÇ¹,5,0,,0,90,,9,0,0x05000000,7,2,34,4,80,1,19,{ callfunc "bonus2_DemiHuman",bAddRace,35; callfunc "bonus2_DemiHuman",bIgnoreDefRate,25; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { callfunc "bonus2_DemiHuman",bAddRace,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); callfunc "bonus2_DemiHuman",bIgnoreDefRate,5; } if(getrefine() > 8) {bonus2 bAddClass,Class_Boss,getrefine(); bonus2 bAddClass,Class_Normal,getrefine(); } },{},{}
 13178,Krieger_Shotgun1,ÈÙ¹âÁÔÇ¹,5,0,,0,110,,9,0,0x05000000,7,2,34,4,80,1,20,{ callfunc "bonus2_DemiHuman",bAddRace,55; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; bonus bSplashRange,1; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { callfunc "bonus2_DemiHuman",bAddRace,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); callfunc "bonus2_DemiHuman",bIgnoreDefRate,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_SPREADATTACK",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; } },{},{}
-13179,Krieger_Launcher1,ÈÙ¹âÁñµ¯·¢ÉäÆ÷,5,0,,0,330,,9,0,0x05000000,7,2,34,4,80,1,21,{ callfunc "bonus2_DemiHuman",bAddRace,35; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { callfunc "bonus2_DemiHuman",bAddRace,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); callfunc "bonus2_DemiHuman",bIgnoreDefRate,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_GROUNDDRIFT",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; autobonus "{ bonus bAspdRate,20; }",200,20000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; } },{},{}
+13179,Krieger_Launcher1,ÈÙ¹âÁñµ¯·¢ÉäÆ÷,5,0,,0,330,,9,0,0x05000000,7,2,34,4,80,1,20,{ callfunc "bonus2_DemiHuman",bAddRace,35; callfunc "bonus2_DemiHuman",bIgnoreDefRate,20; bonus2 bSkillAtk,"GS_TRIPLEACTION",30; bonus bUnbreakableWeapon,0; if(getrefine() > 5) { callfunc "bonus2_DemiHuman",bAddRace,((getrefine()>14?14:getrefine())-4)*((getrefine()>14?14:getrefine())-4); callfunc "bonus2_DemiHuman",bIgnoreDefRate,5; } if(getrefine() > 8) { bonus2 bSkillAtk,"GS_GROUNDDRIFT",getrefine() * 2; bonus3 bAddEffOnSkill,"GS_SPREADATTACK",Eff_Stun,2000; autobonus "{ bonus bAspdRate,20; }",200,20000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; } },{},{}
 // Bullets
 13200,Bullet,ÓÐÉùÇ¹,10,1,,2,10,,,,0x05000000,7,2,32768,,1,,3,{},{},{}
 13201,Silver_Bullet,ÉñÊ¥ÓÐÉùÇ¹,10,15,,2,15,,,,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
@@ -6003,8 +6003,17 @@
 13205,Poison_Sphere,¶¾Ç¹,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
 13206,Blind_Sphere,Ê§Ã÷Ç¹,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEff,Eff_Blind,500; },{},{}
 13207,Freezing_Sphere,±ù¶³Ç¹,10,80,,5,50,,,,0x05000000,7,2,32768,,1,,5,{ bonus bAtkEle,Ele_Water; },{},{}
-13221,Silver_Bullet_C,°×Òøµ¯,10,5,,2,15,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
+13216,Incandescence_Shot,Incandescence Shot,10,10,,2,40,,,0,0xFFFFFFFF,7,2,32768,,100,,3,{ bonus bAtkEle,Ele_Fire; },{},{}
+13217,Glaciation_Shot,Glaciation Shot,10,10,,2,40,,,0,0xFFFFFFFF,7,2,32768,,100,,3,{ bonus bAtkEle,Ele_Water; },{},{}
+13218,Dengeki_Shot,Dengeki Shot,10,10,,2,40,,,0,0xFFFFFFFF,7,2,32768,,100,,3,{ bonus bAtkEle,Ele_Wind; },{},{}
+13219,Hearthstone_Shot,Hearthstone Shot,10,10,,2,40,,,0,0xFFFFFFFF,7,2,32768,,100,,3,{ bonus bAtkEle,Ele_Earth; },{},{}
 13220,Sancturay_Bullet,¾»»¯µ¯,10,10,,2,40,,,0,0x05000000,7,2,32768,,100,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
+13221,Silver_Bullet_C,°×Òøµ¯,10,5,,2,15,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Holy; },{},{}
+13228,Flare_Bullet_,»ðÇ¹,10,10,,2,20,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Fire; },{},{}
+13229,Lightning_Bullet,À×»÷Ç¹,10,10,,2,20,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Wind; },{},{}
+13230,Freezing_Bullet_,±ù¶³Ç¹,10,10,,2,20,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Water; },{},{}
+13231,Poison_Bullet_,¶¾Ç¹,10,10,,2,20,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Poison; bonus2 bAddEff,Eff_Poison,500; },{},{}
+13232,Blind_Bullet_,Ê§Ã÷Ç¹,10,10,,2,20,,,0,0x05000000,7,2,32768,,1,,3,{ bonus bAtkEle,Ele_Dark; },{},{}
 // Shurikens & Kunais
 13250,Shuriken,·ÉïÚ,10,4,,5,10,,,,0x02100000,7,2,32768,,1,,6,{},{},{}
 13251,Nimbus_Shuriken,·çÓê·ÉïÚ,10,10,,5,30,,,,0x02100000,7,2,32768,,20,,6,{},{},{}

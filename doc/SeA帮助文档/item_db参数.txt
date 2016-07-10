@@ -67,11 +67,11 @@ Job: Equippable jobs. Uses the following bitmask table:
 	Summoner    (2^27): 0x08000000
 
 Upper: Equippable upper-types. Uses the following bitmasks:
-	1:  普通职业
-	2:  转生或三转职业
+	1:  非进阶、三转或宝宝职业
+	2:  进阶或三转职业
 	4:  宝宝职业
 	8:  三转职业
-	16: 转生三转职业
+	16: 进阶三转职业
 	24: 三转宝宝职业
 
 Gender: Gender restriction. 0 is female, 1 is male, 2 for both.
