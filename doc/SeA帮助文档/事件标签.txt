@@ -89,3 +89,4 @@ OnBGQRegEvent		加入战场队列的事件，可用于检测ip是否重复。
 OnPCAllyDelEvent	公会同盟删除时的事件。删除的公会变量@allychange_gid
 OnPCAllyAddEvent	公会同盟加入时的事件。添加的公会变量@allychange_gid
 OnPCGuildBreakEvent	玩家公会解散时，运行标签下的脚本。脚本对每个在线的原公会成员运行。
+OnPCInsertCardEvent	双击卡片时的事件。赋予变量@insertcard_index，为物品在物品栏中的位置序号。
