@@ -1,4 +1,4 @@
-Job_Novice	0
+fJob_Novice	0
 Job_Swordman	1
 Job_Mage	2
 Job_Archer	3
@@ -543,6 +543,7 @@ bIgnoreMdefClass	1109
 bDefRatioAtkClass	1110
 bIgnoreDefRateClass	1111
 bIgnoreMdefRateClass	1112
+bMagicAddClass	1113
 
 bFixDamage	1900
 bBonusDamage	1901

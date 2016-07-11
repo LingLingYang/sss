@@ -4,7 +4,7 @@ ID: Item id
 
 AegisName: Server name to reference the item in scripts and lookups, 不能使用空格.
 
-Name: Name in english for displaying as output for @ and script commands.
+Name: 用@指令调用的名字
 
 Type: 
 	0	治愈道具.
@@ -21,19 +21,19 @@ Type:
 	11	延迟消耗道具 (物品在选择对象后被删除，道具技能使用)
 	12	护身符
 
-Buy: Default buying price. When not specified, becomes double the sell price.
+Buy: 买入价
 
-Sell: Default selling price. When not specified, becomes half the buy price.
+Sell: 卖出价
 
-Weight: Item's weight. Each 10 is 1 weight.
+Weight: 重量 10表示1重量
 
-ATK: Weapon's attack
+ATK: 攻击力
 
-DEF: Armor's defense
+DEF: 防御
 
-Range: Weapon's attack range
+Range: 射程
 
-Slots: Amount of slots the item possesses.
+Slots: 洞
 
 Job: Equippable jobs. Uses the following bitmask table:
 
@@ -74,69 +74,69 @@ Upper: Equippable upper-types. Uses the following bitmasks:
 	16: 进阶三转职业
 	24: 三转宝宝职业
 
-Gender: Gender restriction. 0 is female, 1 is male, 2 for both.
+Gender: 性别限制. 0 女 1 男, 2 皆可.
 
 Loc: Equipment's placement. Values are:
  
-	2^8 256 = Upper Headgear
-	2^9 512 = Middle Headgear
-	2^0 001 = Lower Headgear
-	2^4 016 = Armor
-	2^1 002 = Weapon
-	2^5 032 = Shield
-	2^2 004 = Garment
-	2^6 064 = Footgear
-	2^3 008 = Accessory 1
-	2^7 128 = Accessory 2
+	2^8 256 = 头上
+	2^9 512 = 头中
+	2^0 001 = 头下
+	2^4 016 = 防具
+	2^1 002 = 武器
+	2^5 032 = 盾
+	2^2 004 = 披肩
+	2^6 064 = 鞋子
+	2^3 008 = 装饰品 1
+	2^7 128 = 装饰品 2
 
-wLV: Weapon level.
+wLV: 武器等级
 
-eLV: Base level required to be able to equip.
+eLV: 装备等级要求
 
-Refineable: 1 if the item can be refined, 0 otherwise.
+Refineable: 1 可精炼, 0 不可.
 
-View: For normal items, defines a replacement view-sprite for the item (eg:
-      Making apples look like apple juice). The special case are weapons
-      and ammo where this value indicates the weapon-class of the item.
+View: 一般道具的话就是形象。 武器和弹药表示种类.
 
-	For weapons, the types are:
-		0: bare fist
-		1: Daggers
-		2: One-handed swords
-		3: Two-handed swords
-		4: One-handed spears
-		5: Two-handed spears
-		6: One-handed axes
-		7: Two-handed axes
-		8: Maces
+	武器类型:
+		0: 空手
+		1: 短剑
+		2: 单手剑
+		3: 双手剑
+		4: 枪
+		5: 双手枪
+		6: 斧
+		7: 双手斧
+		8: 钝器
 		9: Unused
-		10: Staves
-		11: Bows
-		12: Knuckles
-		13: Musical Instruments
-		14: Whips
-		15: Books
-		16: Katars
-		17: Revolvers
-		18: Rifles
-		19: Gatling guns
-		20: Shotguns
-		21: Grenade launchers
-		22: Fuuma Shurikens
+		10: 杖
+		11: 弓
+		12: 拳套
+		13: 乐器
+		14: 鞭子
+		15: 书
+		16: 拳刃
+		17: 手枪
+		18: 来复枪
+		19: 格林机枪
+		20: 霰弹枪
+		21: 榴弹枪
+		22: 风魔手里剑
 
-	For ammo, the types are:
-		1: Arrows
-		2: Throwable daggers
-		3: Bullets
+	弹药类型:
+		1: 箭矢
+		2: 飞刀
+		3: 子弹
 		4: Shells
-		5: Grenades
-		6: Shuriken
-		7: Kunai
+		5: 榴弹
+		6: 手里剑
+		7: 苦无
+		8：炮弹
+		9：水果
 
-Script: Script to execute when the item is used/equipped.
+Script: 道具使用时的脚本，或穿上装备时的bonus。
 
-OnEquip_Script: Script to execute when the item is equipped.
-                Warning, not all item bonuses will work here as expected.
+OnEquip_Script: 穿装备时运行的脚本
+                注意：运行脚本！基本不用Bonus。
 
-OnUnequip_Script: Script to execute when the item is unequipped.
-                  警告：不是所有的道具bonus都能在这里使用。
+OnUnequip_Script: 脱下装备时运行的脚本
+                 注意：运行脚本！基本不用Bonus。
