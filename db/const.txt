@@ -689,6 +689,9 @@ RC_DemiHuman	7
 RC_Angel	8
 RC_Dragon	9
 RC_Player	10
+RC_All		11
+RC_Human	12
+RC_NonHuman	13
 
 Class_Normal	0
 Class_Boss	1

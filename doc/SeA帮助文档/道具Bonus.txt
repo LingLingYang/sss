@@ -301,6 +301,9 @@ bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱
 	8=天使系
 	9=龙系
 	10=玩家系(r版限定)
+	11=以上全部
+	12=7和10
+	13=除了7和10之外的全部
 注2：
 	0=无属性
 	1=水属性
@@ -343,7 +346,7 @@ bonus5 bAutoSpellOnSkill,x,y,n,r,i;	r/10% 几率在使用 x 技能时在 i 条件下自动咏唱
 		BF_SKILL:	技能攻击
 		此组若不定义，则BF_WEAPON时默认BF_NORMAL|BF_SKILL，否则BF_SKILL。
 注11：
-	bAddDamageClass相关，bAddMonsterDropItem相关，bAddEff相关，bAutoSpell相关，只能设定10个。超过10个的都被无视。
+	bAddDamageClass相关，bAddMonsterDropItem相关，bAddEff相关，bAutoSpell相关，只能设定10个。超过10个的都被无视。（授权版是50个）
 注12：
 	箭矢能使用的效果只有 bCritical、bAtkEle、bHit、bAtkRange、bAddEle、bAddRace、bAddEnemy, bAddSize、bAddEff，其他都被无视
 注13：
