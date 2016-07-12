@@ -474,7 +474,7 @@ OnPCGuildJoinEvent:
 	if(getcharid(2) == 0) end;
 	getguildallies getcharid(2);
 	for( .@i = 0; .@i < $@guildalliescount; .@i++ )
-		Channel_Ally_Join($@guildidallies);//加入同盟公会频道。
+		Channel_Ally_Join($@guildidallies[.@i]);//加入同盟公会频道。
 OnPCGuildCreateEvent:
 	Channel_Ally_Join(getcharid(2));//加入自己公会的频道
 	channel_bindname($@ally_chat_nick$,$@ally_chat_nick$+getcharid(2));//绑定#同盟为自己公会频道
@@ -491,7 +491,7 @@ OnPCGuildLeaveEvent:
 OnPCGuildBreakEvent:
 	getguildallies getcharid(2);
 	for( .@i = 0; .@i < $@guildalliescount; .@i++ )
-		channel_leave $@ally_chat_nick$+$@guildidallies;//离开同盟公会频道
+		channel_leave $@ally_chat_nick$+$@guildidallies[.@i];//离开同盟公会频道
 	channel_leave $@ally_chat_nick$+getcharid(2);//离开自己公会频道
 	end;
 
