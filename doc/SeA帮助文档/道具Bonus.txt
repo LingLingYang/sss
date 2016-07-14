@@ -94,18 +94,19 @@ bonus bIgnoreDefRace,n;			无视 n 种族物理防御 (n值见备注1)
 bonus bIgnoreDefEle,n;			无视 n 属性物理防御 (n值见备注2)
 bonus bIgnoreMDefRace,n;		无视 n 种族魔法防御 (n值见备注1)
 bonus bIgnoreMDefEle,n;			无视 n 属性魔法防御 (n值见备注2)
-bonus bIgnoreDefClass			无视 n 系魔法防御 (n值见备注14)
-bonus bIgnoreMdefClass			无视 n 系魔法防御 (n值见备注14)
+bonus bIgnoreDefClass,n;		无视 n 系魔法防御 (n值见备注14)
+bonus bIgnoreMdefClass,n;		无视 n 系魔法防御 (n值见备注14)
+bonus bIgnoreDefRate,n;			无视对方 n% 物理防御
 bonus bIgnoreMdefRate,n;		无视对方 n% 魔法防御
 bonus bDefRatioAtkRace,n;		刺穿 n 种族物理防御 (n值见备注1)
 bonus bDefRatioAtkEle,n;		刺穿 n 属性物理防御 (n值见备注2)
-bonus bDefRatioAtkClass			刺穿 n 系物理防御 (n值见备注14)
-bonus bAddShadowDamage,n;		暗影附身反射的伤害增加n% 
-bonus bSubShadowDamage,n;		被暗影附身反射的伤害减少n% 
+bonus bDefRatioAtkClass,n;		刺穿 n 系物理防御 (n值见备注14)
 bonus2 bIgnoreDefRate,n,x;		无视种族为 n 的对方 x% 的物理防御力 (n值见备注1)
 bonus2 bIgnoreMdefRate,n,x;		无视种族为 n 的对方 x% 的魔法防御力 (n值见备注1)
 bonus2 bIgnoreDefRateClass,n,x;		无视 n 系的对方 x% 的物理防御力 (n值见备注14)
-bonus2 bIgnoreMdefRateClass,n,x;		无视 n 系的对方 x% 的魔法防御力 (n值见备注14)
+bonus2 bIgnoreMdefRateClass,n,x;	无视 n 系的对方 x% 的魔法防御力 (n值见备注14)
+bonus bAddShadowDamage,n;		暗影附身反射的伤害增加n% 
+bonus bSubShadowDamage,n;		被暗影附身反射的伤害减少n% 
 
 //=========================================================
 //=HP SP
@@ -121,14 +122,17 @@ bonus bSPGainValue,n;			以物理攻击杀死魔物时得到 n SP
 bonus bHPGainValue,n;			以物理攻击杀死魔物时得到 n HP
 bonus bMagicSPGainValue,n;		以魔法攻击杀死魔物时得到 n SP
 bonus bMagicHPGainValue,n;		以魔法攻击杀死魔物时得到 n HP
-bonus bSPDrainValue,n;			物理攻击时，SP 变化 n 
+bonus bHPDrainValue,n;			物理攻击时，HP 吸收 n 
+bonus bSPDrainValue,n;			物理攻击时，SP 吸收 n 
 bonus bUseSPrate,n;			SP消耗 + n%
 bonus2 bUseSPrate,x,n;			技能 x SP消耗 + n%
 bonus2 bUseSPValue,x,n;			技能 x SP消耗 + n
 bonus2 bSPGainValueOnSKill,x,n;		使用技能 x 后得到SP n
 bonus2 bHPGainValueOnSKill,x,n;		使用技能 x 后得到HP n
-bonus2 bSPDrainValue,n,x;		单体物理物理攻击时, x 的 SP 变化 n (x 0: 自己, 1: 对方)
-bonus2 bSPDrainValueRace,r,x;		单体物理物理攻击时, 种族为 r 的对象 SP 变化 n
+bonus2 bHPDrainValue,n,x;		单体物理物理攻击时, x 的 HP 吸收 n (x 0: 自己, 1: 对方)
+bonus2 bSPDrainValue,n,x;		单体物理物理攻击时, x 的 SP 吸收 n (x 0: 自己, 1: 对方)
+bonus2 bHPDrainValueRace,r,x;		单体物理物理攻击时, 对种族为 r 的对象 HP 吸收 n
+bonus2 bSPDrainValueRace,r,x;		单体物理物理攻击时, 对种族为 r 的对象 SP 吸收 n
 bonus2 bSPVanishRate,n,x;		单体物理攻击时 n/10 % 几率减少 x% 对方SP
 bonus2 bSPVanishMagicRate,n,x;		魔法攻击时 n/10 % 几率减少 x% 对方SP
 bonus2 bHPDrainRate,n,x;		单体物理攻击时 n/10 % 几率把伤害的 x% 应用到HP
@@ -218,8 +222,9 @@ bonus2 bAddMagicDamageClass,n,x;	对id为 n 的魔物/职业id为 n 的玩家增加 x% 魔法攻
 bonus2 bAddDefClass,n,x;		减少id为 n 的魔物/职业id为 n 的玩家给与的物理攻击伤害 x% 
 bonus2 bAddMDefClass,n,x;		减少id为 n 的魔物/职业id为 n 的玩家给与的魔法攻击伤害 x% 
 bonus2 bAddDamageByClass,n,x;		被 n 魔物攻击时增加伤害 x%
-bonus2 bAddRace2,n,x;			对种族 n 的敌人的伤害增加 x% (种族n在mob_race2_db.txt中定义)
-bonus2 bSubRace2,n,x;			对种族 n 的敌人的伤害减少 x% (种族n在mob_race2_db.txt中定义)
+bonus2 bAddGroup,n,x;			对组 n 的敌人的伤害增加 x% (组n在mob_group_db.txt中定义)
+bonus2 bMagicAddGroup,n,x;		对组 n 的敌人的魔法伤害增加 x% (组n在mob_group_db.txt中定义)
+bonus2 bSubGroup,n,x;			对组 n 的敌人的伤害减少 x% (组n在mob_group_db.txt中定义)
 bonus3 bAddEleRace,m,n,x;		对种族 n 属性 m 的敌人的增加减少 x% (n值见备注1)(m值见备注2)
 bonus bNearAtkDef,n;			减少 n% 近距离物理攻击伤害
 bonus bLongAtkDef,n;			减少 n% 远距离攻击伤害

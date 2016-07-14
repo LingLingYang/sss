@@ -624,6 +624,7 @@ bNoSteal	2047
 bNoStealCoin	2048
 bNoSnatch	2049
 bUnstripableAcc	2050
+bMagicAddGroup	2051
 
 EQI_HEAD_TOP	1
 EQI_ARMOR	2
