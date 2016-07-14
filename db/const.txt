@@ -544,6 +544,8 @@ bDefRatioAtkClass	1110
 bIgnoreDefRateClass	1111
 bIgnoreMdefRateClass	1112
 bMagicAddClass	1113
+bAddMonsterIDDropItem	1114
+bAddMonsterIDDropItemGroup	1115
 
 bFixDamage	1900
 bBonusDamage	1901
