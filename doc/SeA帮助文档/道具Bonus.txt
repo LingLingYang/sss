@@ -76,8 +76,12 @@ bonus bMatk,n;				魔法攻击力 + n (仅复兴版有效)
 bonus bAtkRate,n;			物理攻击力 + n%
 bonus bBaseAtk,n;			基础攻击力 + n
 bonus bMatkRate,n;			魔法攻击力 + n%
-bonus2 bAddAtkRate,n,r			r%几率增加n%物理伤害
-bonus2 bAddMatkRate,n,r			r%几率增加n%魔法伤害
+bonus bBaseWeaponAtkRate,n;		武器纯粹攻击力 + n%
+bonus bBaseWeaponMatkRate,n;		武器纯粹魔法攻击力 + n%
+bonus bBaseWeaponAtkValue,n;		武器纯粹攻击力 + n
+bonus bBaseWeaponMatkValue,n;		武器纯粹魔法攻击力 + n
+bonus2 bAddAtkRate,n,r;			r%几率增加n%物理伤害
+bonus2 bAddMatkRate,n,r;		r%几率增加n%魔法伤害
 
 //=========================================================
 //=防御修正
@@ -143,8 +147,8 @@ bonus2 bHPRegenRate,n,x;		每 x 毫秒得到 n HP
 bonus2 bHPLossRate,n,x;			每 x 毫秒失去 n HP
 bonus2 bSPRegenRate,n,x;		每 x 毫秒得到 n SP
 bonus2 bSPLossRate,n,x;			每 x 毫秒失去 n SP
-bonus bSPForceVanishRate,n;		普通攻击中，100%使得攻击无效，并使被攻击者的SP减少MaxSP的n%。
-bonus bHPForceVanishRate,n;		普通攻击中，100%使得攻击无效，并使被攻击者的HP减少MaxHP的n%。
+bonus bSPForceVanishRate,n;		对玩家的普通攻击中，100%使得攻击无效，并使被攻击者的SP减少MaxSP的n%。
+bonus bHPForceVanishRate,n;		对玩家的普通攻击中，100%使得攻击无效，并使被攻击者的HP减少MaxHP的n%。
 
 //=========================================================
 //=人物防御性能力

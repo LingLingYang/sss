@@ -573,6 +573,10 @@ bSkillAtkRace	1925
 bSkillAtkEle	1926
 bSkillDef	1927
 bSubFixedCastRate	1932
+bBaseWeaponAtkRate	1948
+bBaseWeaponMatkRate	1949
+bBaseWeaponAtkValue	1950
+bBaseWeaponMatkValue	1951
 
 bRestartFullRecover	2000
 bNoCastCancel	2001
