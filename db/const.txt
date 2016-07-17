@@ -1,4 +1,4 @@
-fJob_Novice	0
+Job_Novice	0
 Job_Swordman	1
 Job_Mage	2
 Job_Archer	3
