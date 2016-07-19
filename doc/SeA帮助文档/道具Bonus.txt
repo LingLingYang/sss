@@ -122,27 +122,28 @@ bonus bMaxSPrate,n;			SP上限 + n%
 bonus bAddItemHealRate,n		恢复类道具效果上升 n%
 bonus bHPrecovRate,n;			HP自然恢复率 + n%
 bonus bSPrecovRate,n;			SP自然恢复率 + n%
-bonus bSPGainValue,n;			以物理攻击杀死魔物时得到 n SP
-bonus bHPGainValue,n;			以物理攻击杀死魔物时得到 n HP
-bonus bMagicSPGainValue,n;		以魔法攻击杀死魔物时得到 n SP
-bonus bMagicHPGainValue,n;		以魔法攻击杀死魔物时得到 n HP
-bonus bHPDrainValue,n;			物理攻击时，HP 吸收 n 
-bonus bSPDrainValue,n;			物理攻击时，SP 吸收 n 
 bonus bUseSPrate,n;			SP消耗 + n%
 bonus2 bUseSPrate,x,n;			技能 x SP消耗 + n%
 bonus2 bUseSPValue,x,n;			技能 x SP消耗 + n
+bonus bSPGainValue,n;			以物理攻击条件 杀死 所有种族 魔物时得到 n SP
+bonus bHPGainValue,n;			以物理攻击条件 杀死 所有种族 魔物时得到 n HP
+bonus bMagicSPGainValue,n;		以魔法攻击条件 杀死 所有种族 魔物时得到 n SP
+bonus bMagicHPGainValue,n;		以魔法攻击条件 杀死 所有种族 魔物时得到 n HP
+bonus2 bSPGainRace,r,n;			以物理攻击条件 杀死 r 种族魔物时，得到 n 点SP (n见注1)
+bonus3 bHPGainValue,r,n,t;		以 t 条件 杀死 r 种族魔物时，得到 n 点HP (n见注1)(t见注10)
+bonus3 bSPGainValue,r,n,t;		以 t 条件 杀死 r 种族魔物时，得到 n 点SP (n见注1)(t见注10)
 bonus2 bSPGainValueOnSKill,x,n;		使用技能 x 后得到SP n
 bonus2 bHPGainValueOnSKill,x,n;		使用技能 x 后得到HP n
-bonus2 bHPDrainValue,n,x;		单体物理物理攻击时, x 的 HP 吸收 n (x 0: 自己, 1: 对方)
-bonus2 bSPDrainValue,n,x;		单体物理物理攻击时, x 的 SP 吸收 n (x 0: 自己, 1: 对方)
-bonus2 bHPDrainValueRace,r,x;		单体物理物理攻击时, 对种族为 r 的对象 HP 吸收 n
-bonus2 bSPDrainValueRace,r,x;		单体物理物理攻击时, 对种族为 r 的对象 SP 吸收 n
-bonus2 bSPVanishRate,n,x;		单体物理攻击时 n/10 % 几率减少 x% 对方SP
-bonus2 bSPVanishMagicRate,n,x;		魔法攻击时 n/10 % 几率减少 x% 对方SP
-bonus2 bHPDrainRate,n,x;		单体物理攻击时 n/10 % 几率把伤害的 x% 应用到HP
-bonus2 bSPDrainRate,n,x;		单体物理攻击时 n/10 % 几率把伤害的 x% 应用到SP
-bonus3 bSPDrainRate,n,x,y;		单体物理攻击时, n 几率把伤害的 x% 应用到 y 的SP (y 0: 自己, 1: 对方)
-bonus2 bSPGainRace,n,x;			物理攻击杀死 n 种族怪物时，得到 x 点SP (种族n在mob_race2_db.txt中定义)
+bonus bHPDrainValue,x;			单体物理攻击造成伤害时, 1000/10 % 几率对所有种族 HP 获得 x 
+bonus bSPDrainValue,x;			单体物理攻击造成伤害时, 1000/10 % 几率对所有种族 SP 获得 x 
+bonus2 bHPDrainValueRace,r,x;		单体物理攻击造成伤害时, 1000/10 % 几率对 r 种族 HP 获得 x 
+bonus2 bSPDrainValueRace,r,x;		单体物理攻击造成伤害时, 1000/10 % 几率对 r 种族 SP 获得 x 
+bonus2 bHPDrainRate,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对所有种族的造成的伤害的获得 x% 为HP
+bonus2 bSPDrainRate,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对所有种族的造成的伤害的获得 x% 为SP
+bonus3 bHPDrainRateRace,r,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对 r 种族的造成的伤害获得 x% 为HP
+bonus3 bSPDrainRateRace,r,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对 r 种族的造成的伤害获得 x% 为SP
+bonus2 bSPVanishRate,n,x;		单体物理攻击造成伤害时, n/10 % 几率对所有种族减少 x% 对方SP
+bonus2 bSPVanishMagicRate,n,x;		魔法攻击造成伤害时,  n/10 % 几率对所有种族减少 x% 对方SP
 bonus2 bHPRegenRate,n,x;		每 x 毫秒得到 n HP
 bonus2 bHPLossRate,n,x;			每 x 毫秒失去 n HP
 bonus2 bSPRegenRate,n,x;		每 x 毫秒得到 n SP
