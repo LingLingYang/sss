@@ -125,13 +125,11 @@ bonus bSPrecovRate,n;			SP×ÔÈ»»Ö¸´ÂÊ + n%
 bonus bUseSPrate,n;			SPÏûºÄ + n%
 bonus2 bUseSPrate,x,n;			¼¼ÄÜ x SPÏûºÄ + n%
 bonus2 bUseSPValue,x,n;			¼¼ÄÜ x SPÏûºÄ + n
-bonus bSPGainValue,n;			ÒÔÎïÀí¹¥»÷Ìõ¼ş É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ±µÃµ½ n SP
-bonus bHPGainValue,n;			ÒÔÎïÀí¹¥»÷Ìõ¼ş É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ±µÃµ½ n HP
-bonus bMagicSPGainValue,n;		ÒÔÄ§·¨¹¥»÷Ìõ¼ş É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ±µÃµ½ n SP
-bonus bMagicHPGainValue,n;		ÒÔÄ§·¨¹¥»÷Ìõ¼ş É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ±µÃµ½ n HP
-bonus2 bSPGainRace,r,n;			ÒÔÎïÀí¹¥»÷Ìõ¼ş É±ËÀ r ÖÖ×åÄ§ÎïÊ±£¬µÃµ½ n µãSP (n¼û×¢1)
-bonus3 bHPGainValue,r,n,t;		ÒÔ t Ìõ¼ş É±ËÀ r ÖÖ×åÄ§ÎïÊ±£¬µÃµ½ n µãHP (n¼û×¢1)(t¼û×¢10)
-bonus3 bSPGainValue,r,n,t;		ÒÔ t Ìõ¼ş É±ËÀ r ÖÖ×åÄ§ÎïÊ±£¬µÃµ½ n µãSP (n¼û×¢1)(t¼û×¢10)
+bonus bSPGainValue,n;			ÒÔ½ü¾àÀëÎïÀí¹¥»÷ É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ± 1000/10% µÃµ½ n SP
+bonus bHPGainValue,n;			ÒÔ½ü¾àÀëÎïÀí¹¥»÷ É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ± 1000/10% µÃµ½ n HP
+bonus bMagicSPGainValue,n;		ÒÔÄ§·¨¹¥»÷ É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ± 1000/10% µÃµ½ n SP
+bonus bMagicHPGainValue,n;		ÒÔÄ§·¨¹¥»÷ É±ËÀ ËùÓĞÖÖ×å Ä§ÎïÊ± 1000/10% µÃµ½ n HP
+bonus2 bSPGainRace,r,n;			ÒÔ½ü¾àÀëÎïÀí¹¥»÷Ìõ¼ş É±ËÀ r ÖÖ×åÄ§ÎïÊ± 1000/10% µÃµ½ n µãSP (n¼û×¢1)
 bonus2 bSPGainValueOnSKill,x,n;		Ê¹ÓÃ¼¼ÄÜ x ºóµÃµ½SP n
 bonus2 bHPGainValueOnSKill,x,n;		Ê¹ÓÃ¼¼ÄÜ x ºóµÃµ½HP n
 bonus bHPDrainValue,x;			µ¥ÌåÎïÀí¹¥»÷Ôì³ÉÉËº¦Ê±, 1000/10 % ¼¸ÂÊ¶ÔËùÓĞÖÖ×å HP »ñµÃ x 
@@ -143,7 +141,7 @@ bonus2 bSPDrainRate,n,x;		µ¥ÌåÎïÀí¹¥»÷Ôì³ÉÉËº¦Ê±, n/10 % ¼¸ÂÊ°Ñ¶ÔËùÓĞÖÖ×åµÄÔì³Éµ
 bonus3 bHPDrainRateRace,r,n,x;		µ¥ÌåÎïÀí¹¥»÷Ôì³ÉÉËº¦Ê±, n/10 % ¼¸ÂÊ°Ñ¶Ô r ÖÖ×åµÄÔì³ÉµÄÉËº¦»ñµÃ x% ÎªHP
 bonus3 bSPDrainRateRace,r,n,x;		µ¥ÌåÎïÀí¹¥»÷Ôì³ÉÉËº¦Ê±, n/10 % ¼¸ÂÊ°Ñ¶Ô r ÖÖ×åµÄÔì³ÉµÄÉËº¦»ñµÃ x% ÎªSP
 bonus2 bSPVanishRate,n,x;		µ¥ÌåÎïÀí¹¥»÷Ôì³ÉÉËº¦Ê±, n/10 % ¼¸ÂÊ¶ÔËùÓĞÖÖ×å¼õÉÙ x% ¶Ô·½SP
-bonus2 bSPVanishMagicRate,n,x;		Ä§·¨¹¥»÷Ôì³ÉÉËº¦Ê±,  n/10 % ¼¸ÂÊ¶ÔËùÓĞÖÖ×å¼õÉÙ x% ¶Ô·½SP
+bonus2 bSPVanishMagicRate,n,x;		Ä§·¨¹¥»÷Ôì³ÉÉËº¦Ê±, n/10 % ¼¸ÂÊ¶ÔËùÓĞÖÖ×å¼õÉÙ x% ¶Ô·½SP
 bonus2 bHPRegenRate,n,x;		Ã¿ x ºÁÃëµÃµ½ n HP
 bonus2 bHPLossRate,n,x;			Ã¿ x ºÁÃëÊ§È¥ n HP
 bonus2 bSPRegenRate,n,x;		Ã¿ x ºÁÃëµÃµ½ n SP
