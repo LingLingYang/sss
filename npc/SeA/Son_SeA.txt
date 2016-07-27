@@ -9,13 +9,7 @@
 	mes "[SeA服务员]";
 	mes "请你跟我说需要什么样的服务呢？";
 	next;
-	switch(select("状态服务","传送服务","职业服务",
-		(
-			(getgmlevel() < getbattleflag("gm_cant_drop_min_lv") && getbattleflag("gm_cant_drop_min_lv"))
-			||
-			(getgmlevel() > getbattleflag("gm_cant_drop_max_lv") && getbattleflag("gm_cant_drop_max_lv"))
-		)
-		?"悬赏系统":""))
+	switch(select("状态服务","传送服务","职业服务"))
 	{
 	case 4: doevent "Wanted_Reward::OnFunc";
 		cutin "son",255;
