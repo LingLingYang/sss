@@ -2236,7 +2236,8 @@ Valid types are:
 		if = 0, then monsters don't drop it at all (rare or a quest item)
 		if = 10000, then this item is sold in NPC shops only
 	4 - sex; 5 - equip; 6 - weight; 7 - atk; 8 - def; 9 - range;
-	10 - slot; 11 - look; 12 - elv; 13 - wlv;
+	10 - slot; 11 - 外观; 12 - 装备必要等级; 13 - 装备等级上限 14 - 武器等级; 
+	15 - view_id(item_avail中的设定); 16 - mdef; 17 - matk
 
 Check sample in nps\sample\getiteminfo.txt
 
