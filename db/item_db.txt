@@ -491,7 +491,7 @@
 1138,Mysteltainn_,Ñý½£ s¹â,5,20,,1000,170,,1,0,0x000654E2,7,2,2,4,40,1,2,{ bonus bAtkEle,Ele_Dark; bonus2 bAddEle,Ele_Ghost,15; bonus3 bAutoSpell,"MG_STONECURSE",3,100; bonus2 bAddEff,Eff_Stone,10; bonus bDex,3; },{},{}
 1139,Tale_Fing_,Ä§µ¶ ÍÌÉñ,5,20,,1000,200,,1,0,0x000654E2,7,2,2,4,40,1,2,{ bonus bAtkEle,Ele_Dark; bonus2 bHPLossRate,35,10000; },{},{}
 1140,Byeorrun_Gum,Ê×ÁìÖ®½£,5,20,,900,150,,1,0,0x000654E2,7,2,2,4,40,1,2,{ bonus2 bSubClass,Class_Normal,-10; bonus2 bAddClass,Class_Boss,50; bonus bAllStats,2; },{},{}
-1141,Immaterial_Sword,Ê¥½£ »ëãç,5,20,,900,140,,1,0,0x000654E2,7,2,2,4,40,1,2,{ bonus bAtkEle,Ele_Ghost; bonus2 bSPVanishRate,30,30; bonus2 bSPVanishMagicRate,30,30; bonus bSPDrainValue,-1; bonus bUnbreakableWeapon,0; },{},{}
+1141,Immaterial_Sword,Ê¥½£ »ëãç,5,20,,900,140,,1,0,0x000654E2,7,2,2,4,40,1,2,{ bonus bAtkEle,Ele_Ghost; bonus2 bSPVanishRate,30,30; bonus2 bSPVanishMagicRate,30,30; bonus2 bSPGainOnHitRace,RC_All,-1; bonus bUnbreakableWeapon,0; },{},{}
 1142,Jewel_Sword,Ñ°±¦Ö®½£,5,20,,2200,104,,1,0,0x000654E2,7,2,2,3,68,1,2,{ bonus2 bAddMonsterDropItemGroup,IG_Jewel,100; },{},{}
 1143,Gaia_Sword,Ñ°¿óÖ®½£,5,20,,2500,140,,1,0,0x000654E2,7,2,2,3,74,1,2,{ bonus2 bAddMonsterDropItemGroup,IG_Ore,30; },{},{}
 1144,Sasimi,ÉúÓãÆ¬µ¶,5,20,,1400,75,,1,0,0x000654E2,7,2,2,3,48,1,2,{ bonus bAtkEle,Ele_Wind; bonus3 bAddMonsterDropItem,544,RC_Fish,4000; },{},{}
@@ -677,7 +677,7 @@
 1366,Right_Epsilon,ÖÇÌìÊ¹Ö®¸«,5,20,,2300,180,,1,0,0x000444A2,7,2,34,4,44,1,7,{ bonus bAtkEle,Ele_Holy; skill "AL_HEAL",3; bonus2 bAddRace,RC_Demon,3; },{},{}
 1367,Slaughter,Ë¹ÀÕÌØ¸«,5,20,,2500,120,,1,0,0x000444A2,7,2,34,4,44,1,7,{ bonus bAtkEle,Ele_Earth; bonus bIgnoreDefRace,RC_Brute; bonus2 bWeaponComaRace,RC_Brute,40; },{},{}
 1368,Tomahawk,·çÁéÖ®¸«,5,20,,2500,165,,1,0,0x000444A2,7,2,34,4,44,1,7,{ bonus bAtkEle,Ele_Wind; skill "ITM_TOMAHAWK",1; },{},{}
-1369,Guillotine,Õ¶Ê×Ö®¸«,5,20,,3000,215,,1,0,0x000444A2,7,2,34,4,44,1,7,{ bonus2 bWeaponComaRace,RC_Human,30; bonus bSPDrainValue,2; bonus bSPGainValue,20; },{},{}
+1369,Guillotine,Õ¶Ê×Ö®¸«,5,20,,3000,215,,1,0,0x000444A2,7,2,34,4,44,1,7,{ bonus2 bWeaponComaRace,RC_Human,30; bonus2 bSPGainOnHitRace,RC_Human,2; bonus2 bSPGainRace,RC_Human,20; },{},{}
 1370,Doom_Slayer,³¬ÖØË«ÊÖ¸«,5,20,,6000,10,,1,0,0x000444A2,7,2,34,4,80,1,7,{ bonus bAspdRate,-40; bonus bUseSPrate,100; if(readparam(bStr)>=95){ bonus bBaseAtk,340; bonus2 bAddEff,Eff_Stun,3000; bonus bBreakArmorRate,500; } },{},{}
 1371,Doom_Slayer_,³¬ÖØ Ë«ÊÖ½£,5,20,,6000,10,,1,1,0x000444A2,7,2,34,4,80,1,7,{ bonus bAspdRate,-40; bonus bUseSPrate,100; if(readparam(bStr)>=95){ bonus bBaseAtk,340; bonus2 bAddEff,Eff_Stun,3000; bonus bBreakArmorRate,500; } },{},{}
 1372,Right_Epsilon_C,ÖÇÌìÊ¹Ö®¸«,5,1,,0,229,,1,0,0x000444A2,7,2,34,4,1,0,7,{ bonus bAtkEle,Ele_Holy; skill "AL_HEAL",3; bonus2 bAddRace,RC_Demon,3; bonus bStr,10; bonus bSpeedRate,25; },{},{}
@@ -718,7 +718,7 @@
 1413,Gungnir,¸ÕÄá¶û³¤Ã¬,5,20,,500,120,,3,0,0x00004082,7,2,2,4,4,1,4,{ bonus bAtkEle,Ele_Wind; bonus bPerfectHitRate,25; bonus bHit,30; },{},{}
 1414,Gelerdria,µØÁéÖ®Ã¬,5,20,,700,145,,3,0,0x00004082,7,2,2,4,48,1,4,{ bonus bAtkEle,Ele_Earth; bonus bMaxHP,800; bonus bMaxSP,-50; },{},{}
 1415,Skewer,Ä§Á¦Ö®Ã¬,5,20,,850,100,,3,0,0x00004082,7,2,2,4,48,1,4,{ bonus bIgnoreDefClass,Class_Normal; bonus2 bAddEle,Ele_Neutral,25; },{},{}
-1416,Tjungkuletti,Ð°ÁéÖ®Ã¬,5,20,,1000,95,,3,0,0x00004082,7,2,2,4,48,1,4,{ bonus bSPDrainValue,1; bonus bSPGainValue,5; },{},{}
+1416,Tjungkuletti,Ð°ÁéÖ®Ã¬,5,20,,1000,95,,3,0,0x00004082,7,2,2,4,48,1,4,{ bonus bSPDrainValue,1; bonus2 bSPGainOnHitRace,RC_All,5; },{},{}
 1417,Pole_Axe,Á­êª,5,20,,3800,160,,3,1,0x00004082,7,2,2,3,71,1,4,{ bonus bStr,1; bonus bInt,2; bonus bDex,1; },{},{}
 1418,Gungnir_,¸ÕÄá¶û³¤Ã¬,5,20,,500,120,,3,2,0x00004082,7,2,2,4,4,1,4,{ bonus bAtkEle,Ele_Wind; bonus bPerfectHitRate,25; bonus bHit,30; },{},{}
 1419,Pole_Axe_C,Á­êª,5,1,,4800,159,,3,0,0x00004082,7,2,2,3,1,0,4,{ bonus bStr,1; bonus bInt,2; bonus bDex,1; },{},{}
@@ -880,7 +880,7 @@
 1610,Arc_Wand,ÑÔÁéÄ§ÕÈ,5,45000,,400,60,,1,1,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,95; bonus bInt,3; },{},{}
 1611,Arc_Wand_,ÑÔÁéÄ§ÕÈ,5,45000,,400,60,,1,2,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,95; bonus bInt,3; },{},{}
 1612,Arc_Wand__,ÑÔÁéÄ§ÕÈ,5,45000,,400,60,,1,0,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,95; bonus bInt,3; },{},{}
-1613,Mighty_Staff,Î×ÕÈ »êÒ§,5,20,,700,130,,1,0,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,100; bonus bStr,10; bonus bSPDrainValue,-2; },{},{}
+1613,Mighty_Staff,Î×ÕÈ »êÒ§,5,20,,700,130,,1,0,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,100; bonus bStr,10; bonus2 bSPGainOnHitRace,RC_All,-2; },{},{}
 1614,Blessed_Wand,Ê¥ÕÈ Ó¢Áé,5,20,,700,75,,1,0,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,105; bonus bInt,3; },{},{}
 1615,Bone_Wand,÷¼÷ÃÄ§ÕÈ,5,20,,700,40,,1,0,0x00818314,7,2,2,3,24,1,10,{ bonus bMatk,110; bonus bAtkEle,Ele_Undead; bonus bInt,4; },{},{}
 1616,Staff_Of_Wing,ÓðÒíÖ®ÕÈ,5,20,,500,60,,1,0,0x00810204,7,2,2,4,40,1,10,{ bonus bMatk,115; bonus bAtkEle,Ele_Wind; bonus bCastrate,-5; },{},{}
@@ -2021,7 +2021,7 @@
 4168,Dark_Lord_Card,ºÚ°µÖ®Íõ¿¨Æ¬,6,20,,10,,,,,,,,64,,,,,{ bonus3 bAutoSpellWhenHit,"WZ_METEOR",5,100; },{},{}
 4169,Dark_Illusion_Card,ÃÔ»ÃÖ®Íõ¿¨Æ¬,6,20,,10,,,,,,,,769,,,,,{ bonus bMaxHPrate,-10; bonus bMaxSPrate,-10; bonus bCastrate,-10; },{},{}
 4170,Dark_Frame_Card,¾µÑý¿¨Æ¬,6,20,,10,,,,,,,,16,,,,,{ bonus2 bAddEffWhenHit,Eff_Stone,600; },{},{}
-4171,Dark_Priest_Card,°µºÚ¼ÀË¾¿¨Æ¬,6,20,,10,,,,,,,,2,,,,,{ bonus2 bSPVanishRate,50,10; bonus2 bSPVanishMagicRate,50,10;  if(BaseJob==Job_Sage) bonus bSPDrainValue,1; },{},{}
+4171,Dark_Priest_Card,°µºÚ¼ÀË¾¿¨Æ¬,6,20,,10,,,,,,,,2,,,,,{ bonus2 bSPVanishRate,50,10; bonus2 bSPVanishMagicRate,50,10;  if(BaseJob==Job_Sage) bonus2 bSPGainOnHitRace,RC_All,1; },{},{}
 4172,The_Paper_Card,Ö½Ñý¿¨Æ¬,6,20,,10,,,,,,,,2,,,,,{ bonus bCritAtkRate,20; bonus bSPDrainValue,-1; },{},{}
 4173,Demon_Pungus_Card,ÌìÐ°¹í¿¨Æ¬,6,20,,10,,,,,,,,16,,,,,{ bonus2 bAddEffWhenHit,Eff_Sleep,600; },{},{}
 4174,Deviling_Card,¶ñÄ§²¨Àû¿¨Æ¬,6,20,,10,,,,,,,,4,,,,,{ bonus2 bSubEle,Ele_Neutral,50; bonus2 bSubEle,Ele_Water,-50; bonus2 bSubEle,Ele_Earth,-50; bonus2 bSubEle,Ele_Fire,-50; bonus2 bSubEle,Ele_Wind,-50; bonus2 bSubEle,Ele_Poison,-50; bonus2 bSubEle,Ele_Holy,-50; bonus2 bSubEle,Ele_Dark,-50; bonus2 bSubEle,Ele_Ghost,-50; bonus2 bSubEle,Ele_Undead,-50; },{},{}

@@ -511,6 +511,8 @@ bNoKnockback	1077
 bClassChange	1078
 bHPDrainValue	1079
 bSPDrainValue	1080
+bHPGainOnAttack	1079
+bSPGainOnAttack	1080
 bWeaponAtk	1081
 bWeaponAtkRate	1082
 bDelayrate	1083
@@ -600,16 +602,21 @@ bSkillAtk	2018
 bUnstripable	2019
 bAutoSpellOnSkill	2020
 bSPGainValue	2021
+bSPGainOnKill	2021
 bHPRegenRate	2022
 bHPLossRate	2023
 bAddDamageGroup	2024
 bHPGainValue	2025
+bHPGainOnKill	2025
 bSubSize	2026
 bHPDrainValueRace	2027
+bHPGainOnAttackRace	2027
 bAddItemHealRate	2028
 bSPDrainValueRace	2029
+bSPGainOnAttackRace	2029
 bExpAddRace	2030
 bSPGainRace	2031
+bSPGainOnKillRace	2031
 bSubDamageGroup	2032
 bAddMdefGroup		2032
 bUnbreakableShoes	2033
@@ -624,6 +631,8 @@ bAddSkillBlow	2041
 bSPVanishRate	2042
 bMagicSPGainValue	2043
 bMagicHPGainValue	2044
+bSPGainOnMagicKill	2043
+bHPGainOnMagicKill	2044
 bSPGainValueOnSkill	2045
 bHPGainValueOnSkill	2046
 bNoSteal	2047
@@ -631,6 +640,7 @@ bNoStealCoin	2048
 bNoSnatch	2049
 bUnstripableAcc	2050
 bMagicAddGroup	2051
+bSPGainOnHitRace	2052
 
 EQI_HEAD_TOP	1
 EQI_ARMOR	2
