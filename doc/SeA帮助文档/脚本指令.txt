@@ -2797,13 +2797,9 @@ currently work due to a bug.
 -------------------------
 
 *playerattached;
+*mobattached;
 
-Returns the ID of the player currently attached to the script. It will return
-0 if noone is attached, or if the attached player no longer exists on the map
-server. It is wise to check for the attached player in script functions that
-deal with timers as there's no guarantee the player will still be logged on
-when the timer triggers. Note that the ID of a player is actually their
-account ID.
+返回关联当前脚本的玩家AID/魔物GID. 如果没人关联会返回0.
 
 -------------------------
 
@@ -3093,6 +3089,7 @@ For a list of equipment slots see 'getequipid'.
 -------------------------
 
 *attachrid(<account ID>)
+*mobattachrid(<GID>) 上面指令的魔物版本
 *detachrid;
 
 A 'RID' is an ID of a character who caused the NPC script to run, as has been 
