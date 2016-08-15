@@ -206,6 +206,7 @@ bonus2 bRandomAttackIncrease,n,r;	r% 几率增加物理攻击伤害 n
 //=========================================================
 bonus bNoWeaponDamage,n;		物理伤害减少n%。
 bonus bNoMagicDamage,n;			魔法伤害减少n%。
+bonus bMagicFleeRate,n;			n%/10几率免受魔法伤害
 bonus2 bAddSize,n,x;			物理攻击时，对体型 n 增加 x% 的伤害 (n值见备注5)
 bonus2 bMagicAddSize,n,x;		魔法攻击时，对体型 n 增加 x% 的伤害 (n值见备注5)
 bonus2 bSubSize,n,x;			减少来自体型 n 的伤害 x% (n值见备注5)
