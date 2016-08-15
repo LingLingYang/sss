@@ -125,20 +125,19 @@ bonus bSPrecovRate,n;			SP自然恢复率 + n%
 bonus bUseSPrate,n;			SP消耗 + n%
 bonus2 bUseSPrate,x,n;			技能 x SP消耗 + n%
 bonus2 bUseSPValue,x,n;			技能 x SP消耗 + n
-bonus bSPGainOnKill,n;			以近距离物理攻击 杀死 所有种族 魔物时 1000/10% 得到 n SP
-bonus bHPGainOnKill,n;			以近距离物理攻击 杀死 所有种族 魔物时 1000/10% 得到 n HP
+bonus bSPGainOnKill,n;			以物理攻击 杀死 所有种族 魔物时 1000/10% 得到 n SP
+bonus bHPGainOnKill,n;			以物理攻击 杀死 所有种族 魔物时 1000/10% 得到 n HP
 bonus bSPGainOnMagicKill,n;		以魔法攻击 杀死 所有种族 魔物时 1000/10% 得到 n SP
 bonus bHPGainOnMagicKill,n;		以魔法攻击 杀死 所有种族 魔物时 1000/10% 得到 n HP
-bonus2 bSPGainOnKillRace,r,n;		以近距离物理攻击条件 杀死 r 种族魔物时 1000/10% 得到 n 点SP (n见注1)
+bonus2 bSPGainOnKillRace,r,n;		以物理攻击 杀死 r 种族魔物时 1000/10% 得到 n 点SP (n见注1)
 bonus2 bSPGainOnSKill,x,n;		使用技能 x 后得到SP n
 bonus2 bHPGainOnSKill,x,n;		使用技能 x 后得到HP n
-bonus bHPGainOnAttack,x;		单体物理攻击对所有种族造成伤害时, 1000/10 % 几率 HP 获得 x 
-bonus bSPGainOnAttack,x;		单体物理攻击对所有种族造成伤害时, 1000/10 % 几率 SP 获得 x 
-bonus2 bHPGainOnAttackRace,r,x;		单体物理攻击对 r 种族造成伤害时, 1000/10 % 几率 HP 获得 x 
-bonus2 bSPGainOnAttackRace,r,x;		单体物理攻击对 r 种族造成伤害时, 1000/10 % 几率 SP 获得 x 
+bonus bHPGainOnAttack,x;		攻击对所有种族造成伤害时, 1000/10 % 几率 HP 获得 x 
+bonus bSPGainOnAttack,x;		攻击对所有种族造成伤害时, 1000/10 % 几率 SP 获得 x 
+bonus2 bHPGainOnAttackRace,r,x;		攻击对 r 种族造成伤害时, 1000/10 % 几率 HP 获得 x 
+bonus2 bSPGainOnAttackRace,r,x;		攻击对 r 种族造成伤害时, 1000/10 % 几率 SP 获得 x 
 bonus2 bSPGainOnHitRace,r,x;		物理攻击命中 r 种族 时, SP 获得 x。如果x为负数且扣除不成功，则武器攻击力为0。
-bonus2 bSPVanishRate,n,x;		单体物理攻击造成伤害时, n/10 % 几率对所有种族减少 x% 对方SP
-bonus2 bSPVanishMagicRate,n,x;		魔法攻击造成伤害时, n/10 % 几率对所有种族减少 x% 对方SP
+bonus2 bSPVanishRate,n,x;		攻击造成伤害时, n/10 % 几率对所有种族减少 x% 对方SP
 bonus2 bHPDrainRate,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对所有种族的造成的伤害的获得 x% 为HP
 bonus2 bSPDrainRate,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对所有种族的造成的伤害的获得 x% 为SP
 bonus3 bHPDrainRateRace,r,n,x;		单体物理攻击造成伤害时, n/10 % 几率把对 r 种族的造成的伤害获得 x% 为HP

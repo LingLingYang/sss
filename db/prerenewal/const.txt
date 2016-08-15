@@ -525,7 +525,7 @@ bHealPower2	1091
 bEleMagicAddRate	1092
 bSPForceVanishRate	1093
 bHPForceVanishRate	1094
-bSPVanishMagicRate	1095
+bSPGainOnHitRace	1095
 bSubRaceMagic	1096
 bSlingItem	1097
 bMonTransform	1098
@@ -622,8 +622,6 @@ bAddMonsterDropItemGroup	2039
 bSPLossRate	2040
 bAddSkillBlow	2041
 bSPVanishRate	2042
-bMagicSPGainValue	2043
-bMagicHPGainValue	2044
 bSPGainOnMagicKill	2043
 bHPGainOnMagicKill	2044
 bSPGainValueOnSkill	2045
@@ -633,7 +631,6 @@ bNoStealCoin	2048
 bNoSnatch	2049
 bUnstripableAcc	2050
 bMagicAddGroup	2051
-bSPGainOnHitRace	2052
 
 EQI_HEAD_TOP	1
 EQI_ARMOR	2
