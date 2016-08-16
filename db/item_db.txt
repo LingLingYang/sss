@@ -7426,33 +7426,33 @@
 18851,C_Polar_Bear_Cap,Costume Polar Bear Cap,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,1,966,{},{},{}
 18873,Sweet_Valentine_Out,Sweet Valentine Out,4,20,,100,,1,,0,0xFFFFFFFF,7,2,256,,1,1,965,{},{},{}
 //Ê±×°
-19500,T_Mr_Smile,T Mr Smile,4,0,,0,,0,,0,0xFFFFFFFF,7,2,513,,0,0,65,{ bonus bStr,2; },{},{}
-19501,T_Spinx_Helm,T Spinx Helm,4,0,,0,,0,,1,0xFFFFFFFF,7,2,257,,0,0,137,{},{},{}
-19504,T_Sunglasses,T Sunglasses,4,0,,0,,0,,0,0xFFFFFFFF,7,2,512,,0,0,12,{},{},{}
-19505,T_Cigarette,T Cigarette,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1,,0,0,54,{},{},{}
-19506,T_Valkyrie_Feather_Band,T Valkyrie Feather Band,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,0,1,300,{},{},{}
-19507,Clear_Sun,²ÓÀÃÌ«Ñô,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,654,{},{},{}
-19508,T_Gemmed_Sallet,T Gemmed Sallet,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,0,1,0,{},{},{}
-19509,Butterfly_Wings_Ear,»Æ·ïµû³á°ò,4,20,,0,,0,,0,0xFFFFFFFF,7,2,512,,1,0,695,{},{},{}
-19510,Screw_Stuck_Head,´©ÄÔÂÝË¿,4,20,,0,,0,,0,0xFFFFFFFF,7,2,512,,1,0,696,{},{},{}
-19513,Chicken_Bill,¼¦à¹,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1,,1,0,699,{},{},{}
-19514,Charlies_Beard,ÃûÈËºúÐë,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1,,1,0,700,{},{},{}
-19515,Yellow_Hat,»ÆÉ«ÓðÃ«Ã±,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,701,{},{},{}
-19516,Singing_Bird,°®³ª¸èµÄÐ¡Äñ,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,702,{},{},{}
-19517,Chicken_Crest,¼¦¹Ú,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,703,{},{},{}
-19518,Rainbow,Ñ¤Àö²Êºç,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,704,{},{},{}
-19519,Thunderstorm_Cloud,Åùö¨À×ÔÆ,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,688,{},{},{}
-19520,Rain_Cloud,À×ÕóÓêÔÆ,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,705,{},{},{}
-19521,Charlies_Hat,ÉðÊ¿Ô²Ã±,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,706,{},{},{}
-19522,Mini_Crown1,ºìÉ«Ð¡Íõ¹Ú,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,707,{},{},{}
-19523,Green_Ribbon,Green Ribbon,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,244,{},{},{}
-19524,Costume_Green_Feeler,Costume Green Feeler,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,85,{},{},{}
-19525,Costume_Mini_Glasses,Costume Mini Glasses,4,0,,0,,0,,0,0xFFFFFFFF,7,2,512,,1,0,47,{},{},{}
-19526,Costume_Helm,Costume Helm,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,40,{},{},{}
-19527,Costume_Spiky_Band,Costume Spiky Band,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,43,{},{},{}
-19528,Costume_Iron_Cain,Costume Iron Cain,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1,,1,0,53,{},{},{}
-19529,Costume_Angel_Wing,Costume Angel Wing,4,0,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,38,{},{},{}
-19530,Costume_Wild_Rose,Costume Wild Rose,4,20,,0,,0,,0,0xFFFFFFFF,7,2,256,,1,0,541,{},{},{}
+19500,T_Mr_Smile,T Mr Smile,4,0,,0,,0,,0,0xFFFFFFFF,7,2,6144,,0,0,65,{ bonus bStr,2; },{},{}
+19501,T_Spinx_Helm,T Spinx Helm,4,0,,0,,0,,1,0xFFFFFFFF,7,2,7168,,0,0,137,{},{},{}
+19504,T_Sunglasses,T Sunglasses,4,0,,0,,0,,0,0xFFFFFFFF,7,2,2048,,0,0,12,{},{},{}
+19505,T_Cigarette,T Cigarette,4,0,,0,,0,,0,0xFFFFFFFF,7,2,4096,,0,0,54,{},{},{}
+19506,T_Valkyrie_Feather_Band,T Valkyrie Feather Band,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,0,1,300,{},{},{}
+19507,Clear_Sun,²ÓÀÃÌ«Ñô,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,654,{},{},{}
+19508,T_Gemmed_Sallet,T Gemmed Sallet,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,0,1,0,{},{},{}
+19509,Butterfly_Wings_Ear,»Æ·ïµû³á°ò,4,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,1,0,695,{},{},{}
+19510,Screw_Stuck_Head,´©ÄÔÂÝË¿,4,20,,0,,0,,0,0xFFFFFFFF,7,2,2048,,1,0,696,{},{},{}
+19513,Chicken_Bill,¼¦à¹,4,20,,0,,0,,0,0xFFFFFFFF,7,2,4096,,1,0,699,{},{},{}
+19514,Charlies_Beard,ÃûÈËºúÐë,4,20,,0,,0,,0,0xFFFFFFFF,7,2,4096,,1,0,700,{},{},{}
+19515,Yellow_Hat,»ÆÉ«ÓðÃ«Ã±,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,701,{},{},{}
+19516,Singing_Bird,°®³ª¸èµÄÐ¡Äñ,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,702,{},{},{}
+19517,Chicken_Crest,¼¦¹Ú,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,703,{},{},{}
+19518,Rainbow,Ñ¤Àö²Êºç,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,704,{},{},{}
+19519,Thunderstorm_Cloud,Åùö¨À×ÔÆ,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,688,{},{},{}
+19520,Rain_Cloud,À×ÕóÓêÔÆ,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,705,{},{},{}
+19521,Charlies_Hat,ÉðÊ¿Ô²Ã±,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,706,{},{},{}
+19522,Mini_Crown1,ºìÉ«Ð¡Íõ¹Ú,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,707,{},{},{}
+19523,Green_Ribbon,Green Ribbon,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,244,{},{},{}
+19524,Costume_Green_Feeler,Costume Green Feeler,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,85,{},{},{}
+19525,Costume_Mini_Glasses,Costume Mini Glasses,4,0,,0,,0,,0,0xFFFFFFFF,7,2,2048,,1,0,47,{},{},{}
+19526,Costume_Helm,Costume Helm,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,40,{},{},{}
+19527,Costume_Spiky_Band,Costume Spiky Band,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,43,{},{},{}
+19528,Costume_Iron_Cain,Costume Iron Cain,4,0,,0,,0,,0,0xFFFFFFFF,7,2,4096,,1,0,53,{},{},{}
+19529,Costume_Angel_Wing,Costume Angel Wing,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,38,{},{},{}
+19530,Costume_Wild_Rose,Costume Wild Rose,4,20,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,541,{},{},{}
 19532,C_Red_Bunny_Band,Red Bunny Band,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,640,{ bonus bUnbreakableHelm,0; bonus bDex,1; },{},{}
 19533,C_Spore_Hat,Costume Spore Hat,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,114,{ bonus bUnbreakableHelm,0; bonus bVit,1; },{},{}
 19535,C_Sinsuncho_Hat,Costume Sinsuncho Hat,4,0,,0,,0,,0,0xFFFFFFFF,7,2,1024,,1,0,730,{ bonus bUnbreakableHelm,0; bonus bStr,1; },{},{}
