@@ -2522,9 +2522,7 @@ Valid types of data are:
 15 - Is 1 if the 6th guardian is present (Knight Guardian)
 16 - Is 1 if the 7th guardian is present (Knight Guardian)
 17 - Is 1 if the 8th guardian is present (Knight Guardian)
-
-18-25 types of data will return current hit point values for guardians 1-8 
-respectively.
+18 - 占有城堡的公会的公会名
 
 The 'setcastledata' command will behave identically, but instead of returning 
 values for the specified types of accessible data, it will alter them and cause 
